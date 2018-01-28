@@ -30,9 +30,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Events\LogReceivedEventArgs.cs" />
     <Compile Include="Events\MessageResponseReceivedArgs.cs" />
+    <Compile Include="Engines\Networks\INetworkEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
+    <Folder Include="Engines\" />
+    <Folder Include="Engines\Networks\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
