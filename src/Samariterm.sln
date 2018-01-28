@@ -5,11 +5,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{0EF1A6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile", "Samariterm.Mobile\Samariterm.Mobile.csproj", "{039207AC-2037-4B0B-A200-23A680E73FD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.iOS", "iOS\Samariterm.Mobile.iOS.csproj", "{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.iOS", "Samariterm.Mobile.iOS\Samariterm.Mobile.iOS.csproj", "{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.Droid", "Droid\Samariterm.Mobile.Droid.csproj", "{741BF8CD-1951-4C21-8F10-CB40B87E237A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.Droid", "Samariterm.Mobile.Droid\Samariterm.Mobile.Droid.csproj", "{741BF8CD-1951-4C21-8F10-CB40B87E237A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.UITests", "UITests\Samariterm.Mobile.UITests.csproj", "{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.UITests", "Samariterm.Mobile.UITests\Samariterm.Mobile.UITests.csproj", "{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
