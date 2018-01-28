@@ -3,8 +3,8 @@
   <PropertyGroup>
     <ProjectGuid>{8EBD2F90-3680-4951-A4D2-04F2BF5A61DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <RootNamespace>Samariterm.Gtk</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Juniansoft.Samariterm.Gtk</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
