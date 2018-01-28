@@ -7,7 +7,7 @@
     <ProjectGuid>{741BF8CD-1951-4C21-8F10-CB40B87E237A}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Samariterm.Mobile.Droid</RootNamespace>
+    <RootNamespace>Juniansoft.Samariterm.Mobile.Droid</RootNamespace>
     <AssemblyName>Samariterm.Mobile.Droid</AssemblyName>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
