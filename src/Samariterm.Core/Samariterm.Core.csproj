@@ -31,11 +31,13 @@
     <Compile Include="Events\LogReceivedEventArgs.cs" />
     <Compile Include="Events\MessageResponseReceivedArgs.cs" />
     <Compile Include="Engines\Networks\INetworkEngine.cs" />
+    <Compile Include="Engines\Scripts\IBotScriptEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
     <Folder Include="Engines\" />
     <Folder Include="Engines\Networks\" />
+    <Folder Include="Engines\Scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
