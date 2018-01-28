@@ -31,6 +31,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Engines\Networks\BaseNetworkEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Engines\" />
+    <Folder Include="Engines\Networks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
+      <Name>Samariterm.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

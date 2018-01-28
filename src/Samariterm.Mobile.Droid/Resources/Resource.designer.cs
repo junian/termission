@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Samariterm.Mobile.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Juniansoft.Samariterm.Mobile.Droid.Resource", IsApplication=true)]
 
-namespace Samariterm.Mobile.Droid
+namespace Juniansoft.Samariterm.Mobile.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Samariterm.Mobile.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Samariterm.Mobile.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Juniansoft.Samariterm.Mobile.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

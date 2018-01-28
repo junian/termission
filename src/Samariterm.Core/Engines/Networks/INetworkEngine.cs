@@ -5,7 +5,7 @@ using Juniansoft.Samariterm.Core.Events;
 
 namespace Juniansoft.Samariterm.Core.Engines.Networks
 {
-    public interface INetworkEngineIEngine
+    public interface INetworkEngine
     {
         event EventHandler<MessageResponseReceivedArgs> MessageResponseReceived;
 
