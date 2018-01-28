@@ -29,6 +29,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Events\LogReceivedEventArgs.cs" />
+    <Compile Include="Events\MessageResponseReceivedArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
