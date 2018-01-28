@@ -121,6 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Engines\" />
+    <Folder Include="Engines\Networks\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -133,11 +135,24 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\TcpListenerEngine.cs">
+      <Link>Engines\Networks\TcpListenerEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\TcpClientEngine.cs">
+      <Link>Engines\Networks\TcpClientEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\BaseNetworkEngine.cs">
+      <Link>Engines\Networks\BaseNetworkEngine.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Mobile\Samariterm.Mobile.csproj">
       <Project>{039207AC-2037-4B0B-A200-23A680E73FD7}</Project>
       <Name>Samariterm.Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
+      <Name>Samariterm.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
