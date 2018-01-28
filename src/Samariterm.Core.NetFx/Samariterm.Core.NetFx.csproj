@@ -33,6 +33,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Engines\Networks\BaseNetworkEngine.cs" />
     <Compile Include="Engines\Networks\SerialComEngine.cs" />
+    <Compile Include="Engines\Networks\TcpClientEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engines\" />
