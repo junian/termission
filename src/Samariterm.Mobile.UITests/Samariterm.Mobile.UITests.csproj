@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -38,13 +38,13 @@
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\iOS\Samariterm.Mobile.iOS.csproj">
+    <ProjectReference Include="..\Samariterm.Mobile.iOS\Samariterm.Mobile.iOS.csproj">
       <Project>{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}</Project>
       <Name>Samariterm.Mobile.iOS</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Droid\Samariterm.Mobile.Droid.csproj">
+    <ProjectReference Include="..\Samariterm.Mobile.Droid\Samariterm.Mobile.Droid.csproj">
       <Project>{741BF8CD-1951-4C21-8F10-CB40B87E237A}</Project>
       <Name>Samariterm.Mobile.Droid</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
