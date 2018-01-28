@@ -34,6 +34,7 @@
     <Compile Include="Engines\Networks\BaseNetworkEngine.cs" />
     <Compile Include="Engines\Networks\SerialComEngine.cs" />
     <Compile Include="Engines\Networks\TcpClientEngine.cs" />
+    <Compile Include="Engines\Networks\TcpListenerEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engines\" />
