@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.Droid", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Mobile.UITests", "Samariterm.Mobile.UITests\Samariterm.Mobile.UITests.csproj", "{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Core", "Samariterm.Core\Samariterm.Core.csproj", "{3EDCD048-0B52-408B-9E27-C507F4FB14E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|iPhone.Build.0 = Release|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{039207AC-2037-4B0B-A200-23A680E73FD7} = {0EF1A6CF-57CA-4A91-9955-7BC9BA84E171}
