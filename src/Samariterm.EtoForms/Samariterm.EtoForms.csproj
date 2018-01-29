@@ -52,6 +52,7 @@
     <Compile Include="Views\MainView.cs" />
     <Compile Include="Views\PreferencesView.cs" />
     <Compile Include="Views\DeviceBotView.cs" />
+    <Compile Include="Forms\AboutForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
@@ -72,6 +73,7 @@
     <Folder Include="Resources\" />
     <Folder Include="MenuCommands\" />
     <Folder Include="Views\" />
+    <Folder Include="Forms\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\DocumentNew.png" />
