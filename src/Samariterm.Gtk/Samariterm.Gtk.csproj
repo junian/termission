@@ -52,5 +52,19 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
+      <Name>Samariterm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samariterm.Core.Mono\Samariterm.Core.Mono.csproj">
+      <Project>{0E44089B-8967-4117-A12F-6F0E31D480D2}</Project>
+      <Name>Samariterm.Core.Mono</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samariterm.Core.NetFx\Samariterm.Core.NetFx.csproj">
+      <Project>{68A8AACE-4371-4D61-B984-09185E77C2ED}</Project>
+      <Name>Samariterm.Core.NetFx</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
