@@ -397,7 +397,7 @@ namespace Juniansoft.Samariterm.Core.ViewModels
 
         public string Title
         {
-            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? "TermSharp" : $"TermSharp ({CurrentFilePath})";
+            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? $"{App.AssemblyProduct}" : $"{App.AssemblyProduct} ({CurrentFilePath})";
         }
 
         public ICommand ExitCommand => new Command(_systemService.Quit);

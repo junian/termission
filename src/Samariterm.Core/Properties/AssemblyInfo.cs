@@ -5,11 +5,11 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle("Samariterm.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Cross-platform Serial/TCP terminal")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("Junian")]
+[assembly: AssemblyProduct("SamariTerm")]
+[assembly: AssemblyCopyright("(c) 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

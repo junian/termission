@@ -181,7 +181,7 @@ namespace Juniansoft.Samariterm.Core.ViewModels
 
         public string Title
         {
-            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? "TermSharp Bot" : $"TermSharp Bot ({CurrentFilePath})";
+            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? $"{App.AssemblyProduct} Bot" : $"{App.AssemblyProduct} Bot ({CurrentFilePath})";
         }
 
         public int Width
