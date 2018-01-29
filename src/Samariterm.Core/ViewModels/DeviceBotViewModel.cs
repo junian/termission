@@ -82,22 +82,19 @@ namespace Juniansoft.Samariterm.Core.ViewModels
         {
             try
             {
-                if (!IsCompiled)
+                if (DeviceBotEngine.Compile(UserScript))
                 {
-                    if (DeviceBotEngine.Compile(UserScript))
+                    IsCompiled = true;
+                    IsCompileStatusVisible = true;
+                }
+                else
+                {
+                    var sb = new StringBuilder();
+                    foreach (var ce in DeviceBotEngine.Errors)
                     {
-                        IsCompiled = true;
-                        IsCompileStatusVisible = true;
+                        sb.AppendLine($"{ce}");
                     }
-                    else
-                    {
-                        var sb = new StringBuilder();
-                        foreach (var ce in DeviceBotEngine.Errors)
-                        {
-                            sb.AppendLine($"{ce}");
-                        }
-                        return sb.ToString();
-                    }
+                    return sb.ToString();
                 }
             }
             catch (Exception ex)
@@ -256,6 +253,7 @@ namespace Juniansoft.Samariterm.Core.ViewModels
                 DeviceBotEngine = ServiceLocator.Instance.Get<ICSharpBotEngine>();
                 CodeLanguage = "cs";
             }
+            IsCompiled = false;
         }
     }
 }

@@ -3,8 +3,6 @@ using AppKit.TextKit.Formatter;
 using Eto.Forms;
 using Eto.Mac.Forms.Controls;
 using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.Mac.Controls;
-using static Juniansoft.Samariterm.EtoForms.Controls.SyntaxHightlightTextArea;
 
 namespace Juniansoft.Samariterm.Mac.Controls
 {
