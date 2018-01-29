@@ -6,6 +6,7 @@ using Juniansoft.Samariterm.EtoForms.Controls;
 using Juniansoft.Samariterm.Core.Extensions;
 using Juniansoft.Samariterm.Core.ViewModels;
 using static Juniansoft.Samariterm.EtoForms.Controls.SyntaxHightlightTextArea;
+using System.Diagnostics;
 
 namespace Juniansoft.Samariterm.EtoForms.Views
 {
@@ -42,7 +43,14 @@ namespace Juniansoft.Samariterm.EtoForms.Views
                         if (string.IsNullOrEmpty(err))
                             MessageBox.Show(this, "Your script successfully compiled! Now you can use it to work.", "Compile Success!", MessageBoxType.Information);
                         else
-                            MessageBox.Show(this, $"{err.Truncate(512, "...")}", "Compile Error!", MessageBoxType.Error);
+                        {
+                            var errMsg = err.Truncate(512, "...");
+                            if (Platform.IsGtk)
+                            {
+                                errMsg = errMsg.Replace("{", "{{").Replace("}", "}}");
+                            }
+                            MessageBox.Show(this, @errMsg, "Compile Error!", MessageBoxType.Error);
+                        }
                     };
                 }
             };
