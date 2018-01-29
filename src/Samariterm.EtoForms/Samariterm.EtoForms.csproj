@@ -49,6 +49,7 @@
     <Compile Include="MenuCommands\UpdateCommand.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Services\EtoSystemService.cs" />
+    <Compile Include="Views\MainView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
@@ -68,6 +69,7 @@
     <Folder Include="Controls\" />
     <Folder Include="Resources\" />
     <Folder Include="MenuCommands\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\DocumentNew.png" />
