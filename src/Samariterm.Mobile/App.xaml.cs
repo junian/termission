@@ -13,9 +13,9 @@ namespace Samariterm.Mobile
 
             RegisterServices();
 
-            MainPage = new PreferencesPage
+            MainPage = new DeviceBotPage
             {
-                BindingContext = ServiceLocator.Instance.Get<PreferencesViewModel>(),
+                //BindingContext = ServiceLocator.Instance.Get<DeviceBotViewModel>(),
             };
         }
 
