@@ -32,6 +32,9 @@
     <Compile Include="Events\MessageResponseReceivedArgs.cs" />
     <Compile Include="Engines\Networks\INetworkEngine.cs" />
     <Compile Include="Engines\Scripts\IBotScriptEngine.cs" />
+    <Compile Include="Engines\Scripts\JSJintScriptEngine.cs" />
+    <Compile Include="Engines\Scripts\BaseJSScriptEngine.cs" />
+    <Compile Include="Engines\Scripts\BaseScriptEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
