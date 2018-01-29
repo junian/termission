@@ -38,8 +38,8 @@ namespace Juniansoft.Samariterm.Mac.Controls
             }
         }
 
-        private Language _codeLanguage = Language.CSharp;
-        public Language CodeLanguage 
+        private string _codeLanguage = "cs";
+        public string CodeLanguage 
         {
             get => _codeLanguage;
             set
@@ -54,11 +54,11 @@ namespace Juniansoft.Samariterm.Mac.Controls
 
         private void UpdateFormatter()
         {
-            if (CodeLanguage == Language.JavaScript)
+            if (CodeLanguage == "js")
             {
                 textSource.Formatter = new LanguageFormatter(textSource, new JavaScriptDescriptor());
             }
-            else if (CodeLanguage == Language.CSharp)
+            else if (CodeLanguage == "cs")
             {
                 textSource.Formatter = new LanguageFormatter(textSource, new CSharpDescriptor());
             }

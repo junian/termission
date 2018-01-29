@@ -19,7 +19,7 @@ namespace Juniansoft.Samariterm.EtoForms.Controls
 
         new ISyntaxHightlightTextArea Handler { get { return (ISyntaxHightlightTextArea)base.Handler; } }
 
-        public Language CodeLanguage
+        public string CodeLanguage
         {
             get { return Handler.CodeLanguage; }
             set { Handler.CodeLanguage = value; }
@@ -28,7 +28,7 @@ namespace Juniansoft.Samariterm.EtoForms.Controls
         // interface to the platform implementations
         public interface ISyntaxHightlightTextArea : IHandler
         {
-            Language CodeLanguage { get; set; }
+            string CodeLanguage { get; set; }
         }
     }
 }

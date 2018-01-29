@@ -149,10 +149,7 @@ namespace Juniansoft.Samariterm.EtoForms.Views
             _btnCompile.BindDataContext(x => x.Enabled, Binding.Property((DeviceBotViewModel vm) => vm.IsBotEnabled), DualBindingMode.OneWay);
 
             _textSourceCode.BindDataContext(x => x.Text, Binding.Property((DeviceBotViewModel vm) => vm.UserScript));
-            _textSourceCode.BindDataContext(x => x.CodeLanguage, 
-                                            Binding.Property((DeviceBotViewModel vm) => vm.CodeLanguage)
-                                            .Convert(x => x == "js" ? Language.JavaScript : Language.CSharp,
-                                                     x => x == Language.JavaScript ? "js" : "cs"));
+            _textSourceCode.BindDataContext(x => x.CodeLanguage, Binding.Property((DeviceBotViewModel vm) => vm.CodeLanguage), DualBindingMode.OneWay);
 
             _radBotLanguages.BindDataContext(
                 c => c.DataStore,
