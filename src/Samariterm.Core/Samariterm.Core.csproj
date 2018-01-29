@@ -42,6 +42,7 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Constants\EtoStyles.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Models\BotScript.cs" />
     <Compile Include="Models\ShouldSerializeContractResolver.cs" />
     <Compile Include="Enums\ActivityMode.cs" />
     <Compile Include="Enums\BotScriptType.cs" />
