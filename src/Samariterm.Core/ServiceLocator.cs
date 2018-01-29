@@ -16,6 +16,12 @@ namespace Juniansoft.Samariterm.Core
                 new Lazy<object>(() => Activator.CreateInstance(typeof(TService)));
         }
 
+        public void Register<TService>() where TService : new()
+        {
+            registeredServices[typeof(TService)] =
+                new Lazy<object>(() => Activator.CreateInstance(typeof(TService)));
+        }
+
         public T Get<T>() where T : class
         {
             Lazy<object> service;
