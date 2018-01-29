@@ -51,6 +51,7 @@
     <Compile Include="Services\EtoSystemService.cs" />
     <Compile Include="Views\MainView.cs" />
     <Compile Include="Views\PreferencesView.cs" />
+    <Compile Include="Views\DeviceBotView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
