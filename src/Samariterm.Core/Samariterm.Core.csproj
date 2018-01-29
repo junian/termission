@@ -40,6 +40,7 @@
     <Compile Include="Command.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Constants\EtoStyles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -47,6 +48,7 @@
     <Folder Include="Engines\Networks\" />
     <Folder Include="Engines\Scripts\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
