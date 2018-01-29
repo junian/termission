@@ -8,7 +8,9 @@ namespace Juniansoft.Samariterm.EtoForms.Controls
     {
         public AceSourceEditor()
         {
-            this.LoadHtml(AppResources.AceEditorHtml);
+            this.LoadHtml(AppResources.AceEditorHtml.Replace("//ace.js", AppResources.AceJS));
+            this.BrowserContextMenuEnabled = false;
+
         }
     }
 }

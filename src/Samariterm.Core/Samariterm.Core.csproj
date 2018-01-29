@@ -80,6 +80,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
     <EmbeddedResource Include="Resources\AceEditor.html" />
+    <EmbeddedResource Include="Resources\ace.js" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="jint">
