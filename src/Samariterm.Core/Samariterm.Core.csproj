@@ -42,5 +42,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="jint">
+      <HintPath>..\packages\jint.2.10.4\lib\portable40-net40+sl5+win8+wp8+wpa81\jint.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
