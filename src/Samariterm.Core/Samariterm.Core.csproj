@@ -36,12 +36,16 @@
     <Compile Include="Engines\Scripts\BaseJSScriptEngine.cs" />
     <Compile Include="Engines\Scripts\BaseScriptEngine.cs" />
     <Compile Include="ISamaritermApp.cs" />
+    <Compile Include="ServiceLocator.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
     <Folder Include="Engines\" />
     <Folder Include="Engines\Networks\" />
     <Folder Include="Engines\Scripts\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
