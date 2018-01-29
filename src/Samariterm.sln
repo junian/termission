@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.Wpf", "Samariter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.WinForms", "Samariterm.WinForms\Samariterm.WinForms.csproj", "{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samariterm.EtoForms", "Samariterm.EtoForms\Samariterm.EtoForms.csproj", "{BDC8B552-3E54-44F1-A703-F712D06B55C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -170,6 +172,18 @@ Global
 		{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8}.Release|iPhone.Build.0 = Release|Any CPU
 		{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhone.Build.0 = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -183,6 +197,7 @@ Global
 		{8EBD2F90-3680-4951-A4D2-04F2BF5A61DD} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
 		{482CF3BF-50FD-43BB-9F71-29AE47E89032} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
 		{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0192AC8-3C08-4C66-B288-D98C944A45D9}
