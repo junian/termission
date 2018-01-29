@@ -9,6 +9,6 @@
 
     public class BotFactory
     {
-        public IProgram CreateProgram() => new Program();
+        public IProgram CreateProgram() { return new Program(); }
     }
 }
