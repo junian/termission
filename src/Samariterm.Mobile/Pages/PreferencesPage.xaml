@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Juniansoft.Samariterm.Mobile.Pages.PreferencesPage">
+	<TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="TCP Listener Mode">
+                <EntryCell Label="IP Address" Text="{Binding TcpListenerIp}" Keyboard="Url" />
+                <EntryCell Label="Port" Text="{Binding TcpListenerPort}" Keyboard="Numeric" />
+            </TableSection>
+            <TableSection Title="TCP Client Mode">
+                <EntryCell Label="IP Address" Text="{Binding TcpClientIp}" Keyboard="Url" />
+                <EntryCell Label="Port" Text="{Binding TcpClientPort}" Keyboard="Numeric" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
