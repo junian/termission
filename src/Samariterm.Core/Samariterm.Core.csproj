@@ -51,6 +51,7 @@
     <Compile Include="Services\INotificationService.cs" />
     <Compile Include="Services\ICrossDialog.cs" />
     <Compile Include="ViewModels\CoreViewModel.cs" />
+    <Compile Include="ViewModels\PreferencesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
