@@ -7,7 +7,11 @@ namespace Juniansoft.Samariterm.Core.Resources
     public static class AppResources
     {
         public static string AceEditorHtml => GetString("AceEditor.html");
+        public static string AceEditorJS => GetString("ace-editor.js");
         public static string AceJS => GetString("ace.js");
+        public static string LanguageToolsJS => GetString("ext-language_tools.js");
+        public static string ModeJavascriptJs => GetString("mode-javascript.js");
+        public static string ModeCSharpJs => GetString("mode-csharp.js");
 
         private static string GetString(string name)
         {

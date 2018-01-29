@@ -81,6 +81,10 @@
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
     <EmbeddedResource Include="Resources\AceEditor.html" />
     <EmbeddedResource Include="Resources\ace.js" />
+    <EmbeddedResource Include="Resources\ace-editor.js" />
+    <EmbeddedResource Include="Resources\ext-language_tools.js" />
+    <EmbeddedResource Include="Resources\mode-javascript.js" />
+    <EmbeddedResource Include="Resources\mode-csharp.js" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="jint">
