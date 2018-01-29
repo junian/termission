@@ -68,6 +68,7 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\NotificationService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +92,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Samariterm.Core.NetFx\Samariterm.Core.NetFx.csproj">
+      <Project>{68a8aace-4371-4d61-b984-09185e77c2ed}</Project>
+      <Name>Samariterm.Core.NetFx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+      <Project>{3edcd048-0b52-408b-9e27-c507f4fb14e3}</Project>
+      <Name>Samariterm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samariterm.EtoForms\Samariterm.EtoForms.csproj">
+      <Project>{bdc8b552-3e54-44f1-a703-f712d06b55c6}</Project>
+      <Name>Samariterm.EtoForms</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
