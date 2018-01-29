@@ -15,8 +15,7 @@ namespace Juniansoft.Samariterm.Core.ViewModels
                 return false;
 
             backingStore = value;
-            onChanged?.Invoke();
-            OnPropertyChanged(propertyName);
+            RaisePropertyChanged(propertyName, onChanged);
             return true;
         }
 
