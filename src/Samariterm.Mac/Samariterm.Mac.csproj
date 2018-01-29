@@ -95,6 +95,21 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Services\NotificationService.cs" />
+    <Compile Include="Controls\SyntaxHightlightTextAreaHandler.cs" />
+    <Compile Include="Controls\LanguageFormats\CSharpDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormats\HTMLDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormats\JavaScriptDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormats\XMLDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormatter\FormatDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormatter\FormatDescriptorType.cs" />
+    <Compile Include="Controls\LanguageFormatter\KeywordDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormatter\KeywordType.cs" />
+    <Compile Include="Controls\LanguageFormatter\LanguageClosure.cs" />
+    <Compile Include="Controls\LanguageFormatter\LanguageDescriptor.cs" />
+    <Compile Include="Controls\LanguageFormatter\LanguageFormatCommand.cs" />
+    <Compile Include="Controls\LanguageFormatter\LanguageFormatter.cs" />
+    <Compile Include="Controls\LanguageFormatter\SourceTextView.cs" />
+    <Compile Include="Controls\LanguageFormatter\SourceTextViewDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainMenu.xib" />
