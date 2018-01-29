@@ -37,6 +37,17 @@
     <Compile Include="Services\CrossDialog.cs" />
     <Compile Include="Controls\SyntaxHightlightTextArea.cs" />
     <Compile Include="Resources\AppResources.cs" />
+    <Compile Include="MenuCommands\AboutCommand.cs" />
+    <Compile Include="MenuCommands\BotActiveCommand.cs" />
+    <Compile Include="MenuCommands\CompileCommand.cs" />
+    <Compile Include="MenuCommands\NewCommand.cs" />
+    <Compile Include="MenuCommands\OpenCommand.cs" />
+    <Compile Include="MenuCommands\PreferencesCommand.cs" />
+    <Compile Include="MenuCommands\QuitCommand.cs" />
+    <Compile Include="MenuCommands\SaveAsCommand.cs" />
+    <Compile Include="MenuCommands\SaveCommand.cs" />
+    <Compile Include="MenuCommands\UpdateCommand.cs" />
+    <Compile Include="MainApplication.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
@@ -55,6 +66,7 @@
     <Folder Include="Services\" />
     <Folder Include="Controls\" />
     <Folder Include="Resources\" />
+    <Folder Include="MenuCommands\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\DocumentNew.png" />
