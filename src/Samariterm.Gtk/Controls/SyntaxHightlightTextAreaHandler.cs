@@ -2,12 +2,11 @@
 using Eto.Drawing;
 using Eto.Forms;
 using Eto.GtkSharp.Forms;
-using Gtk;
 using Juniansoft.Samariterm.EtoForms.Controls;
 using Mono.TextEditor;
 using Mono.TextEditor.Highlighting;
 
-namespace Juniansoft.Samariterm.Gtk.Controls
+namespace Juniansoft.Samariterm.GtkSharp.Controls
 {
     public class SyntaxHightlightTextAreaHandler : GtkControl<MonoTextEditor, SyntaxHightlightTextArea, SyntaxHightlightTextArea.ICallback>, SyntaxHightlightTextArea.ISyntaxHightlightTextArea
     {
@@ -15,9 +14,9 @@ namespace Juniansoft.Samariterm.Gtk.Controls
         public SyntaxHightlightTextAreaHandler()
         {
 
-            scroll = new ScrolledWindow
+            scroll = new Gtk.ScrolledWindow
             {
-                ShadowType = ShadowType.In,
+                ShadowType = Gtk.ShadowType.In,
             };
             editor = new MonoTextEditor
             {
@@ -43,10 +42,10 @@ namespace Juniansoft.Samariterm.Gtk.Controls
         }
 
         int suppressSelectionAndTextChanged;
-        readonly ScrolledWindow scroll;
-        TextTag tag;
+        readonly Gtk.ScrolledWindow scroll;
+        Gtk.TextTag tag;
 
-        public override Widget ContainerControl
+        public override Gtk.Widget ContainerControl
         {
             get { return scroll; }
         }
@@ -173,7 +172,7 @@ namespace Juniansoft.Samariterm.Gtk.Controls
                 e.Handled = true;
         }
 
-        static void PreventEnterKey(object o, KeyPressEventArgs args)
+        static void PreventEnterKey(object o, Gtk.KeyPressEventArgs args)
         {
             if (args.Event.Key == Gdk.Key.Return)
                 args.RetVal = false;
@@ -248,7 +247,7 @@ namespace Juniansoft.Samariterm.Gtk.Controls
                     handler.Callback.OnTextChanged(Handler.Widget, EventArgs.Empty);
             }
 
-            public void HandleSelectionChanged(object o, MarkSetArgs args)
+            public void HandleSelectionChanged(object o, Gtk.MarkSetArgs args)
             {
                 var handler = Handler;
                 var selection = handler.Selection;
@@ -259,7 +258,7 @@ namespace Juniansoft.Samariterm.Gtk.Controls
                 }
             }
 
-            public void HandleCaretIndexChanged(object o, MarkSetArgs args)
+            public void HandleCaretIndexChanged(object o, Gtk.MarkSetArgs args)
             {
                 var handler = Handler;
                 var caretIndex = handler.CaretIndex;
