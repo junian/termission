@@ -36,6 +36,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CrossDialog.cs" />
     <Compile Include="Controls\SyntaxHightlightTextArea.cs" />
+    <Compile Include="Resources\AppResources.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
@@ -53,6 +54,18 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Controls\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DocumentNew.png" />
+    <EmbeddedResource Include="Resources\DocumentOpen.png" />
+    <EmbeddedResource Include="Resources\DocumentSave.png" />
+    <EmbeddedResource Include="Resources\DocumentSaveAs.png" />
+    <EmbeddedResource Include="Resources\MediaRecord.png" />
+    <EmbeddedResource Include="Resources\MediaStart.png" />
+    <EmbeddedResource Include="Resources\Preferences.png" />
+    <EmbeddedResource Include="Resources\Refresh.png" />
+    <EmbeddedResource Include="Resources\Terminal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
