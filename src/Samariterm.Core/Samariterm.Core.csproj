@@ -60,6 +60,7 @@
     <Compile Include="Models\TcpListenerSettings.cs" />
     <Compile Include="Models\TcpClientSettings.cs" />
     <Compile Include="Models\SerialComSettings.cs" />
+    <Compile Include="ViewModels\DeviceBotViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
