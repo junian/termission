@@ -36,6 +36,7 @@
     <Compile Include="Engines\Networks\TcpClientEngine.cs" />
     <Compile Include="Engines\Networks\TcpListenerEngine.cs" />
     <Compile Include="Engines\Scripts\BaseCSharpScriptEngine.cs" />
+    <Compile Include="Engines\Scripts\CSharpCodeDomScriptEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engines\" />
