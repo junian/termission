@@ -39,6 +39,7 @@
     <Compile Include="ServiceLocator.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="Helpers\Settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -53,6 +54,15 @@
   <ItemGroup>
     <Reference Include="jint">
       <HintPath>..\packages\jint.2.10.4\lib\portable40-net40+sl5+win8+wp8+wpa81\jint.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
