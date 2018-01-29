@@ -42,6 +42,7 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Constants\EtoStyles.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Models\ShouldSerializeContractResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -51,6 +52,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Constants\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
