@@ -35,10 +35,12 @@
     <Compile Include="Engines\Networks\SerialComEngine.cs" />
     <Compile Include="Engines\Networks\TcpClientEngine.cs" />
     <Compile Include="Engines\Networks\TcpListenerEngine.cs" />
+    <Compile Include="Engines\Scripts\BaseCSharpScriptEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engines\" />
     <Folder Include="Engines\Networks\" />
+    <Folder Include="Engines\Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
