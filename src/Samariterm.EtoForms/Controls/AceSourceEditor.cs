@@ -25,5 +25,12 @@ namespace Juniansoft.Samariterm.EtoForms.Controls
             this.BrowserContextMenuEnabled = false;
 
         }
+
+        public string Text
+        {
+            get => this.ExecuteScript("editor.getValue();");
+
+            set => this.ExecuteScript($"editor.setValue(\"{value}\");");
+        }
     }
 }
