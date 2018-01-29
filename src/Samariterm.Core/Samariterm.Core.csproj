@@ -45,6 +45,7 @@
     <Compile Include="Models\ShouldSerializeContractResolver.cs" />
     <Compile Include="Enums\ActivityMode.cs" />
     <Compile Include="Enums\BotScriptType.cs" />
+    <Compile Include="Models\TermSharpSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
