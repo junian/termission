@@ -7,7 +7,7 @@ namespace Juniansoft.Samariterm.Core.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        protected bool SetProperty<T>(ref T backingStore, T value,
+        protected bool Set<T>(ref T backingStore, T value,
             [CallerMemberName]string propertyName = "",
             Action onChanged = null)
         {
@@ -18,6 +18,12 @@ namespace Juniansoft.Samariterm.Core.ViewModels
             onChanged?.Invoke();
             OnPropertyChanged(propertyName);
             return true;
+        }
+
+        protected void RaisePropertyChanged([CallerMemberName]string propertyName = "", Action onChanged = null)
+        {
+            onChanged?.Invoke();
+            OnPropertyChanged(propertyName);
         }
 
         #region INotifyPropertyChanged
