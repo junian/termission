@@ -52,6 +52,7 @@
     <Compile Include="Views\MainView.cs" />
     <Compile Include="Views\PreferencesView.cs" />
     <Compile Include="Views\DeviceBotView.cs" />
+    <Compile Include="Forms\MainForm.cs" />
     <Compile Include="Forms\AboutForm.cs" />
     <Compile Include="Forms\PreferencesForm.cs" />
     <Compile Include="Forms\DeviceBotForm.cs" />

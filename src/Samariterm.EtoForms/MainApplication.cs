@@ -8,6 +8,7 @@ using Juniansoft.Samariterm.Core.Engines.Scripts;
 using Juniansoft.Samariterm.Core.Services;
 using Juniansoft.Samariterm.Core.ViewModels;
 using Juniansoft.Samariterm.EtoForms.Services;
+using Juniansoft.Samariterm.EtoForms.Views;
 
 namespace Juniansoft.Samariterm.EtoForms
 {
@@ -33,13 +34,13 @@ namespace Juniansoft.Samariterm.EtoForms
 
             // Register all ViewModels here.
             ServiceLocator.Instance.Register<BaseViewModel>();
-            //SimpleIoc.Default.Register<DeviceBotViewModel>();
-            //SimpleIoc.Default.Register<PreferencesViewModel>();
+            ServiceLocator.Instance.Register<DeviceBotViewModel>();
+            ServiceLocator.Instance.Register<PreferencesViewModel>();
 
             // Register all Views here
-            //SimpleIoc.Default.Register<MainView>();
-            //SimpleIoc.Default.Register<DeviceBotView>();
-            //SimpleIoc.Default.Register<PreferencesView>();
+            ServiceLocator.Instance.Register<MainView>();
+            ServiceLocator.Instance.Register<DeviceBotView>();
+            ServiceLocator.Instance.Register<PreferencesView>();
         }
 
         #region Assembly Attribute Accessors
