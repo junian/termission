@@ -33,7 +33,7 @@ namespace Juniansoft.Samariterm.EtoForms
                 ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
 
             // Register all ViewModels here.
-            ServiceLocator.Instance.Register<BaseViewModel>();
+            ServiceLocator.Instance.Register<MainViewModel>();
             ServiceLocator.Instance.Register<DeviceBotViewModel>();
             ServiceLocator.Instance.Register<PreferencesViewModel>();
 
