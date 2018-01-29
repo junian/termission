@@ -1,12 +1,41 @@
 ﻿using System;
 using System.Reflection;
+using Eto;
+using Eto.Forms;
+using Juniansoft.Samariterm.Core;
+using Juniansoft.Samariterm.Core.Engines.Scripts;
+using Juniansoft.Samariterm.Core.Services;
+using Juniansoft.Samariterm.Core.ViewModels;
+using Juniansoft.Samariterm.EtoForms.Services;
 
 namespace Juniansoft.Samariterm.EtoForms
 {
-    public class MainApplication
+    public class MainApplication: Application, ISamaritermApp
     {
-        public MainApplication()
+        public MainApplication(Platform platform)
+            : base(platform)
         {
+            RegisterServices();
+        }
+
+        public void RegisterServices()
+        {
+            // Register all Services here
+            ServiceLocator.Instance.Register<ICrossDialog, CrossDialog>();
+            ServiceLocator.Instance.Register<BaseJSScriptEngine, JSJintScriptEngine>();
+
+            if (Platform.Instance.IsWinForms || Platform.IsWpf)
+                ServiceLocator.Instance.Register<BaseCSharpScriptEngine, CSharpCodeDomScriptEngine>();
+
+            // Register all ViewModels here.
+            ServiceLocator.Instance.Register<BaseViewModel>();
+            //SimpleIoc.Default.Register<DeviceBotViewModel>();
+            //SimpleIoc.Default.Register<PreferencesViewModel>();
+
+            // Register all Views here
+            //SimpleIoc.Default.Register<MainView>();
+            //SimpleIoc.Default.Register<DeviceBotView>();
+            //SimpleIoc.Default.Register<PreferencesView>();
         }
 
         #region Assembly Attribute Accessors
