@@ -35,6 +35,7 @@
     <Compile Include="Engines\Scripts\JSJintScriptEngine.cs" />
     <Compile Include="Engines\Scripts\BaseJSScriptEngine.cs" />
     <Compile Include="Engines\Scripts\BaseScriptEngine.cs" />
+    <Compile Include="ISamaritermApp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
