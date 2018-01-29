@@ -1,5 +1,6 @@
 ﻿using System;
 using Eto.Forms;
+using Juniansoft.Samariterm.Core.Resources;
 
 namespace Juniansoft.Samariterm.EtoForms.Controls
 {
@@ -7,7 +8,7 @@ namespace Juniansoft.Samariterm.EtoForms.Controls
     {
         public AceSourceEditor()
         {
-            //this.load
+            this.LoadHtml(AppResources.AceEditorHtml);
         }
     }
 }
