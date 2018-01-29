@@ -48,6 +48,7 @@
     <Compile Include="Enums\BotScriptType.cs" />
     <Compile Include="Models\TermSharpSettings.cs" />
     <Compile Include="Services\SerialDataConverter.cs" />
+    <Compile Include="Services\INotificationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
