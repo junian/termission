@@ -3,6 +3,7 @@ using System.Reflection;
 using Eto;
 using Eto.Forms;
 using Juniansoft.Samariterm.Core;
+using Juniansoft.Samariterm.Core.Engines.Networks;
 using Juniansoft.Samariterm.Core.Engines.Scripts;
 using Juniansoft.Samariterm.Core.Services;
 using Juniansoft.Samariterm.Core.ViewModels;
@@ -22,10 +23,13 @@ namespace Juniansoft.Samariterm.EtoForms
         {
             // Register all Services here
             ServiceLocator.Instance.Register<ICrossDialog, CrossDialog>();
-            ServiceLocator.Instance.Register<BaseJSScriptEngine, JSJintScriptEngine>();
+            ServiceLocator.Instance.Register<IJavaScriptBotEngine, JSJintScriptEngine>();
+            ServiceLocator.Instance.Register<INetworkEngine, TermSharpEngine>();
+            ServiceLocator.Instance.Register<ISystemService, EtoSystemService>();
+            ServiceLocator.Instance.Register<IFileService, FileService>();
 
             if (Platform.Instance.IsWinForms || Platform.IsWpf)
-                ServiceLocator.Instance.Register<BaseCSharpScriptEngine, CSharpCodeDomScriptEngine>();
+                ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
 
             // Register all ViewModels here.
             ServiceLocator.Instance.Register<BaseViewModel>();

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Juniansoft.Samariterm.Core.Events;
+using Juniansoft.Samariterm.Core.Models;
 
 namespace Juniansoft.Samariterm.Core.Engines.Networks
 {
@@ -46,11 +47,11 @@ namespace Juniansoft.Samariterm.Core.Engines.Networks
 
         public void Set(object model)
         {
-            if (model is SerialComEngine.Settings)
+            if (model is SerialComSettings)
                 _selectedEngine = _serialComEngine;
-            else if (model is TcpClientEngine.Settings)
+            else if (model is TcpClientSettings)
                 _selectedEngine = _tcpClientEngine;
-            else if (model is TcpListenerEngine.Settings)
+            else if (model is TcpListenerSettings)
                 _selectedEngine = _tcpListenerEngine;
 
             _selectedEngine?.Set(model);

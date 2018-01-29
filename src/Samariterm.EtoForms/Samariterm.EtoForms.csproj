@@ -48,6 +48,7 @@
     <Compile Include="MenuCommands\SaveCommand.cs" />
     <Compile Include="MenuCommands\UpdateCommand.cs" />
     <Compile Include="MainApplication.cs" />
+    <Compile Include="Services\EtoSystemService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">

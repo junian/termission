@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using Juniansoft.Samariterm.Core.Models;
 
 namespace Juniansoft.Samariterm.Core.Engines.Networks
 {
@@ -106,20 +107,14 @@ namespace Juniansoft.Samariterm.Core.Engines.Networks
             throw new NotImplementedException();
         }
 
-        private Settings CurrentSettings;
+        private TcpListenerSettings CurrentSettings;
 
         public override void Set(object model)
         {
-            if (model is Settings s)
+            if (model is TcpListenerSettings s)
             {
                 CurrentSettings = s;
             }
-        }
-
-        public class Settings
-        {
-            public string IpAddress { get; set; }
-            public int Port { get; set; }
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.IO;
 using System.IO.Ports;
 using System.Threading.Tasks;
+using Juniansoft.Samariterm.Core.Models;
 
 namespace Juniansoft.Samariterm.Core.Engines.Networks
 {
@@ -44,13 +45,13 @@ namespace Juniansoft.Samariterm.Core.Engines.Networks
 
         public override void Set(object model)
         {
-            if (model is Settings s)
+            if (model is SerialComSettings s)
             {
                 _serialPort.BaudRate = s.BaudRate;
-                _serialPort.Handshake = s.Handshake;
-                _serialPort.Parity = s.Parity;
+                _serialPort.Handshake = (Handshake) s.Handshake;
+                _serialPort.Parity = (Parity) s.Parity;
                 _serialPort.DataBits = s.DataBits;
-                _serialPort.StopBits = s.StopBits;
+                _serialPort.StopBits = (StopBits) s.StopBits;
             }
         }
 
@@ -79,15 +80,6 @@ namespace Juniansoft.Samariterm.Core.Engines.Networks
         protected override async Task EngineOpenAsync()
         {
             await Task.Run(() => EngineOpen());
-        }
-
-        public class Settings
-        {
-            public int BaudRate { get; set; }
-            public Handshake Handshake { get; set; }
-            public Parity Parity { get; set; }
-            public int DataBits { get; set; }
-            public StopBits StopBits { get; set; }
         }
     }
 

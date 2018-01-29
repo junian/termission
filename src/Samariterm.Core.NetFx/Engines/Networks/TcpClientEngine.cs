@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using Juniansoft.Samariterm.Core.Models;
 
 namespace Juniansoft.Samariterm.Core.Engines.Networks
 {
@@ -112,20 +113,14 @@ namespace Juniansoft.Samariterm.Core.Engines.Networks
             BaseStream = _tcpClient?.GetStream();
         }
 
-        private Settings CurrentSettings;
+        private TcpClientSettings CurrentSettings;
 
         public override void Set(object model)
         {
-            if (model is Settings s)
+            if (model is TcpClientSettings s)
             {
                 CurrentSettings = s;
             }
-        }
-
-        public class Settings
-        {
-            public string IpAddress { get; set; }
-            public int Port { get; set; }
         }
     }
 }

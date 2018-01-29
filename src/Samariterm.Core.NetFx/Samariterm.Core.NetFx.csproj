@@ -38,11 +38,14 @@
     <Compile Include="Engines\Scripts\BaseCSharpScriptEngine.cs" />
     <Compile Include="Engines\Scripts\CSharpCodeDomScriptEngine.cs" />
     <Compile Include="Engines\Networks\TermSharpEngine.cs" />
+    <Compile Include="Services\SystemService.cs" />
+    <Compile Include="Services\FileService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engines\" />
     <Folder Include="Engines\Networks\" />
     <Folder Include="Engines\Scripts\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">

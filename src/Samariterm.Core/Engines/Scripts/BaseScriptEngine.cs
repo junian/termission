@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Juniansoft.Samariterm.Core.Engines.Scripts
 {
-    public abstract class BaseScriptEngine: IBotScriptEngine
+    public abstract class BaseScriptEngine: IBotScriptEngine, IJavaScriptBotEngine, ICSharpBotEngine
     {
         protected BaseScriptEngine()
         {

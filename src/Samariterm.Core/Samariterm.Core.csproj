@@ -52,6 +52,14 @@
     <Compile Include="Services\ICrossDialog.cs" />
     <Compile Include="ViewModels\CoreViewModel.cs" />
     <Compile Include="ViewModels\PreferencesViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Services\ISystemService.cs" />
+    <Compile Include="Engines\Scripts\ICSharpBotEngine.cs" />
+    <Compile Include="Engines\Scripts\IJavaScriptBotEngine.cs" />
+    <Compile Include="Services\IFileService.cs" />
+    <Compile Include="Models\TcpListenerSettings.cs" />
+    <Compile Include="Models\TcpClientSettings.cs" />
+    <Compile Include="Models\SerialComSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
