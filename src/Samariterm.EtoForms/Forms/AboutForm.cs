@@ -22,7 +22,7 @@ namespace Juniansoft.Samariterm.EtoForms.Forms
 
             var imageView = new ImageView
             {
-                Image = AppResources.Terminal,
+                Image = DesktopAppResources.Terminal,
                 Size = new Size(128, 128)
             };
 

@@ -19,7 +19,7 @@ namespace Juniansoft.Samariterm.EtoForms.MenuCommands
             this.ToolTip = "Preferences";
             if (Platform.Instance.IsMac)
                 this.Shortcut = Application.Instance.CommonModifier | Keys.Comma;
-            this.Image = AppResources.Preferences;
+            this.Image = DesktopAppResources.Preferences;
         }
     }
 }

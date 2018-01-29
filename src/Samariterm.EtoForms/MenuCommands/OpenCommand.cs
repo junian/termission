@@ -18,7 +18,7 @@ namespace Juniansoft.Samariterm.EtoForms.MenuCommands
                 this.ToolBarText = "Open";
             this.ToolTip = "Open";
             this.Shortcut = Application.Instance.CommonModifier | Keys.O;
-            this.Image = AppResources.DocumentOpen;
+            this.Image = DesktopAppResources.DocumentOpen;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Juniansoft.Samariterm.EtoForms.MenuCommands
             this.MenuText = "Activate";
             this.ToolBarText = "Activate";
             this.ToolTip = "Activate";
-            this.Image = AppResources.MediaRecord;
+            this.Image = DesktopAppResources.MediaRecord;
         }
     }
 }

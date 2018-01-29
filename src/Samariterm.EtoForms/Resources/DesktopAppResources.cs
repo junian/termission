@@ -3,7 +3,7 @@ using Eto.Drawing;
 
 namespace Juniansoft.Samariterm.EtoForms.Resources
 {
-    public static class AppResources
+    public static class DesktopAppResources
     {
         public static Image DocumentNew => FromResource(nameof(DocumentNew));
         public static Image DocumentOpen => FromResource(nameof(DocumentOpen));
@@ -17,7 +17,7 @@ namespace Juniansoft.Samariterm.EtoForms.Resources
 
         private static Bitmap FromResource(string name)
         {
-            return Bitmap.FromResource($"{typeof(AppResources).Namespace}.{name}.png");
+            return Bitmap.FromResource($"{typeof(DesktopAppResources).Namespace}.{name}.png");
         }
     }
 }

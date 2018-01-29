@@ -17,7 +17,7 @@ namespace Juniansoft.Samariterm.EtoForms.MenuCommands
             if (!Platform.Instance.IsWinForms)
                 this.ToolBarText = "Compile";
             this.ToolTip = "Compile";
-            this.Image = AppResources.MediaStart;
+            this.Image = DesktopAppResources.MediaStart;
             if (Platform.Instance.IsMac)
                 this.Shortcut = Application.Instance.CommonModifier | Keys.B;
             else

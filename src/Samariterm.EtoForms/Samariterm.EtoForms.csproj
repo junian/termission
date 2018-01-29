@@ -36,7 +36,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CrossDialog.cs" />
     <Compile Include="Controls\SyntaxHightlightTextArea.cs" />
-    <Compile Include="Resources\AppResources.cs" />
+    <Compile Include="Resources\DesktopAppResources.cs" />
     <Compile Include="MenuCommands\AboutCommand.cs" />
     <Compile Include="MenuCommands\BotActiveCommand.cs" />
     <Compile Include="MenuCommands\CompileCommand.cs" />
@@ -56,6 +56,7 @@
     <Compile Include="Forms\AboutForm.cs" />
     <Compile Include="Forms\PreferencesForm.cs" />
     <Compile Include="Forms\DeviceBotForm.cs" />
+    <Compile Include="Controls\AceSourceEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">

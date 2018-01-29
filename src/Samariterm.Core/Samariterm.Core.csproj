@@ -62,6 +62,7 @@
     <Compile Include="Models\SerialComSettings.cs" />
     <Compile Include="ViewModels\DeviceBotViewModel.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="Resources\AppResources.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -74,9 +75,11 @@
     <Folder Include="Models\" />
     <Folder Include="Enums\" />
     <Folder Include="Services\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
+    <EmbeddedResource Include="Resources\AceEditor.html" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="jint">

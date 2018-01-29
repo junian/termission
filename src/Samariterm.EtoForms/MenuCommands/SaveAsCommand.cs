@@ -17,7 +17,7 @@ namespace Juniansoft.Samariterm.EtoForms.MenuCommands
             if (!Platform.Instance.IsWinForms)
                 this.ToolBarText = "Save As";
             this.ToolTip = "Save As";
-            this.Image = AppResources.DocumentSaveAs;
+            this.Image = DesktopAppResources.DocumentSaveAs;
         }
     }
 }
