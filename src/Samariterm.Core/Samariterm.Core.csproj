@@ -47,6 +47,7 @@
     <Compile Include="Enums\ActivityMode.cs" />
     <Compile Include="Enums\BotScriptType.cs" />
     <Compile Include="Models\TermSharpSettings.cs" />
+    <Compile Include="Services\SerialDataConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -58,6 +59,7 @@
     <Folder Include="Extensions\" />
     <Folder Include="Models\" />
     <Folder Include="Enums\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Engines\Scripts\Program.cs" />
