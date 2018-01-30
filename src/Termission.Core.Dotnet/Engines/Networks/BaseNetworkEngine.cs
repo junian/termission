@@ -3,9 +3,9 @@ using System.ComponentModel;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Juniansoft.Samariterm.Core.Events;
+using Juniansoft.Termission.Core.Events;
 
-namespace Juniansoft.Samariterm.Core.Engines.Networks
+namespace Juniansoft.Termission.Core.Engines.Networks
 {
     public abstract class BaseNetworkEngine: INetworkEngine
     {

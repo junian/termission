@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Juniansoft.Samariterm.Core.Services
+namespace Juniansoft.Termission.Core.Services
 {
     public class FileService: IFileService
     {

@@ -1,26 +1,26 @@
 ﻿using System;
 using System.IO;
+using System.IO.Ports;
 using System.Threading.Tasks;
-using Juniansoft.Samariterm.Core.Models;
-using RJCP.IO.Ports;
+using Juniansoft.Termission.Core.Models;
 
-namespace Juniansoft.Samariterm.Core.Engines.Networks
+namespace Juniansoft.Termission.Core.Engines.Networks
 {
-    public class SerialPortStreamEngine : BaseNetworkEngine
+    public class SerialComEngine: BaseNetworkEngine
     {
-        private SerialPortStream _serialPort;
+        private SerialPort _serialPort;
 
-        public SerialPortStreamEngine()
+        public SerialComEngine()
             : base()
         {
-            _serialPort = new SerialPortStream();
+            _serialPort = new SerialPort();
             //_serialPort.ErrorReceived += (_, e) => OnLogReceived(e.EventType);
             //_serialPort.PinChanged += (_, e) => OnLogReceived(e.EventType);
         }
 
         public override Stream BaseStream
         {
-            get => _serialPort;
+            get => _serialPort.BaseStream;
             protected set
             {
                 return;
@@ -48,10 +48,10 @@ namespace Juniansoft.Samariterm.Core.Engines.Networks
             if (model is SerialComSettings s)
             {
                 _serialPort.BaudRate = s.BaudRate;
-                _serialPort.Handshake = (Handshake)s.Handshake;
-                _serialPort.Parity = (Parity)s.Parity;
+                _serialPort.Handshake = (Handshake) s.Handshake;
+                _serialPort.Parity = (Parity) s.Parity;
                 _serialPort.DataBits = s.DataBits;
-                _serialPort.StopBits = (StopBits)s.StopBits;
+                _serialPort.StopBits = (StopBits) s.StopBits;
             }
         }
 

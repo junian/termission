@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.TextEditor", "Mono.Tex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core", "Termission.Core\Termission.Core.csproj", "{3EDCD048-0B52-408B-9E27-C507F4FB14E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core.Dotnet", "Termission.Core.Dotnet\Termission.Core.Dotnet.csproj", "{68A8AACE-4371-4D61-B984-09185E77C2ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,20 @@ Global
 		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Standalone|Any CPU.ActiveCfg = Debug|Any CPU
 		{3EDCD048-0B52-408B-9E27-C507F4FB14E3}.Standalone|Any CPU.Build.0 = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Release|iPhone.Build.0 = Release|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Standalone|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A8AACE-4371-4D61-B984-09185E77C2ED}.Standalone|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +76,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A2329308-3751-4DBD-9A75-5F7B8B024625} = {5747969E-61FD-45E8-ADF0-F6F0D7929640}
 		{3EDCD048-0B52-408B-9E27-C507F4FB14E3} = {2FD4FE5E-EDFB-4E75-8705-C6CF678F92C0}
+		{68A8AACE-4371-4D61-B984-09185E77C2ED} = {2FD4FE5E-EDFB-4E75-8705-C6CF678F92C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0192AC8-3C08-4C66-B288-D98C944A45D9}

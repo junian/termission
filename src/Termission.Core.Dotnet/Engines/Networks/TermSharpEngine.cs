@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Juniansoft.Samariterm.Core.Events;
-using Juniansoft.Samariterm.Core.Models;
+using Juniansoft.Termission.Core.Events;
+using Juniansoft.Termission.Core.Models;
 
-namespace Juniansoft.Samariterm.Core.Engines.Networks
+namespace Juniansoft.Termission.Core.Engines.Networks
 {
     public class TermSharpEngine: INetworkEngine
     {

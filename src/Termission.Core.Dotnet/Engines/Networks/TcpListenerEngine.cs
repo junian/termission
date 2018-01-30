@@ -4,9 +4,9 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
-using Juniansoft.Samariterm.Core.Models;
+using Juniansoft.Termission.Core.Models;
 
-namespace Juniansoft.Samariterm.Core.Engines.Networks
+namespace Juniansoft.Termission.Core.Engines.Networks
 {
     public class TcpListenerEngine: BaseNetworkEngine
     {

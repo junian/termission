@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
-using Juniansoft.Samariterm.Core.Helpers;
+using Juniansoft.Termission.Core.Helpers;
 
-namespace Juniansoft.Samariterm.Core.Services
+namespace Juniansoft.Termission.Core.Services
 {
     public class SystemService: ISystemService
     {

@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace Juniansoft.Samariterm.Core.Engines.Scripts
+namespace Juniansoft.Termission.Core.Engines.Scripts
 {
     public abstract class BaseCSharpScriptEngine : BaseScriptEngine
     {
