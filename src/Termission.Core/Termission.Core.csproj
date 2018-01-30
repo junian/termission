@@ -63,6 +63,7 @@
     <Compile Include="ViewModels\DeviceBotViewModel.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Resources\AppResources.cs" />
+    <Compile Include="ViewModels\HelpViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -90,6 +91,7 @@
     <EmbeddedResource Include="Resources\codemirror-mode-javascript.js" />
     <EmbeddedResource Include="Resources\codemirror-mode-clike.js" />
     <EmbeddedResource Include="Resources\codemirror-editor.html" />
+    <EmbeddedResource Include="Resources\help.md" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="jint">
@@ -104,6 +106,12 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Markdig">
+      <HintPath>..\packages\Markdig.Signed.0.14.9\lib\portable40-net40+sl5+win8+wp8+wpa81\Markdig.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

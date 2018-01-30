@@ -19,6 +19,8 @@ namespace Juniansoft.Termission.Core.Resources
         public static string CodeMirrorModeCLikeJs => GetString("codemirror-mode-clike.js");
         public static string CodeMirrorModeJavascriptJs => GetString("codemirror-mode-javascript.js");
 
+        public static string HelpMd => GetString("help.md");
+
         private static string GetString(string name)
         {
             var type = typeof(AppResources);

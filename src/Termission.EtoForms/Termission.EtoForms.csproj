@@ -57,6 +57,8 @@
     <Compile Include="Forms\PreferencesForm.cs" />
     <Compile Include="Forms\DeviceBotForm.cs" />
     <Compile Include="Controls\AceSourceEditor.cs" />
+    <Compile Include="Forms\HelpForm.cs" />
+    <Compile Include="MenuCommands\HelpCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">

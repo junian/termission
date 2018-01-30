@@ -36,6 +36,7 @@ namespace Juniansoft.Termission.EtoForms
             ServiceLocator.Current.Register<MainViewModel>();
             ServiceLocator.Current.Register<DeviceBotViewModel>();
             ServiceLocator.Current.Register<PreferencesViewModel>();
+            ServiceLocator.Current.Register<HelpViewModel>();
 
             // Register all Views here
             ServiceLocator.Current.Register<MainView>();

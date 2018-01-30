@@ -16,6 +16,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
         Command _menuItemSave;
         Command _menuItemSaveAs;
         Command _menuItemExit;
+        Command _menuItemHelp;
 
         CheckCommand _menuItemAlwaysOnTop;
 
@@ -56,6 +57,10 @@ namespace Juniansoft.Termission.EtoForms.Forms
             this._menuItemSave.BindDataContext(x => x.DelegatedCommand, Binding.Property((MainViewModel vm) => vm.SaveCommand));
             this._menuItemSaveAs.BindDataContext(x => x.DelegatedCommand, Binding.Property((MainViewModel vm) => vm.SaveAsCommand));
             this._menuItemExit.BindDataContext(x => x.DelegatedCommand, Binding.Property((MainViewModel vm) => vm.ExitCommand));
+            _menuItemHelp.DelegatedCommand = new RelayCommand<object>((_) => 
+            {
+                new HelpForm().ShowModal(this);
+            });
         }
 
         private MenuBar BuildMenu()
@@ -95,6 +100,9 @@ namespace Juniansoft.Termission.EtoForms.Forms
             {
                 MenuText = "Always on top",
             }));
+
+            var help = menuBar.Items.GetSubmenu("Help");
+            help.Items.Add((_menuItemHelp = new HelpCommand()));
 
             if (Platform.IsMac || Platform.IsWpf || Platform.IsWinForms)
             {
