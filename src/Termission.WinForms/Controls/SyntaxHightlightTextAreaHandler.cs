@@ -1,14 +1,14 @@
 ﻿using Eto.Forms;
 using Eto.WinForms.Forms;
 using FastColoredTextBoxNS;
-using Juniansoft.Samariterm.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.WinForms.Controls
+namespace Juniansoft.Termission.WinForms.Controls
 {
     public class SyntaxHightlightTextAreaHandler : WindowsControl<FastColoredTextBox, SyntaxHightlightTextArea, SyntaxHightlightTextArea.ICallback>, SyntaxHightlightTextArea.ISyntaxHightlightTextArea
     {

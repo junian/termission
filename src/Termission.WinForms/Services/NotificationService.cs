@@ -1,4 +1,4 @@
-﻿using Juniansoft.Samariterm.Core.Services;
+﻿using Juniansoft.Termission.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Juniansoft.Samariterm.WinForms.Services
+namespace Juniansoft.Termission.WinForms.Services
 {
     public class NotificationService : INotificationService
     {

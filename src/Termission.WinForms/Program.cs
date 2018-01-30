@@ -7,16 +7,16 @@ using System.Windows.Forms;
 using Eto;
 using Eto.WinForms.Forms;
 using Eto.WinForms.Forms.Controls;
-using Juniansoft.Samariterm.Core;
-using Juniansoft.Samariterm.Core.Constants;
-using Juniansoft.Samariterm.Core.Services;
-using Juniansoft.Samariterm.EtoForms;
-using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.EtoForms.Forms;
-using Juniansoft.Samariterm.WinForms.Controls;
-using Juniansoft.Samariterm.WinForms.Services;
+using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.Constants;
+using Juniansoft.Termission.Core.Services;
+using Juniansoft.Termission.EtoForms;
+using Juniansoft.Termission.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Forms;
+using Juniansoft.Termission.WinForms.Controls;
+using Juniansoft.Termission.WinForms.Services;
 
-namespace Samariterm.WinForms
+namespace Juniansoft.Termission.WinForms
 {
     static class Program
     {

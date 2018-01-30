@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Juniansoft.Samariterm.WinForms</RootNamespace>
-    <AssemblyName>Samariterm.WinForms</AssemblyName>
+    <RootNamespace>Juniansoft.Termission.WinForms</RootNamespace>
+    <AssemblyName>Termission</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -89,15 +89,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samariterm.Core.NetFx\Samariterm.Core.NetFx.csproj">
+    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
       <Project>{68a8aace-4371-4d61-b984-09185e77c2ed}</Project>
       <Name>Samariterm.Core.NetFx</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
       <Project>{3edcd048-0b52-408b-9e27-c507f4fb14e3}</Project>
       <Name>Samariterm.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samariterm.EtoForms\Samariterm.EtoForms.csproj">
+    <ProjectReference Include="..\Termission.EtoForms\Termission.EtoForms.csproj">
       <Project>{bdc8b552-3e54-44f1-a703-f712d06b55c6}</Project>
       <Name>Samariterm.EtoForms</Name>
     </ProjectReference>
