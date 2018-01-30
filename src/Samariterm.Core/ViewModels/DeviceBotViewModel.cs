@@ -212,8 +212,8 @@ namespace Juniansoft.Samariterm.Core.ViewModels
 
         public DeviceBotViewModel()
         {
-            _crossFileDialog = ServiceLocator.Instance.Get<ICrossDialog>();
-            _file = ServiceLocator.Instance.Get<IFileService>();
+            _crossFileDialog = ServiceLocator.Current.Get<ICrossDialog>();
+            _file = ServiceLocator.Current.Get<IFileService>();
             UpdateBotLang(SelectedBotLanguage);
         }
 
@@ -245,12 +245,12 @@ namespace Juniansoft.Samariterm.Core.ViewModels
             _selectedBotScript = BotScript.All[type];
             if (type == BotScriptType.JavaScript)
             {
-                DeviceBotEngine = ServiceLocator.Instance.Get<IJavaScriptBotEngine>();
+                DeviceBotEngine = ServiceLocator.Current.Get<IJavaScriptBotEngine>();
                 CodeLanguage = "js";
             }
             else
             {
-                DeviceBotEngine = ServiceLocator.Instance.Get<ICSharpBotEngine>();
+                DeviceBotEngine = ServiceLocator.Current.Get<ICSharpBotEngine>();
                 CodeLanguage = "cs";
             }
             IsCompiled = false;

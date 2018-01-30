@@ -24,9 +24,9 @@ namespace Juniansoft.Samariterm.EtoForms.Forms
 
         public DeviceBotForm()
         {
-            _mainVm = Core.ServiceLocator.Instance.Get<MainViewModel>();
-            _botVM = Core.ServiceLocator.Instance.Get<DeviceBotViewModel>();
-            _botView = Core.ServiceLocator.Instance.Get<DeviceBotView>();
+            _mainVm = Core.ServiceLocator.Current.Get<MainViewModel>();
+            _botVM = Core.ServiceLocator.Current.Get<DeviceBotViewModel>();
+            _botView = Core.ServiceLocator.Current.Get<DeviceBotView>();
 
             Style = EtoStyles.DeviceBotDialog;
             Resizable = true;

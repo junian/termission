@@ -47,9 +47,9 @@ namespace Samariterm.Mobile
                 //ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
 
             // Register all ViewModels here.
-            ServiceLocator.Instance.Register<MainViewModel>();
-            ServiceLocator.Instance.Register<DeviceBotViewModel>();
-            ServiceLocator.Instance.Register<PreferencesViewModel>();
+            ServiceLocator.Current.Register<MainViewModel>();
+            ServiceLocator.Current.Register<DeviceBotViewModel>();
+            ServiceLocator.Current.Register<PreferencesViewModel>();
 
             // Register all Views here
             //ServiceLocator.Instance.Register<MainView>();

@@ -25,8 +25,8 @@ namespace Juniansoft.Samariterm.EtoForms.Forms
 
         public MainForm()
         {
-            _mainView = Core.ServiceLocator.Instance.Get<MainView>();
-            _mainVm = Core.ServiceLocator.Instance.Get<MainViewModel>();
+            _mainView = Core.ServiceLocator.Current.Get<MainView>();
+            _mainVm = Core.ServiceLocator.Current.Get<MainViewModel>();
 
             Title = MainApplication.AssemblyProduct;
             ClientSize = new Eto.Drawing.Size(720, 480);

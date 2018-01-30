@@ -8,7 +8,7 @@ namespace Juniansoft.Samariterm.Core
         static readonly Lazy<ServiceLocator> instance = new Lazy<ServiceLocator>(() => new ServiceLocator());
         readonly Dictionary<Type, Lazy<object>> registeredServices = new Dictionary<Type, Lazy<object>>();
 
-        public static ServiceLocator Instance => instance.Value;
+        public static ServiceLocator Current => instance.Value;
 
         public void Register<TContract, TService>() where TService : new()
         {

@@ -39,7 +39,7 @@ namespace Samariterm.WinForms
 
             var app = new MainApplication(platform);
 
-            ServiceLocator.Instance.Register<INotificationService, NotificationService>();
+            ServiceLocator.Current.Register<INotificationService, NotificationService>();
 
             app.Run(new MainForm());
         }

@@ -30,8 +30,8 @@ namespace Samariterm.Mac
 
             var app = new MainApplication(platform);
 
-            ServiceLocator.Instance.Register<INotificationService, NotificationService>();
-            ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpMcsScriptEngine>();
+            ServiceLocator.Current.Register<INotificationService, NotificationService>();
+            ServiceLocator.Current.Register<ICSharpBotEngine, CSharpMcsScriptEngine>();
 
             app.Run(new MainForm());
         }

@@ -240,12 +240,12 @@ namespace Juniansoft.Samariterm.Core.ViewModels
 
         public MainViewModel()
         {
-            _crossFileDialog = ServiceLocator.Instance.Get<ICrossDialog>();
-            _notification = ServiceLocator.Instance.Get<INotificationService>();
-            _systemService = ServiceLocator.Instance.Get<ISystemService>();
-            _file = ServiceLocator.Instance.Get<IFileService>();
+            _crossFileDialog = ServiceLocator.Current.Get<ICrossDialog>();
+            _notification = ServiceLocator.Current.Get<INotificationService>();
+            _systemService = ServiceLocator.Current.Get<ISystemService>();
+            _file = ServiceLocator.Current.Get<IFileService>();
             _enc = Encoding.UTF8;
-            _engine = ServiceLocator.Instance.Get<INetworkEngine>();
+            _engine = ServiceLocator.Current.Get<INetworkEngine>();
             _engine.MessageResponseReceived += (_, e) => ViewReceivedMessage(e.Data);
             //RefreshSerialPorts();
             MainForm_Load(null, null);
@@ -531,9 +531,9 @@ namespace Juniansoft.Samariterm.Core.ViewModels
                 {
                     var type = (BotScriptType)Settings.SelectedScriptingLanguage;
                     if (type == BotScriptType.JavaScript)
-                        DeviceBotEngine = ServiceLocator.Instance.Get<IJavaScriptBotEngine>();
+                        DeviceBotEngine = ServiceLocator.Current.Get<IJavaScriptBotEngine>();
                     else
-                        DeviceBotEngine = ServiceLocator.Instance.Get<ICSharpBotEngine>();
+                        DeviceBotEngine = ServiceLocator.Current.Get<ICSharpBotEngine>();
                     DeviceBotEngine.Compile(Settings.CurrentBotScript);
                 }
             }

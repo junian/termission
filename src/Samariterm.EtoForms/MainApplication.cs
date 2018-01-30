@@ -23,24 +23,24 @@ namespace Juniansoft.Samariterm.EtoForms
         public void RegisterServices()
         {
             // Register all Services here
-            ServiceLocator.Instance.Register<ICrossDialog, CrossDialog>();
-            ServiceLocator.Instance.Register<IJavaScriptBotEngine, JSJintScriptEngine>();
-            ServiceLocator.Instance.Register<INetworkEngine, TermSharpEngine>();
-            ServiceLocator.Instance.Register<ISystemService, EtoSystemService>();
-            ServiceLocator.Instance.Register<IFileService, FileService>();
+            ServiceLocator.Current.Register<ICrossDialog, CrossDialog>();
+            ServiceLocator.Current.Register<IJavaScriptBotEngine, JSJintScriptEngine>();
+            ServiceLocator.Current.Register<INetworkEngine, TermSharpEngine>();
+            ServiceLocator.Current.Register<ISystemService, EtoSystemService>();
+            ServiceLocator.Current.Register<IFileService, FileService>();
 
             if (Platform.Instance.IsWinForms || Platform.IsWpf)
-                ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
+                ServiceLocator.Current.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
 
             // Register all ViewModels here.
-            ServiceLocator.Instance.Register<MainViewModel>();
-            ServiceLocator.Instance.Register<DeviceBotViewModel>();
-            ServiceLocator.Instance.Register<PreferencesViewModel>();
+            ServiceLocator.Current.Register<MainViewModel>();
+            ServiceLocator.Current.Register<DeviceBotViewModel>();
+            ServiceLocator.Current.Register<PreferencesViewModel>();
 
             // Register all Views here
-            ServiceLocator.Instance.Register<MainView>();
-            ServiceLocator.Instance.Register<DeviceBotView>();
-            ServiceLocator.Instance.Register<PreferencesView>();
+            ServiceLocator.Current.Register<MainView>();
+            ServiceLocator.Current.Register<DeviceBotView>();
+            ServiceLocator.Current.Register<PreferencesView>();
         }
 
         #region Assembly Attribute Accessors

@@ -13,8 +13,8 @@ namespace Juniansoft.Samariterm.EtoForms.Forms
     {
         public PreferencesForm()
         {
-            var vm = Core.ServiceLocator.Instance.Get<PreferencesViewModel>();
-            var view = Core.ServiceLocator.Instance.Get<PreferencesView>();
+            var vm = Core.ServiceLocator.Current.Get<PreferencesViewModel>();
+            var view = Core.ServiceLocator.Current.Get<PreferencesView>();
 
             this.Content = view;
             this.Title = "Preferences";
