@@ -4,7 +4,7 @@ Cross-platform Serial/TCP Terminal with Scriptable Auto-Response
 
 ## Features
 
-- Cross-platform, available on Windows and macOS (Linux coming soon).
+- Cross-platform: available on Windows, macOS, and Linux
 - Manual device control
 - Can act as Serial COM device
 - Can act as TCP Client/Server
