@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Juniansoft.Samariterm.Core.Engines;
-using Juniansoft.Samariterm.Core.Engines.Networks;
-using Juniansoft.Samariterm.Core.Engines.Scripts;
-using Juniansoft.Samariterm.Core.Enums;
-using Juniansoft.Samariterm.Core.Helpers;
-using Juniansoft.Samariterm.Core.Models;
-using Juniansoft.Samariterm.Core.Services;
+using Juniansoft.Termission.Core.Engines;
+using Juniansoft.Termission.Core.Engines.Networks;
+using Juniansoft.Termission.Core.Engines.Scripts;
+using Juniansoft.Termission.Core.Enums;
+using Juniansoft.Termission.Core.Helpers;
+using Juniansoft.Termission.Core.Models;
+using Juniansoft.Termission.Core.Services;
 using Newtonsoft.Json;
 
-namespace Juniansoft.Samariterm.Core.ViewModels
+namespace Juniansoft.Termission.Core.ViewModels
 {
     public class MainViewModel: CoreViewModel
     {

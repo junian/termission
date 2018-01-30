@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Extensions
+namespace Juniansoft.Termission.Core.Extensions
 {
     public static class StringExtension
     {

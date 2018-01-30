@@ -1,7 +1,7 @@
 ﻿using System;
-using Juniansoft.Samariterm.Core.Events;
+using Juniansoft.Termission.Core.Events;
 
-namespace Juniansoft.Samariterm.Core.ViewModels
+namespace Juniansoft.Termission.Core.ViewModels
 {
     public class CoreViewModel: BaseViewModel
     {

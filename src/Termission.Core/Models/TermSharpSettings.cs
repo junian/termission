@@ -1,7 +1,7 @@
 ﻿using System;
-using Juniansoft.Samariterm.Core.Enums;
+using Juniansoft.Termission.Core.Enums;
 
-namespace Juniansoft.Samariterm.Core.Models
+namespace Juniansoft.Termission.Core.Models
 {
     public class TermSharpSettings
     {

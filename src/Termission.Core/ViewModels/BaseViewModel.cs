@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Juniansoft.Samariterm.Core.ViewModels
+namespace Juniansoft.Termission.Core.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Models
+namespace Juniansoft.Termission.Core.Models
 {
     public class SerialComSettings
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Juniansoft.Samariterm.Core.Services
+namespace Juniansoft.Termission.Core.Services
 {
     public interface ISystemService
     {

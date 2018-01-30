@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Enums
+namespace Juniansoft.Termission.Core.Enums
 {
     public enum BotScriptType
     {

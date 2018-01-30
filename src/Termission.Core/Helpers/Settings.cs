@@ -1,9 +1,9 @@
 // Helpers/Settings.cs
-using Juniansoft.Samariterm.Core.Enums;
+using Juniansoft.Termission.Core.Enums;
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 
-namespace Juniansoft.Samariterm.Core.Helpers
+namespace Juniansoft.Termission.Core.Helpers
 {
     /// <summary>
     /// This is the Settings static class that can be used in your Core solution or in any

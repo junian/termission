@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core
+namespace Juniansoft.Termission.Core
 {
     public interface ISamaritermApp
     {

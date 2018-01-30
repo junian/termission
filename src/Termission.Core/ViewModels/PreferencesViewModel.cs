@@ -1,4 +1,4 @@
-﻿using Juniansoft.Samariterm.Core.Helpers;
+﻿using Juniansoft.Termission.Core.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.Core.ViewModels
+namespace Juniansoft.Termission.Core.ViewModels
 {
     public class PreferencesViewModel : CoreViewModel
     {

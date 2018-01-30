@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Juniansoft.Samariterm.Core.Engines.Scripts
+namespace Juniansoft.Termission.Core.Engines.Scripts
 {
     public abstract class BaseScriptEngine: IBotScriptEngine, IJavaScriptBotEngine, ICSharpBotEngine
     {

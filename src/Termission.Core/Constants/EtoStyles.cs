@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Constants
+namespace Juniansoft.Termission.Core.Constants
 {
     public static class EtoStyles
     {

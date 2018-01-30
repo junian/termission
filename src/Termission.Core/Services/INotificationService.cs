@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Services
+namespace Juniansoft.Termission.Core.Services
 {
     public interface INotificationService
     {

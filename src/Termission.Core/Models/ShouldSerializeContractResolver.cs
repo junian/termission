@@ -3,7 +3,7 @@ using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Juniansoft.Samariterm.Core.Models
+namespace Juniansoft.Termission.Core.Models
 {
     public class ShouldSerializeContractResolver : DefaultContractResolver
     {

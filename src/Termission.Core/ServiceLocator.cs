@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Juniansoft.Samariterm.Core
+namespace Juniansoft.Termission.Core
 {
     public sealed class ServiceLocator
     {

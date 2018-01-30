@@ -5,7 +5,7 @@ using Jint;
 using Jint.Parser;
 using Jint.Runtime;
 
-namespace Juniansoft.Samariterm.Core.Engines.Scripts
+namespace Juniansoft.Termission.Core.Engines.Scripts
 {
     public class JSJintScriptEngine: BaseJSScriptEngine
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Events
+namespace Juniansoft.Termission.Core.Events
 {
     public class LogReceivedEventArgs: EventArgs
     {

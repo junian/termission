@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Juniansoft.Samariterm.Core.Services
+namespace Juniansoft.Termission.Core.Services
 {
     /// <summary>
     /// Description of ComDataConverter.

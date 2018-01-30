@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace Juniansoft.Samariterm.Core
+namespace Juniansoft.Termission.Core
 {
     public class App
     {

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Reflection;
 
-namespace Juniansoft.Samariterm.Core.Resources
+namespace Juniansoft.Termission.Core.Resources
 {
     public static class AppResources
     {

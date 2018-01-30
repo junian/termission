@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Juniansoft.Samariterm.Core.Engines.Scripts
+namespace Juniansoft.Termission.Core.Engines.Scripts
 {
     public abstract class BaseJSScriptEngine: BaseScriptEngine
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Juniansoft.Samariterm.Core.Enums;
-using Juniansoft.Samariterm.Core.Helpers;
+using Juniansoft.Termission.Core.Enums;
+using Juniansoft.Termission.Core.Helpers;
 
-namespace Juniansoft.Samariterm.Core.Models
+namespace Juniansoft.Termission.Core.Models
 {
     public class BotScript
     {
