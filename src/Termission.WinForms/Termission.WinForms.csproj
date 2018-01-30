@@ -91,15 +91,15 @@
   <ItemGroup>
     <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
       <Project>{68a8aace-4371-4d61-b984-09185e77c2ed}</Project>
-      <Name>Samariterm.Core.NetFx</Name>
+      <Name>Termission.Core.Dotnet</Name>
     </ProjectReference>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
       <Project>{3edcd048-0b52-408b-9e27-c507f4fb14e3}</Project>
-      <Name>Samariterm.Core</Name>
+      <Name>Termission.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Termission.EtoForms\Termission.EtoForms.csproj">
       <Project>{bdc8b552-3e54-44f1-a703-f712d06b55c6}</Project>
-      <Name>Samariterm.EtoForms</Name>
+      <Name>Termission.EtoForms</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
