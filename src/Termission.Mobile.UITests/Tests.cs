@@ -5,7 +5,7 @@ using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
-namespace Samariterm.Mobile.UITests
+namespace Juniansoft.Termission.Mobile.UITests
 {
     [TestFixture(Platform.Android)]
     [TestFixture(Platform.iOS)]

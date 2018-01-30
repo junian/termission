@@ -4,7 +4,7 @@ using System.Linq;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
-namespace Samariterm.Mobile.UITests
+namespace Juniansoft.Termission.Mobile.UITests
 {
     public class AppInitializer
     {

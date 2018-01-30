@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Juniansoft.Samariterm.Mobile.UITests</RootNamespace>
-    <AssemblyName>Samariterm.Mobile.UITests</AssemblyName>
+    <RootNamespace>Juniansoft.Termission.Mobile.UITests</RootNamespace>
+    <AssemblyName>Termission.Mobile.UITests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,21 +38,21 @@
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samariterm.Mobile.iOS\Samariterm.Mobile.iOS.csproj">
-      <Project>{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}</Project>
-      <Name>Samariterm.Mobile.iOS</Name>
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Mobile.Droid\Samariterm.Mobile.Droid.csproj">
-      <Project>{741BF8CD-1951-4C21-8F10-CB40B87E237A}</Project>
-      <Name>Samariterm.Mobile.Droid</Name>
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-      <Private>False</Private>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Termission.Mobile.iOS\Termission.Mobile.iOS.csproj">
+      <Project>{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}</Project>
+      <Name>Termission.Mobile.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Mobile.Droid\Termission.Mobile.Droid.csproj">
+      <Project>{741BF8CD-1951-4C21-8F10-CB40B87E237A}</Project>
+      <Name>Termission.Mobile.Droid</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
