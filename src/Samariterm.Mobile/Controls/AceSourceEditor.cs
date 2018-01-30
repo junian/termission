@@ -11,9 +11,9 @@ namespace Juniansoft.Samariterm.Mobile.Controls
         {
             var js = new StringBuilder();
             js.AppendLine(AppResources.AceJS);
-            js.AppendLine(AppResources.ModeJavascriptJs);
-            js.AppendLine(AppResources.ModeCSharpJs);
-            js.AppendLine(AppResources.LanguageToolsJS);
+            js.AppendLine(AppResources.AceModeJavascriptJs);
+            js.AppendLine(AppResources.AceModeCSharpJs);
+            js.AppendLine(AppResources.AceLanguageToolsJS);
             js.AppendLine(AppResources.AceEditorJS);
 
             var html = new StringBuilder();

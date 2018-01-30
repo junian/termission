@@ -51,6 +51,7 @@
     <Compile Include="Pages\DeviceBotPage.xaml.cs">
       <DependentUpon>DeviceBotPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CodeMirrorEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
