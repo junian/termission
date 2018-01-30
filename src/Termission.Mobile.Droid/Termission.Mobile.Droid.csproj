@@ -7,8 +7,8 @@
     <ProjectGuid>{741BF8CD-1951-4C21-8F10-CB40B87E237A}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Juniansoft.Samariterm.Mobile.Droid</RootNamespace>
-    <AssemblyName>Samariterm.Mobile.Droid</AssemblyName>
+    <RootNamespace>Juniansoft.Termission.Mobile.Droid</RootNamespace>
+    <AssemblyName>Termission.Mobile.Droid</AssemblyName>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -118,16 +118,16 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\TcpListenerEngine.cs">
-      <Link>Engines\Networks\TcpListenerEngine.cs</Link>
-    </Compile>
-    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\TcpClientEngine.cs">
-      <Link>Engines\Networks\TcpClientEngine.cs</Link>
-    </Compile>
-    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\BaseNetworkEngine.cs">
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\BaseNetworkEngine.cs">
       <Link>Engines\Networks\BaseNetworkEngine.cs</Link>
     </Compile>
-    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpClientEngine.cs">
+      <Link>Engines\Networks\TcpClientEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpListenerEngine.cs">
+      <Link>Engines\Networks\TcpListenerEngine.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -145,13 +145,13 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samariterm.Mobile\Samariterm.Mobile.csproj">
-      <Project>{039207AC-2037-4B0B-A200-23A680E73FD7}</Project>
-      <Name>Samariterm.Mobile</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
       <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
-      <Name>Samariterm.Core</Name>
+      <Name>Termission.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Mobile\Termission.Mobile.csproj">
+      <Project>{039207AC-2037-4B0B-A200-23A680E73FD7}</Project>
+      <Name>Termission.Mobile</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

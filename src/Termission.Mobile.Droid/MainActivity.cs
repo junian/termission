@@ -7,9 +7,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Juniansoft.Samariterm.Mobile.Droid;
+using Juniansoft.Termission.Mobile.Droid;
 
-namespace Samariterm.Mobile.Droid
+namespace Juniansoft.Termission.Mobile.Droid
 {
     [Activity(Label = "Samariterm.Mobile.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
