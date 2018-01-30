@@ -2,11 +2,11 @@
 using Eto.Drawing;
 using Eto.Forms;
 using Eto.GtkSharp.Forms;
-using Juniansoft.Samariterm.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Controls;
 using Mono.TextEditor;
 using Mono.TextEditor.Highlighting;
 
-namespace Juniansoft.Samariterm.GtkSharp.Controls
+namespace Juniansoft.Termission.GtkSharp.Controls
 {
     public class SyntaxHightlightTextAreaHandler : GtkControl<MonoTextEditor, SyntaxHightlightTextArea, SyntaxHightlightTextArea.ICallback>, SyntaxHightlightTextArea.ISyntaxHightlightTextArea
     {

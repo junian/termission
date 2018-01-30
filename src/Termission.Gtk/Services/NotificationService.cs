@@ -1,7 +1,7 @@
 ﻿using System;
-using Juniansoft.Samariterm.Core.Services;
+using Juniansoft.Termission.Core.Services;
 
-namespace Juniansoft.Samariterm.GtkSharp.Services
+namespace Juniansoft.Termission.GtkSharp.Services
 {
     public class NotificationService : INotificationService
     {

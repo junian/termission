@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
   <import>
-    <widget-library name="../bin/Debug/Samariterm.Gtk.exe" internal="true" />
+    <widget-library name="../../packages/Eto.Platform.Gtk.2.3.0/lib/net45/Eto.Gtk2.dll" />
+    <widget-library name="../../../../build/bin/Mono.TextEditor.dll" />
+    <widget-library name="../bin/Debug/Termission.Gtk.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="400 300">
     <property name="MemberName" />

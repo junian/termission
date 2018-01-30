@@ -2,19 +2,19 @@
 using Eto;
 using Eto.GtkSharp.Forms;
 using Eto.GtkSharp.Forms.Controls;
-using Juniansoft.Samariterm.Core;
-using Juniansoft.Samariterm.Core.Constants;
-using Juniansoft.Samariterm.Core.Engines.Scripts;
-using Juniansoft.Samariterm.Core.Services;
-using Juniansoft.Samariterm.EtoForms;
-using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.EtoForms.Forms;
-using Juniansoft.Samariterm.GtkSharp.Controls;
-using Juniansoft.Samariterm.GtkSharp.Services;
+using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.Constants;
+using Juniansoft.Termission.Core.Engines.Scripts;
+using Juniansoft.Termission.Core.Services;
+using Juniansoft.Termission.EtoForms;
+using Juniansoft.Termission.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Forms;
+using Juniansoft.Termission.GtkSharp.Controls;
+using Juniansoft.Termission.GtkSharp.Services;
 
-namespace Juniansoft.Samariterm.GtkSharp
+namespace Juniansoft.Termission.GtkSharp
 {
-    class MainClass
+    class Program
     {
         public static void Main(string[] args)
         {

@@ -137,11 +137,11 @@ namespace Juniansoft.Termission.EtoForms.Views
                         Control = _textSourceCode = new SyntaxHightlightTextArea{ Style = EtoStyles.SourceEditor, },
                         Expand = true,
                     },
-                    new StackLayoutItem
-                    {
-                        Control = new AceSourceEditor(),
-                        Expand = true,
-                    },
+                    //new StackLayoutItem
+                    //{
+                    //    Control = new AceSourceEditor(),
+                    //    Expand = true,
+                    //},
                 },
             };
         }
