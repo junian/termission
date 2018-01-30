@@ -6,7 +6,7 @@
     <ProjectGuid>{BDC8B552-3E54-44F1-A703-F712D06B55C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Juniansoft.Termission.EtoForms</RootNamespace>
-    <AssemblyName>Samariterm.EtoForms</AssemblyName>
+    <AssemblyName>Termission.EtoForms</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
