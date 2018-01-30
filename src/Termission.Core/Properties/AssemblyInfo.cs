@@ -4,11 +4,11 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Samariterm.Core")]
+[assembly: AssemblyTitle("Termission.Core")]
 [assembly: AssemblyDescription("Cross-platform Serial/TCP terminal")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Junian")]
-[assembly: AssemblyProduct("SamariTerm")]
+[assembly: AssemblyProduct("Termission")]
 [assembly: AssemblyCopyright("(c) 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -4,11 +4,11 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Samariterm.Core.NetFx")]
+[assembly: AssemblyTitle("Termission.Core.Dotnet")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyCompany("Junian")]
+[assembly: AssemblyProduct("Termission")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
