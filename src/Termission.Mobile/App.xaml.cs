@@ -1,11 +1,11 @@
-﻿using Juniansoft.Samariterm.Core;
-using Juniansoft.Samariterm.Core.ViewModels;
-using Juniansoft.Samariterm.Mobile.Pages;
+﻿using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.ViewModels;
+using Juniansoft.Termission.Mobile.Pages;
 using Xamarin.Forms;
 
-namespace Samariterm.Mobile
+namespace Juniansoft.Termission.Mobile
 {
-    public partial class App : Application, ISamaritermApp
+    public partial class App : Application, ITermissionApp
     {
         public App()
         {

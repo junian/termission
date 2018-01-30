@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
-using Juniansoft.Samariterm.Core.Resources;
+using Juniansoft.Termission.Core.Resources;
 using Xamarin.Forms;
 
-namespace Juniansoft.Samariterm.Mobile.Controls
+namespace Juniansoft.Termission.Mobile.Controls
 {
     public class AceSourceEditor: WebView
     {

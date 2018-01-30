@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Juniansoft.Samariterm.Mobile.Pages
+namespace Juniansoft.Termission.Mobile.Pages
 {
     public partial class PreferencesPage : ContentPage
     {

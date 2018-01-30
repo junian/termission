@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Juniansoft.Samariterm.Mobile.Pages.DeviceBotPage"
-    xmlns:controls="clr-namespace:Juniansoft.Samariterm.Mobile.Controls;assembly=Samariterm.Mobile">
+    x:Class="Juniansoft.Termission.Mobile.Pages.DeviceBotPage"
+    xmlns:controls="clr-namespace:Juniansoft.Termission.Mobile.Controls;assembly=Termission.Mobile">
 	<ContentPage.Content>
         <controls:CodeMirrorEditor />
 	</ContentPage.Content>
