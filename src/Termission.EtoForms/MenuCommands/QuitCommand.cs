@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.EtoForms.MenuCommands
+namespace Juniansoft.Termission.EtoForms.MenuCommands
 {
     public class QuitCommand: Command
     {

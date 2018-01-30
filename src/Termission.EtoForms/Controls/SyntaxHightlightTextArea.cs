@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.EtoForms.Controls
+namespace Juniansoft.Termission.EtoForms.Controls
 {
     [Handler(typeof(ISyntaxHightlightTextArea))]
     public class SyntaxHightlightTextArea : TextArea

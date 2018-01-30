@@ -1,9 +1,9 @@
 ﻿using System;
 using Eto.Forms;
 
-namespace Juniansoft.Samariterm.EtoForms.Services
+namespace Juniansoft.Termission.EtoForms.Services
 {
-    public class EtoSystemService: Juniansoft.Samariterm.Core.Services.SystemService
+    public class EtoSystemService: Juniansoft.Termission.Core.Services.SystemService
     {
         public EtoSystemService()
         {

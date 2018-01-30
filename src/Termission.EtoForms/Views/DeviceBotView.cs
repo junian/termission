@@ -1,14 +1,14 @@
 ﻿using System.Linq;
 using Eto.Drawing;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core.Constants;
-using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.Core.Extensions;
-using Juniansoft.Samariterm.Core.ViewModels;
-using static Juniansoft.Samariterm.EtoForms.Controls.SyntaxHightlightTextArea;
+using Juniansoft.Termission.Core.Constants;
+using Juniansoft.Termission.EtoForms.Controls;
+using Juniansoft.Termission.Core.Extensions;
+using Juniansoft.Termission.Core.ViewModels;
+using static Juniansoft.Termission.EtoForms.Controls.SyntaxHightlightTextArea;
 using System.Diagnostics;
 
-namespace Juniansoft.Samariterm.EtoForms.Views
+namespace Juniansoft.Termission.EtoForms.Views
 {
     public class DeviceBotView : Panel
     {

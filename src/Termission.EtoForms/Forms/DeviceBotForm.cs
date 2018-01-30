@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Windows.Input;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core.Constants;
-using Juniansoft.Samariterm.EtoForms.MenuCommands;
-using Juniansoft.Samariterm.EtoForms.Resources;
-using Juniansoft.Samariterm.Core.ViewModels;
-using Juniansoft.Samariterm.EtoForms.Views;
+using Juniansoft.Termission.Core.Constants;
+using Juniansoft.Termission.EtoForms.MenuCommands;
+using Juniansoft.Termission.EtoForms.Resources;
+using Juniansoft.Termission.Core.ViewModels;
+using Juniansoft.Termission.EtoForms.Views;
 
-namespace Juniansoft.Samariterm.EtoForms.Forms
+namespace Juniansoft.Termission.EtoForms.Forms
 {
     public class DeviceBotForm : Dialog
     {

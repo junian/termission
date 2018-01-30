@@ -1,13 +1,13 @@
 ﻿using Eto.Forms;
-using Juniansoft.Samariterm.Core.ViewModels;
-using Juniansoft.Samariterm.EtoForms.Views;
+using Juniansoft.Termission.Core.ViewModels;
+using Juniansoft.Termission.EtoForms.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.EtoForms.Forms
+namespace Juniansoft.Termission.EtoForms.Forms
 {
     public class PreferencesForm : Dialog
     {

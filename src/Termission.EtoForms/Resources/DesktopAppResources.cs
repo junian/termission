@@ -1,7 +1,7 @@
 ﻿using System;
 using Eto.Drawing;
 
-namespace Juniansoft.Samariterm.EtoForms.Resources
+namespace Juniansoft.Termission.EtoForms.Resources
 {
     public static class DesktopAppResources
     {

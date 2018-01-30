@@ -2,9 +2,9 @@
 using System.Reflection;
 using Eto.Drawing;
 using Eto.Forms;
-using Juniansoft.Samariterm.EtoForms.Resources;
+using Juniansoft.Termission.EtoForms.Resources;
 
-namespace Juniansoft.Samariterm.EtoForms.Forms
+namespace Juniansoft.Termission.EtoForms.Forms
 {
     public class AboutForm : Dialog
     {

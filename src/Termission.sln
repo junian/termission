@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core.Dotnet", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core.Mono", "Termission.Core.Mono\Termission.Core.Mono.csproj", "{0E44089B-8967-4117-A12F-6F0E31D480D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.EtoForms", "Termission.EtoForms\Termission.EtoForms.csproj", "{BDC8B552-3E54-44F1-A703-F712D06B55C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,20 @@ Global
 		{0E44089B-8967-4117-A12F-6F0E31D480D2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{0E44089B-8967-4117-A12F-6F0E31D480D2}.Standalone|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E44089B-8967-4117-A12F-6F0E31D480D2}.Standalone|Any CPU.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhone.Build.0 = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Standalone|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6}.Standalone|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +110,7 @@ Global
 		{3EDCD048-0B52-408B-9E27-C507F4FB14E3} = {2FD4FE5E-EDFB-4E75-8705-C6CF678F92C0}
 		{68A8AACE-4371-4D61-B984-09185E77C2ED} = {2FD4FE5E-EDFB-4E75-8705-C6CF678F92C0}
 		{0E44089B-8967-4117-A12F-6F0E31D480D2} = {2FD4FE5E-EDFB-4E75-8705-C6CF678F92C0}
+		{BDC8B552-3E54-44F1-A703-F712D06B55C6} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0192AC8-3C08-4C66-B288-D98C944A45D9}

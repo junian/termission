@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core.Services;
+using Juniansoft.Termission.Core.Services;
 
-namespace Juniansoft.Samariterm.EtoForms.Services
+namespace Juniansoft.Termission.EtoForms.Services
 {
     public class CrossDialog: ICrossDialog
     {

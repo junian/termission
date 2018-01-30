@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Juniansoft.Samariterm.EtoForms.Resources;
+using Juniansoft.Termission.EtoForms.Resources;
 
-namespace Juniansoft.Samariterm.EtoForms.MenuCommands
+namespace Juniansoft.Termission.EtoForms.MenuCommands
 {
     public class OpenCommand: Command
     {

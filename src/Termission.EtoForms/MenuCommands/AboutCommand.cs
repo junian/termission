@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Eto.Forms;
 
-namespace Juniansoft.Samariterm.EtoForms.MenuCommands
+namespace Juniansoft.Termission.EtoForms.MenuCommands
 {
     public class AboutCommand: Command
     {

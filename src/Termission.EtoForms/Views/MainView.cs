@@ -3,12 +3,12 @@ using System.IO.Ports;
 using System.Linq;
 using Eto.Drawing;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core.Constants;
-using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.EtoForms.Resources;
-using Juniansoft.Samariterm.Core.ViewModels;
+using Juniansoft.Termission.Core.Constants;
+using Juniansoft.Termission.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Resources;
+using Juniansoft.Termission.Core.ViewModels;
 
-namespace Juniansoft.Samariterm.EtoForms.Views
+namespace Juniansoft.Termission.EtoForms.Views
 {
     public class MainView : Panel
     {

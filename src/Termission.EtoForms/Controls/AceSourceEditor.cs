@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core.Resources;
+using Juniansoft.Termission.Core.Resources;
 
-namespace Juniansoft.Samariterm.EtoForms.Controls
+namespace Juniansoft.Termission.EtoForms.Controls
 {
     public class AceSourceEditor: WebView
     {

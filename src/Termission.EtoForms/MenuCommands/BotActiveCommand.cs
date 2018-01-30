@@ -1,8 +1,8 @@
 ﻿using System;
 using Eto.Forms;
-using Juniansoft.Samariterm.EtoForms.Resources;
+using Juniansoft.Termission.EtoForms.Resources;
 
-namespace Juniansoft.Samariterm.EtoForms.MenuCommands
+namespace Juniansoft.Termission.EtoForms.MenuCommands
 {
     public class BotActiveCommand: CheckCommand
     {

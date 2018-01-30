@@ -1,7 +1,7 @@
 ﻿using System;
 using Eto.Forms;
 
-namespace Juniansoft.Samariterm.EtoForms.MenuCommands
+namespace Juniansoft.Termission.EtoForms.MenuCommands
 {
     public class UpdateCommand: Command
     {

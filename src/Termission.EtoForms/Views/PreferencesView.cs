@@ -1,6 +1,6 @@
 ﻿using Eto.Drawing;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core.ViewModels;
+using Juniansoft.Termission.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.EtoForms.Views
+namespace Juniansoft.Termission.EtoForms.Views
 {
     public class PreferencesView : Panel
     {

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BDC8B552-3E54-44F1-A703-F712D06B55C6}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Juniansoft.Samariterm.EtoForms</RootNamespace>
+    <RootNamespace>Juniansoft.Termission.EtoForms</RootNamespace>
     <AssemblyName>Samariterm.EtoForms</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -59,13 +59,13 @@
     <Compile Include="Controls\AceSourceEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
       <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
-      <Name>Samariterm.Core</Name>
+      <Name>Termission.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Core.NetFx\Samariterm.Core.NetFx.csproj">
+    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
       <Project>{68A8AACE-4371-4D61-B984-09185E77C2ED}</Project>
-      <Name>Samariterm.Core.NetFx</Name>
+      <Name>Termission.Core.Dotnet</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

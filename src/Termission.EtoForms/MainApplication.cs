@@ -2,15 +2,15 @@
 using System.Reflection;
 using Eto;
 using Eto.Forms;
-using Juniansoft.Samariterm.Core;
-using Juniansoft.Samariterm.Core.Engines.Networks;
-using Juniansoft.Samariterm.Core.Engines.Scripts;
-using Juniansoft.Samariterm.Core.Services;
-using Juniansoft.Samariterm.Core.ViewModels;
-using Juniansoft.Samariterm.EtoForms.Services;
-using Juniansoft.Samariterm.EtoForms.Views;
+using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.Engines.Networks;
+using Juniansoft.Termission.Core.Engines.Scripts;
+using Juniansoft.Termission.Core.Services;
+using Juniansoft.Termission.Core.ViewModels;
+using Juniansoft.Termission.EtoForms.Services;
+using Juniansoft.Termission.EtoForms.Views;
 
-namespace Juniansoft.Samariterm.EtoForms
+namespace Juniansoft.Termission.EtoForms
 {
     public class MainApplication: Application, ISamaritermApp
     {
