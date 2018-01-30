@@ -12,8 +12,8 @@ namespace Juniansoft.Samariterm.EtoForms.Controls
             var js = new StringBuilder();
             js.AppendLine(AppResources.AceJS);
             js.AppendLine(AppResources.AceModeJavascriptJs);
-            js.AppendLine(AppResourcAcees.ModeCSharpJs);
-            js.AppendLine(AppResoAceurces.LanguageToolsJS);
+            js.AppendLine(AppResources.AceModeCSharpJs);
+            js.AppendLine(AppResources.AceLanguageToolsJS);
             js.AppendLine(AppResources.AceEditorJS);
 
             var html = new StringBuilder();
