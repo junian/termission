@@ -13,7 +13,7 @@ namespace Juniansoft.Samariterm.Mobile.Controls
 
             var js = new StringBuilder();
             js.AppendLine(AppResources.CodeMirrorJs);
-            js.AppendLine(AppResources.CodeMirrorModeCLikeJs);
+            //js.AppendLine(AppResources.CodeMirrorModeCLikeJs);
             js.AppendLine(AppResources.CodeMirrorModeJavascriptJs);
 
             var html = new StringBuilder();
