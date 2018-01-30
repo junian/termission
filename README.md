@@ -1,6 +1,6 @@
-# SamariTerm
+# Termission
 
-Cross-platform Serial/TCP Terminal with Scriptable Auto-Response
+Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.
 
 ## Features
 
@@ -33,4 +33,4 @@ This project is possible to build thanks to following libraries:
 
 ## License
 
-This project is licensed under [GPL-3.0](https://github.com/junian/samariterm/blob/master/LICENSE).
+This project is licensed under [GPL-3.0](https://github.com/junian/termission/blob/master/LICENSE).
