@@ -1,17 +1,17 @@
-﻿using Juniansoft.Samariterm.Core;
-using Juniansoft.Samariterm.Core.Services;
-using Juniansoft.Samariterm.EtoForms;
-using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.EtoForms.Forms;
-using Juniansoft.Samariterm.Wpf.Controls;
-using Juniansoft.Samariterm.Wpf.Services;
+﻿using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.Services;
+using Juniansoft.Termission.EtoForms;
+using Juniansoft.Termission.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Forms;
+using Juniansoft.Termission.Wpf.Controls;
+using Juniansoft.Termission.Wpf.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.Wpf
+namespace Juniansoft.Termission.Wpf
 {
     class Program
     {
@@ -26,7 +26,7 @@ namespace Juniansoft.Samariterm.Wpf
 
             var app = new MainApplication(platform);
 
-            ServiceLocator.Instance.Register<INotificationService, NotificationService>();
+            ServiceLocator.Current.Register<INotificationService, NotificationService>();
 
             app.Run(new MainForm());
         }

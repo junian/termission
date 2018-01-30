@@ -4,7 +4,7 @@ using Eto.Wpf.Forms.Controls;
 using ICSharpCode.AvalonEdit;
 using ICSharpCode.AvalonEdit.Document;
 using ICSharpCode.AvalonEdit.Highlighting;
-using Juniansoft.Samariterm.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Juniansoft.Samariterm.Wpf.Controls
+namespace Juniansoft.Termission.Wpf.Controls
 {
     public class ExtendedTextEditor : ICSharpCode.AvalonEdit.TextEditor, INotifyPropertyChanged
     {

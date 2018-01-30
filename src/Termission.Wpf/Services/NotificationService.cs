@@ -1,11 +1,11 @@
-﻿using Juniansoft.Samariterm.Core.Services;
+﻿using Juniansoft.Termission.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Samariterm.Wpf.Services
+namespace Juniansoft.Termission.Wpf.Services
 {
     public class NotificationService : INotificationService
     {
