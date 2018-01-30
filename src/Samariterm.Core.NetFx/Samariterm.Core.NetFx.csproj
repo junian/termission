@@ -28,6 +28,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="RJCP.SerialPortStream">
+      <HintPath>..\packages\SerialPortStream.2.1.2\lib\net45\RJCP.SerialPortStream.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -40,6 +43,7 @@
     <Compile Include="Engines\Networks\TermSharpEngine.cs" />
     <Compile Include="Services\SystemService.cs" />
     <Compile Include="Services\FileService.cs" />
+    <Compile Include="Engines\Networks\SerialPortStreamEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engines\" />
@@ -52,6 +56,9 @@
       <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
       <Name>Samariterm.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
