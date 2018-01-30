@@ -12,7 +12,7 @@ namespace Juniansoft.Termission.Core.ViewModels
 
         public string Content
         {
-            get => LoadHelpContent(AppResources.HelpMd);
+            get => LoadHelpContent(AppResources.DocumentationMd);
         }
 
         private string LoadHelpContent(string md)

@@ -91,7 +91,9 @@
     <EmbeddedResource Include="Resources\codemirror-mode-javascript.js" />
     <EmbeddedResource Include="Resources\codemirror-mode-clike.js" />
     <EmbeddedResource Include="Resources\codemirror-editor.html" />
-    <EmbeddedResource Include="Resources\help.md" />
+    <EmbeddedResource Include="..\..\DOCUMENTATION.md">
+      <Link>Resources\DOCUMENTATION.md</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="jint">
