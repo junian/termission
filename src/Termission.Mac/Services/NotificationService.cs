@@ -1,8 +1,8 @@
 ﻿using System;
 using Foundation;
-using Juniansoft.Samariterm.Core.Services;
+using Juniansoft.Termission.Core.Services;
 
-namespace Juniansoft.Samariterm.Mac.Services
+namespace Juniansoft.Termission.Mac.Services
 {
     public class NotificationService: INotificationService
     {

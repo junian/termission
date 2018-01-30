@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Juniansoft.Termission.Core
 {
-    public interface ISamaritermApp
+    public interface ITermissionApp
     {
         void RegisterServices();
     }

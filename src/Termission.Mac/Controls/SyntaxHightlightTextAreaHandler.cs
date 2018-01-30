@@ -2,9 +2,9 @@
 using AppKit.TextKit.Formatter;
 using Eto.Forms;
 using Eto.Mac.Forms.Controls;
-using Juniansoft.Samariterm.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Controls;
 
-namespace Juniansoft.Samariterm.Mac.Controls
+namespace Juniansoft.Termission.Mac.Controls
 {
     public class SyntaxHightlightTextAreaHandler: TextAreaHandler<SyntaxHightlightTextArea, SyntaxHightlightTextArea.ICallback>, SyntaxHightlightTextArea.ISyntaxHightlightTextArea
     {

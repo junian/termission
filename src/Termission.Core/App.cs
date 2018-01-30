@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Juniansoft.Termission.Core
 {
-    public class App
+    public static class App
     {
         #region Assembly Attribute Accessors
 
@@ -18,7 +18,7 @@ namespace Juniansoft.Termission.Core
                 var attribute = assembly
                     .GetCustomAttributes<AssemblyTitleAttribute>()
                     .FirstOrDefault();
-                
+
                 if (!string.IsNullOrEmpty(attribute?.Title))
                 {
                     return attribute.Title;
@@ -49,7 +49,7 @@ namespace Juniansoft.Termission.Core
                 var attribute = assembly
                     .GetCustomAttributes<AssemblyDescriptionAttribute>()
                     .FirstOrDefault();
-                
+
                 if (!string.IsNullOrEmpty(attribute?.Description))
                 {
                     return attribute.Description;

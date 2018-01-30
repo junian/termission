@@ -12,7 +12,7 @@ using Juniansoft.Termission.EtoForms.Views;
 
 namespace Juniansoft.Termission.EtoForms
 {
-    public class MainApplication: Application, ISamaritermApp
+    public class MainApplication: Application, ITermissionApp
     {
         public MainApplication(Platform platform)
             : base(platform)

@@ -3,19 +3,19 @@ using Eto;
 using Eto.Mac.Forms;
 using Eto.Mac.Forms.Controls;
 using Eto.Mac.Forms.ToolBar;
-using Juniansoft.Samariterm.Core;
-using Juniansoft.Samariterm.Core.Constants;
-using Juniansoft.Samariterm.Core.Engines.Scripts;
-using Juniansoft.Samariterm.Core.Services;
-using Juniansoft.Samariterm.EtoForms;
-using Juniansoft.Samariterm.EtoForms.Controls;
-using Juniansoft.Samariterm.EtoForms.Forms;
-using Juniansoft.Samariterm.Mac.Controls;
-using Juniansoft.Samariterm.Mac.Services;
+using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.Constants;
+using Juniansoft.Termission.Core.Engines.Scripts;
+using Juniansoft.Termission.Core.Services;
+using Juniansoft.Termission.EtoForms;
+using Juniansoft.Termission.EtoForms.Controls;
+using Juniansoft.Termission.EtoForms.Forms;
+using Juniansoft.Termission.Mac.Controls;
+using Juniansoft.Termission.Mac.Services;
 
-namespace Samariterm.Mac
+namespace Juniansoft.Termission.Mac
 {
-    static class MainClass
+    static class Program
     {
         static void Main(string[] args)
         {

@@ -35,7 +35,7 @@
     <Compile Include="Engines\Scripts\JSJintScriptEngine.cs" />
     <Compile Include="Engines\Scripts\BaseJSScriptEngine.cs" />
     <Compile Include="Engines\Scripts\BaseScriptEngine.cs" />
-    <Compile Include="ISamaritermApp.cs" />
+    <Compile Include="ITermissionApp.cs" />
     <Compile Include="ServiceLocator.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />

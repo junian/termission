@@ -6,7 +6,7 @@
     <ProjectGuid>{1BE0CCE6-CC8E-44B4-A365-56E236222594}</ProjectGuid>
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Juniansoft.Samariterm.Mac</RootNamespace>
+    <RootNamespace>Juniansoft.Termission.Mac</RootNamespace>
     <AssemblyName>Samariterm</AssemblyName>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
     <UseXamMacFullFramework>true</UseXamMacFullFramework>
@@ -86,7 +86,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Services\NotificationService.cs" />
@@ -107,21 +107,21 @@
     <Compile Include="Controls\LanguageFormatter\SourceTextViewDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
       <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
-      <Name>Samariterm.Core</Name>
+      <Name>Termission.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Core.Mono\Samariterm.Core.Mono.csproj">
-      <Project>{0E44089B-8967-4117-A12F-6F0E31D480D2}</Project>
-      <Name>Samariterm.Core.Mono</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Core.NetFx\Samariterm.Core.NetFx.csproj">
+    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
       <Project>{68A8AACE-4371-4D61-B984-09185E77C2ED}</Project>
-      <Name>Samariterm.Core.NetFx</Name>
+      <Name>Termission.Core.Dotnet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Samariterm.EtoForms\Samariterm.EtoForms.csproj">
+    <ProjectReference Include="..\Termission.Core.Mono\Termission.Core.Mono.csproj">
+      <Project>{0E44089B-8967-4117-A12F-6F0E31D480D2}</Project>
+      <Name>Termission.Core.Mono</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.EtoForms\Termission.EtoForms.csproj">
       <Project>{BDC8B552-3E54-44F1-A703-F712D06B55C6}</Project>
-      <Name>Samariterm.EtoForms</Name>
+      <Name>Termission.EtoForms</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

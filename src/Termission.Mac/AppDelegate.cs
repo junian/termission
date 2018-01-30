@@ -1,7 +1,7 @@
 ﻿using AppKit;
 using Foundation;
 
-namespace Samariterm.Mac
+namespace Juniansoft.Termission.Mac
 {
     [Register("AppDelegate")]
     public class AppDelegate : NSApplicationDelegate
