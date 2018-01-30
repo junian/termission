@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Samariterm.Mobile.iOS
+namespace Juniansoft.Termission.Mobile.iOS
 {
     public class Application
     {

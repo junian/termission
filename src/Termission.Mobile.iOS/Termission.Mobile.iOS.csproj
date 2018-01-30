@@ -7,7 +7,7 @@
     <ProjectGuid>{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Juniansoft.Samariterm.Mobile.iOS</RootNamespace>
+    <RootNamespace>Juniansoft.Termission.Mobile.iOS</RootNamespace>
     <AssemblyName>Samariterm.Mobile.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
@@ -31,6 +31,7 @@
     <DeviceSpecificBuild>false</DeviceSpecificBuild>
     <MtouchVerbosity>
     </MtouchVerbosity>
+    <AssemblyName>Termission.Mobile.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -66,6 +67,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <MtouchVerbosity>
     </MtouchVerbosity>
+    <AssemblyName>Termission.Mobile.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -141,25 +143,25 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\TcpListenerEngine.cs">
-      <Link>Engines\Networks\TcpListenerEngine.cs</Link>
-    </Compile>
-    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\TcpClientEngine.cs">
-      <Link>Engines\Networks\TcpClientEngine.cs</Link>
-    </Compile>
-    <Compile Include="..\Samariterm.Core.NetFx\Engines\Networks\BaseNetworkEngine.cs">
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\BaseNetworkEngine.cs">
       <Link>Engines\Networks\BaseNetworkEngine.cs</Link>
     </Compile>
-    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpClientEngine.cs">
+      <Link>Engines\Networks\TcpClientEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpListenerEngine.cs">
+      <Link>Engines\Networks\TcpListenerEngine.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samariterm.Mobile\Samariterm.Mobile.csproj">
-      <Project>{039207AC-2037-4B0B-A200-23A680E73FD7}</Project>
-      <Name>Samariterm.Mobile</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Samariterm.Core\Samariterm.Core.csproj">
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
       <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
-      <Name>Samariterm.Core</Name>
+      <Name>Termission.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Mobile\Termission.Mobile.csproj">
+      <Project>{039207AC-2037-4B0B-A200-23A680E73FD7}</Project>
+      <Name>Termission.Mobile</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

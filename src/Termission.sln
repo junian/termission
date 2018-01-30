@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Wpf", "Termissio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Mobile", "Termission.Mobile\Termission.Mobile.csproj", "{039207AC-2037-4B0B-A200-23A680E73FD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Mobile.iOS", "Termission.Mobile.iOS\Termission.Mobile.iOS.csproj", "{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +225,24 @@ Global
 		{039207AC-2037-4B0B-A200-23A680E73FD7}.Standalone|iPhone.Build.0 = Release|Any CPU
 		{039207AC-2037-4B0B-A200-23A680E73FD7}.Standalone|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{039207AC-2037-4B0B-A200-23A680E73FD7}.Standalone|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Release|Any CPU.Build.0 = Release|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Release|iPhone.Build.0 = Release|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Standalone|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Standalone|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Standalone|iPhone.ActiveCfg = Release|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Standalone|iPhone.Build.0 = Release|iPhone
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Standalone|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}.Standalone|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -238,6 +258,7 @@ Global
 		{BFDB387B-728C-4EAC-97F1-D3ACB196AAA8} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
 		{482CF3BF-50FD-43BB-9F71-29AE47E89032} = {D602F808-3239-4FBF-9B43-4CFCC09C1812}
 		{039207AC-2037-4B0B-A200-23A680E73FD7} = {0EF1A6CF-57CA-4A91-9955-7BC9BA84E171}
+		{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E} = {0EF1A6CF-57CA-4A91-9955-7BC9BA84E171}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0192AC8-3C08-4C66-B288-D98C944A45D9}
