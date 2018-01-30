@@ -101,8 +101,8 @@ namespace Juniansoft.Termission.EtoForms.Forms
                 MenuText = "Always on top",
             }));
 
-            var help = menuBar.Items.GetSubmenu("Help");
-            help.Items.Add((_menuItemHelp = new HelpCommand()));
+            //var help = menuBar.Items.GetSubmenu("He&lp");
+            menuBar.HelpItems.Add((_menuItemHelp = new HelpCommand()));
 
             if (Platform.IsMac || Platform.IsWpf || Platform.IsWinForms)
             {
