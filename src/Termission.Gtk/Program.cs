@@ -1,5 +1,6 @@
 ﻿using System;
 using Eto;
+using Eto.GtkSharp;
 using Eto.GtkSharp.Forms;
 using Eto.GtkSharp.Forms.Controls;
 using Juniansoft.Termission.Core;
@@ -25,16 +26,26 @@ namespace Juniansoft.Termission.GtkSharp
 
             var platform = new Eto.GtkSharp.Platform();
 
-            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
+            RegisterUIHandlers(platform);
 
             ConfigureStyles();
 
             var app = new MainApplication(platform);
 
+            RegisterServices();
+
+            app.Run(args);
+        }
+
+        private static void RegisterServices()
+        {
             ServiceLocator.Current.Register<INotificationService, NotificationService>();
             ServiceLocator.Current.Register<ICSharpBotEngine, CSharpMcsScriptEngine>();
+        }
 
-            app.Run(new MainForm());
+        private static void RegisterUIHandlers(Eto.GtkSharp.Platform platform)
+        {
+            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
         }
 
         private static void ConfigureStyles()

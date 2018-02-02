@@ -1,4 +1,5 @@
-﻿using AppKit;
+﻿using System;
+using AppKit;
 using Eto;
 using Eto.Mac.Forms;
 using Eto.Mac.Forms.Controls;
@@ -24,16 +25,29 @@ namespace Juniansoft.Termission.Mac
 
             var platform = new Eto.Mac.Platform();
 
-            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
+            // Register custom UI handlers
+            RegisterUIHandlers(platform);
 
+            // Configure custom platform-specific styles
             ConfigureStyles();
 
             var app = new MainApplication(platform);
 
+            // Register services after MainApplication
+            RegisterServices();
+
+            app.Run(args);
+        }
+
+        private static void RegisterUIHandlers(Platform platform)
+        {
+            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
+        }
+
+        private static void RegisterServices()
+        {
             ServiceLocator.Current.Register<INotificationService, NotificationService>();
             ServiceLocator.Current.Register<ICSharpBotEngine, CSharpMcsScriptEngine>();
-
-            app.Run(new MainForm());
         }
 
         private static void ConfigureStyles()

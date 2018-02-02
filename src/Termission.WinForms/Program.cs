@@ -24,7 +24,7 @@ namespace Juniansoft.Termission.WinForms
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
@@ -33,15 +33,25 @@ namespace Juniansoft.Termission.WinForms
 
             var platform = Eto.Platform.Get(Eto.Platforms.WinForms);
 
-            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
+            RegisterUIHandlers(platform);
 
             ConfigureStyles();
 
             var app = new MainApplication(platform);
 
-            ServiceLocator.Current.Register<INotificationService, NotificationService>();
+            RegisterServices();
 
-            app.Run(new MainForm());
+            app.Run(args);
+        }
+
+        private static void RegisterServices()
+        {
+            ServiceLocator.Current.Register<INotificationService, NotificationService>();
+        }
+
+        private static void RegisterUIHandlers(Platform platform)
+        {
+            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
         }
 
         private static void ConfigureStyles()

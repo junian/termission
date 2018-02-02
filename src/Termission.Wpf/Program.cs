@@ -1,4 +1,5 @@
-﻿using Juniansoft.Termission.Core;
+﻿using Eto;
+using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Services;
 using Juniansoft.Termission.EtoForms;
 using Juniansoft.Termission.EtoForms.Controls;
@@ -20,15 +21,30 @@ namespace Juniansoft.Termission.Wpf
         {
             var platform = Eto.Platform.Get(Eto.Platforms.Wpf);
 
-            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
+            RegisterUIHandlers(platform);
 
-            //ConfigureStyles();
+            ConfigureStyles();
 
             var app = new MainApplication(platform);
 
-            ServiceLocator.Current.Register<INotificationService, NotificationService>();
+            RegisterServices();
 
-            app.Run(new MainForm());
+            app.Run(args);
+        }
+
+        private static void RegisterServices()
+        {
+            ServiceLocator.Current.Register<INotificationService, NotificationService>();
+        }
+
+        private static void ConfigureStyles()
+        {
+            //throw new NotImplementedException();
+        }
+
+        private static void RegisterUIHandlers(Platform platform)
+        {
+            platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
         }
     }
 }

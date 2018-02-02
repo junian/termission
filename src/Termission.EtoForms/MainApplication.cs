@@ -7,6 +7,7 @@ using Juniansoft.Termission.Core.Engines.Networks;
 using Juniansoft.Termission.Core.Engines.Scripts;
 using Juniansoft.Termission.Core.Services;
 using Juniansoft.Termission.Core.ViewModels;
+using Juniansoft.Termission.EtoForms.Forms;
 using Juniansoft.Termission.EtoForms.Services;
 using Juniansoft.Termission.EtoForms.Views;
 
@@ -42,6 +43,11 @@ namespace Juniansoft.Termission.EtoForms
             ServiceLocator.Current.Register<MainView>();
             ServiceLocator.Current.Register<DeviceBotView>();
             ServiceLocator.Current.Register<PreferencesView>();
+        }
+
+        public void Run(string[] args)
+        {
+            this.Run(new MainForm());
         }
 
         #region Assembly Attribute Accessors
