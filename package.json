@@ -4,7 +4,9 @@
   "description": "Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-inject": "^4.3.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,4 +22,3 @@
   },
   "homepage": "https://github.com/junian/termission#readme"
 }
-
