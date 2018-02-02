@@ -46,7 +46,6 @@
       <DependentUpon>PreferencesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Settings.cs" />
-    <Compile Include="Controls\AceSourceEditor.cs" />
     <Compile Include="Pages\DeviceBotPage.xaml.cs">
       <DependentUpon>DeviceBotPage.xaml</DependentUpon>
     </Compile>

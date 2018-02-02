@@ -56,5 +56,10 @@ namespace Juniansoft.Termission.Mobile
             //ServiceLocator.Instance.Register<DeviceBotView>();
             //ServiceLocator.Instance.Register<PreferencesView>();
         }
+
+        public void Run(string[] args)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

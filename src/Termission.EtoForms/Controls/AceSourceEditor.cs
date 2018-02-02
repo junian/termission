@@ -2,6 +2,7 @@
 using System.Text;
 using Eto.Forms;
 using Juniansoft.Termission.Core.Resources;
+using Juniansoft.Termission.EtoForms.Resources;
 
 namespace Juniansoft.Termission.EtoForms.Controls
 {
@@ -10,14 +11,14 @@ namespace Juniansoft.Termission.EtoForms.Controls
         public AceSourceEditor()
         {
             var js = new StringBuilder();
-            js.AppendLine(AppResources.AceJS);
-            js.AppendLine(AppResources.AceModeJavascriptJs);
-            js.AppendLine(AppResources.AceModeCSharpJs);
-            js.AppendLine(AppResources.AceLanguageToolsJS);
-            js.AppendLine(AppResources.AceEditorJS);
+            js.AppendLine(DesktopAppResources.AceJS);
+            js.AppendLine(DesktopAppResources.AceModeJavascriptJs);
+            js.AppendLine(DesktopAppResources.AceModeCSharpJs);
+            js.AppendLine(DesktopAppResources.AceLanguageToolsJS);
+            js.AppendLine(DesktopAppResources.AceEditorJS);
 
             var html = new StringBuilder();
-            html.AppendLine(AppResources.AceEditorHtml);
+            html.AppendLine(DesktopAppResources.AceEditorHtml);
             html.Replace("//ace.js", js.ToString());
 
             this.LoadHtml(html.ToString());
