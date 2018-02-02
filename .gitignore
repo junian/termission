@@ -39,3 +39,4 @@ Thumbs.db
 # dotCover
 *.dotCover
 .vs/
+node_modules/
