@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-inject": "^4.3.0"
   },
   "scripts": {
