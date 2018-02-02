@@ -2,6 +2,10 @@
 
 Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.
 
+## About
+
+This project is the successor of my old [serial-device-emulator](https://github.com/junian/serial-device-emulator). It's rewritten from the ground with cross-platform mindset.
+
 ## Features
 
 - Cross-platform: available on Windows, macOS, and Linux
