@@ -20,6 +20,7 @@ namespace Juniansoft.Termission.Core.Resources
         public static string CodeMirrorModeJavascriptJs => GetString("codemirror-mode-javascript.js");
 
         public static string DocumentationMd => GetString("DOCUMENTATION.md");
+        public static string AcknowledgementsMd => GetString("ACKNOWLEDGEMENTS.md");
 
         private static string GetString(string name)
         {
