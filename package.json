@@ -1,0 +1,23 @@
+{
+  "name": "Termission",
+  "version": "0.8.0",
+  "description": "Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junian/termission.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junian/termission/issues"
+  },
+  "homepage": "https://github.com/junian/termission#readme"
+}
+
