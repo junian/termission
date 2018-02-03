@@ -1,6 +1,5 @@
 ﻿using System;
 using Juniansoft.Termission.Core.Resources;
-using Markdig;
 
 namespace Juniansoft.Termission.Core.ViewModels
 {
@@ -17,8 +16,7 @@ namespace Juniansoft.Termission.Core.ViewModels
 
         private string LoadHelpContent(string md)
         {
-            var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
-            var result = Markdown.ToHtml(md, pipeline);
+            var result = CommonMark.CommonMarkConverter.Convert(md);
             return result;
         }
     }

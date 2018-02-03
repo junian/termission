@@ -43,8 +43,8 @@ namespace Juniansoft.Termission.EtoForms
                 // default
                 { "<>", v =>
                     {
-                        shouldShowHelp = true;
-                        Console.WriteLine("Unknown command parameter.");
+                        //shouldShowHelp = true;
+                        //Console.WriteLine("Unknown command parameter.");
                     }
                 },
             };

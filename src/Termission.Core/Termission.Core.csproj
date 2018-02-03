@@ -100,12 +100,12 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Markdig">
-      <HintPath>..\packages\Markdig.Signed.0.14.9\lib\portable40-net40+sl5+win8+wp8+wpa81\Markdig.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="CommonMark">
+      <HintPath>..\packages\CommonMark.NET.0.15.1\lib\portable-net45+wp80+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\CommonMark.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
