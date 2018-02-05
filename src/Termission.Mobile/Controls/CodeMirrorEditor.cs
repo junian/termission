@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using Juniansoft.Termission.Core.Resources;
+using Juniansoft.Termission.Mobile.Resources;
 using Xamarin.Forms;
 
 namespace Juniansoft.Termission.Mobile.Controls
@@ -9,15 +10,15 @@ namespace Juniansoft.Termission.Mobile.Controls
     {
         public CodeMirrorEditor()
         {
-            var css = AppResources.CodeMirrorCss;
+            var css = MobileAppResources.CodeMirrorCss;
 
             var js = new StringBuilder();
-            js.AppendLine(AppResources.CodeMirrorJs);
+            js.AppendLine(MobileAppResources.CodeMirrorJs);
             //js.AppendLine(AppResources.CodeMirrorModeCLikeJs);
-            js.AppendLine(AppResources.CodeMirrorModeJavascriptJs);
+            js.AppendLine(MobileAppResources.CodeMirrorModeJavascriptJs);
 
             var html = new StringBuilder();
-            html.AppendLine(AppResources.CodeMirrorEditorHtml);
+            html.AppendLine(MobileAppResources.CodeMirrorEditorHtml);
             html.Replace("/*codemirror.css*/", css);
             html.Replace("//codemirror.js", js.ToString());
 

@@ -36,6 +36,21 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\codemirror\codemirror.css">
+      <Link>Resources\codemirror.css</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\codemirror\codemirror.js">
+      <Link>Resources\codemirror.js</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\codemirror\codemirror-editor.html">
+      <Link>Resources\codemirror-editor.html</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\codemirror\codemirror-mode-clike.js">
+      <Link>Resources\codemirror-mode-clike.js</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\codemirror\codemirror-mode-javascript.js">
+      <Link>Resources\codemirror-mode-javascript.js</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -50,6 +65,7 @@
       <DependentUpon>DeviceBotPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\CodeMirrorEditor.cs" />
+    <Compile Include="Resources\MobileAppResources.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -80,6 +96,7 @@
   <ItemGroup>
     <Folder Include="Pages\" />
     <Folder Include="Controls\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
