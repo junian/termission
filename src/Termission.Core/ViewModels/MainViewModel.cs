@@ -15,7 +15,6 @@ using Juniansoft.Termission.Core.Enums;
 using Juniansoft.Termission.Core.Helpers;
 using Juniansoft.Termission.Core.Models;
 using Juniansoft.Termission.Core.Services;
-using Newtonsoft.Json;
 
 namespace Juniansoft.Termission.Core.ViewModels
 {
@@ -35,6 +34,7 @@ namespace Juniansoft.Termission.Core.ViewModels
         private ICrossDialog _crossFileDialog;
         private ISystemService _systemService;
         private IFileService _file;
+        private IJsonService _jsonSvc;
 
         public ObservableCollection<int> BaudRateOptions => new ObservableCollection<int>
         {
@@ -244,6 +244,7 @@ namespace Juniansoft.Termission.Core.ViewModels
             _notification = ServiceLocator.Current.Get<INotificationService>();
             _systemService = ServiceLocator.Current.Get<ISystemService>();
             _file = ServiceLocator.Current.Get<IFileService>();
+            _jsonSvc = ServiceLocator.Current.Get<IJsonService>();
             _enc = Encoding.UTF8;
             _engine = ServiceLocator.Current.Get<INetworkEngine>();
             _engine.MessageResponseReceived += (_, e) => ViewReceivedMessage(e.Data);
@@ -358,7 +359,7 @@ namespace Juniansoft.Termission.Core.ViewModels
             {
                 CurrentFilePath = filename;
                 var jsonString = _file.ReadAllText(CurrentFilePath);
-                var model = JsonConvert.DeserializeObject<T>(jsonString);
+                var model = _jsonSvc.Deserialize<T>(jsonString);
                 return model;
             }
 
@@ -370,13 +371,9 @@ namespace Juniansoft.Termission.Core.ViewModels
             if (!string.IsNullOrWhiteSpace(filename))
             {
                 CurrentFilePath = filename;
-                var jsonString = JsonConvert.SerializeObject(
+                var jsonString = _jsonSvc.Serialize(
                     model,
-                    Formatting.Indented,
-                    new JsonSerializerSettings
-                    {
-                        ContractResolver = new ShouldSerializeContractResolver()
-                    });
+                    true);
                 _file.WriteAllText(CurrentFilePath, jsonString);
             }
         }

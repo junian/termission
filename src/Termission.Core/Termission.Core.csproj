@@ -64,6 +64,8 @@
     <Compile Include="App.cs" />
     <Compile Include="Resources\AppResources.cs" />
     <Compile Include="ViewModels\HelpViewModel.cs" />
+    <Compile Include="Services\IJsonService.cs" />
+    <Compile Include="Services\LitJsonService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Events\" />
@@ -97,14 +99,14 @@
     <Reference Include="Plugin.Settings">
       <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="CommonMark">
       <HintPath>..\packages\CommonMark.NET.0.15.1\lib\portable-net45+wp80+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\CommonMark.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\packages\LitJson.0.9.0\lib\LitJson.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

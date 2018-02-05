@@ -88,6 +88,7 @@ namespace Juniansoft.Termission.EtoForms
             ServiceLocator.Current.Register<INetworkEngine, TermSharpEngine>();
             ServiceLocator.Current.Register<ISystemService, EtoSystemService>();
             ServiceLocator.Current.Register<IFileService, FileService>();
+            ServiceLocator.Current.Register<IJsonService, LitJsonService>();
 
             if (Platform.Instance.IsWinForms || Platform.IsWpf)
                 ServiceLocator.Current.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
