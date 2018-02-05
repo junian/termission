@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Samariterm</string>
+	<string>Termission</string>
 	<key>CFBundleIdentifier</key>
 	<string>net.junian.termission</string>
 	<key>CFBundleShortVersionString</key>
@@ -41,6 +41,6 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleName</key>
-	<string>Termission Mobile</string>
+	<string>Termission</string>
 </dict>
 </plist>

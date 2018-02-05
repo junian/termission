@@ -8,7 +8,7 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>Juniansoft.Termission.Mobile.iOS</RootNamespace>
-    <AssemblyName>Samariterm.Mobile.iOS</AssemblyName>
+    <AssemblyName>Termission.Mobile.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -31,7 +31,6 @@
     <DeviceSpecificBuild>false</DeviceSpecificBuild>
     <MtouchVerbosity>
     </MtouchVerbosity>
-    <AssemblyName>Termission.Mobile.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -67,7 +66,6 @@
     <PlatformTarget>x86</PlatformTarget>
     <MtouchVerbosity>
     </MtouchVerbosity>
-    <AssemblyName>Termission.Mobile.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
