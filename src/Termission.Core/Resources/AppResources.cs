@@ -6,12 +6,6 @@ namespace Juniansoft.Termission.Core.Resources
 {
     public static class AppResources
     {
-        public static string CodeMirrorEditorHtml => GetString("codemirror-editor.html");
-        public static string CodeMirrorCss => GetString("codemirror.css");
-        public static string CodeMirrorJs => GetString("codemirror.js");
-        public static string CodeMirrorModeCLikeJs => GetString("codemirror-mode-clike.js");
-        public static string CodeMirrorModeJavascriptJs => GetString("codemirror-mode-javascript.js");
-
         public static string DocumentationMd => GetString("DOCUMENTATION.md");
         public static string AcknowledgementsMd => GetString("ACKNOWLEDGEMENTS.md");
 
