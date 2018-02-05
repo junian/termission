@@ -1,4 +1,5 @@
 ﻿using Juniansoft.Termission.Core;
+using Juniansoft.Termission.Core.Services;
 using Juniansoft.Termission.Core.ViewModels;
 using Juniansoft.Termission.Mobile.Pages;
 using Xamarin.Forms;
@@ -42,6 +43,7 @@ namespace Juniansoft.Termission.Mobile
             //ServiceLocator.Instance.Register<INetworkEngine, TermSharpEngine>();
             //ServiceLocator.Instance.Register<ISystemService, EtoSystemService>();
             //ServiceLocator.Instance.Register<IFileService, FileService>();
+            ServiceLocator.Current.Register<IJsonService, LitJsonService>();
 
             //if (Platform.Instance.IsWinForms || Platform.IsWpf)
                 //ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
