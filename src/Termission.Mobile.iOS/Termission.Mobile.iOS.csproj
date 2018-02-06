@@ -129,6 +129,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Engines\" />
     <Folder Include="Engines\Networks\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -151,6 +152,7 @@
     <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpListenerEngine.cs">
       <Link>Engines\Networks\TcpListenerEngine.cs</Link>
     </Compile>
+    <Compile Include="Controls\CodeMirrorEditorRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
