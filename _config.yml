@@ -2,3 +2,4 @@ theme: jekyll-theme-cayman
 title: Termission
 description: Cross-platform Serial/TCP Terminal with Scriptable Auto-Responder
 show_downloads: true
+google_analytics: UA-113890655-3
