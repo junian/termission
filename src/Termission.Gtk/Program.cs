@@ -3,6 +3,7 @@ using Eto;
 using Eto.GtkSharp;
 using Eto.GtkSharp.Forms;
 using Eto.GtkSharp.Forms.Controls;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Constants;
 using Juniansoft.Termission.Core.Engines.Scripts;

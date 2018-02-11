@@ -42,6 +42,9 @@
     <Reference Include="ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
       <HintPath>..\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmReady, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a3e9addd991930c7, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmReady.1.1.0\lib\net45\MvvmReady.dll</HintPath>
+    </Reference>
     <Reference Include="Plugin.Settings, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\net45\Plugin.Settings.dll</HintPath>
     </Reference>

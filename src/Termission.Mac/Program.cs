@@ -4,6 +4,7 @@ using Eto;
 using Eto.Mac.Forms;
 using Eto.Mac.Forms.Controls;
 using Eto.Mac.Forms.ToolBar;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Constants;
 using Juniansoft.Termission.Core.Engines.Scripts;

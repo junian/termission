@@ -6,6 +6,7 @@ using Juniansoft.Termission.EtoForms.MenuCommands;
 using Juniansoft.Termission.EtoForms.Resources;
 using Juniansoft.Termission.Core.ViewModels;
 using Juniansoft.Termission.EtoForms.Views;
+using Juniansoft.MvvmReady;
 
 namespace Juniansoft.Termission.EtoForms.Forms
 {
@@ -16,17 +17,17 @@ namespace Juniansoft.Termission.EtoForms.Forms
         private DeviceBotView _botView;
 
         private CheckCommand _enableCommand;
-        private Command _compileCommand;
-        private Command _newCommand;
-        private Command _openCommand;
-        private Command _saveCommand;
-        private Command _saveAsCommand;
+        private Eto.Forms.Command _compileCommand;
+        private Eto.Forms.Command _newCommand;
+        private Eto.Forms.Command _openCommand;
+        private Eto.Forms.Command _saveCommand;
+        private Eto.Forms.Command _saveAsCommand;
 
         public DeviceBotForm()
         {
-            _mainVm = Core.ServiceLocator.Current.Get<MainViewModel>();
-            _botVM = Core.ServiceLocator.Current.Get<DeviceBotViewModel>();
-            _botView = Core.ServiceLocator.Current.Get<DeviceBotView>();
+            _mainVm = ServiceLocator.Current.Get<MainViewModel>();
+            _botVM = ServiceLocator.Current.Get<DeviceBotViewModel>();
+            _botView = ServiceLocator.Current.Get<DeviceBotView>();
 
             Style = EtoStyles.DeviceBotDialog;
             Resizable = true;

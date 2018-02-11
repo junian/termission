@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Juniansoft.MvvmReady;
 
 namespace Juniansoft.Termission.EtoForms.Forms
 {
@@ -13,8 +14,8 @@ namespace Juniansoft.Termission.EtoForms.Forms
     {
         public PreferencesForm()
         {
-            var vm = Core.ServiceLocator.Current.Get<PreferencesViewModel>();
-            var view = Core.ServiceLocator.Current.Get<PreferencesView>();
+            var vm = ServiceLocator.Current.Get<PreferencesViewModel>();
+            var view = ServiceLocator.Current.Get<PreferencesView>();
 
             this.Content = view;
             this.Title = "Preferences";

@@ -40,6 +40,9 @@
     <Reference Include="FastColoredTextBox, Version=2.16.21.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
       <HintPath>..\packages\FCTB.2.16.21.0\lib\FastColoredTextBox.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmReady, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a3e9addd991930c7, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmReady.1.1.0\lib\net45\MvvmReady.dll</HintPath>
+    </Reference>
     <Reference Include="Plugin.Settings, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\net45\Plugin.Settings.dll</HintPath>
     </Reference>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Eto;
 using Eto.Forms;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Engines.Networks;
 using Juniansoft.Termission.Core.Engines.Scripts;

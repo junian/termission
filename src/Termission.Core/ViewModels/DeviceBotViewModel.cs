@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core.Engines.Scripts;
 using Juniansoft.Termission.Core.Enums;
 using Juniansoft.Termission.Core.Helpers;

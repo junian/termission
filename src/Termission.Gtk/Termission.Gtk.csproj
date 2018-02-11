@@ -77,6 +77,9 @@
       <HintPath>..\packages\ICSharpCode.NRefactory.5.5.1\lib\Net40\ICSharpCode.NRefactory.Xml.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cairo" />
+    <Reference Include="MvvmReady">
+      <HintPath>..\packages\MvvmReady.1.1.0\lib\net45\MvvmReady.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">

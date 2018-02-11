@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core.Engines;
 using Juniansoft.Termission.Core.Engines.Networks;
 using Juniansoft.Termission.Core.Engines.Scripts;

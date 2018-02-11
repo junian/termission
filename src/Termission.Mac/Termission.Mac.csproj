@@ -66,6 +66,9 @@
     <Reference Include="RJCP.SerialPortStream">
       <HintPath>..\packages\SerialPortStream.2.1.2\lib\net45\RJCP.SerialPortStream.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmReady">
+      <HintPath>..\packages\MvvmReady.1.1.0\lib\net45\MvvmReady.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />

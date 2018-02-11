@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using Eto;
 using Eto.WinForms.Forms;
 using Eto.WinForms.Forms.Controls;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Constants;
 using Juniansoft.Termission.Core.Services;

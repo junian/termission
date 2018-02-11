@@ -6,17 +6,18 @@ using Juniansoft.Termission.EtoForms.MenuCommands;
 using Juniansoft.Termission.EtoForms.Resources;
 using Juniansoft.Termission.Core.ViewModels;
 using Juniansoft.Termission.EtoForms.Views;
+using Juniansoft.MvvmReady;
 
 namespace Juniansoft.Termission.EtoForms.Forms
 {
     public class MainForm : Form
     {
-        Command _menuItemNew;
-        Command _menuItemOpen;
-        Command _menuItemSave;
-        Command _menuItemSaveAs;
-        Command _menuItemExit;
-        Command _menuItemHelp;
+        Eto.Forms.Command _menuItemNew;
+        Eto.Forms.Command _menuItemOpen;
+        Eto.Forms.Command _menuItemSave;
+        Eto.Forms.Command _menuItemSaveAs;
+        Eto.Forms.Command _menuItemExit;
+        Eto.Forms.Command _menuItemHelp;
 
         CheckCommand _menuItemAlwaysOnTop;
 
@@ -26,8 +27,8 @@ namespace Juniansoft.Termission.EtoForms.Forms
 
         public MainForm()
         {
-            _mainView = Core.ServiceLocator.Current.Get<MainView>();
-            _mainVm = Core.ServiceLocator.Current.Get<MainViewModel>();
+            _mainView = ServiceLocator.Current.Get<MainView>();
+            _mainVm = ServiceLocator.Current.Get<MainViewModel>();
 
             Title = MainApplication.AssemblyProduct;
             ClientSize = new Eto.Drawing.Size(720, 480);
@@ -88,7 +89,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
             //file.Items.Add(new SeparatorMenuItem());
 
             var view = menuBar.Items.GetSubmenu("&View");
-            view.Items.Add(new Command
+            view.Items.Add(new Eto.Forms.Command
             {
                 MenuText = "Device Bot",
                 DelegatedCommand = new RelayCommand<object>((_) =>

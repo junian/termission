@@ -1,4 +1,5 @@
 ﻿using Eto;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Services;
 using Juniansoft.Termission.EtoForms;

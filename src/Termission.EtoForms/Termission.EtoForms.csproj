@@ -34,6 +34,9 @@
     <Reference Include="Mono.Options">
       <HintPath>..\packages\Mono.Options.5.3.0.1\lib\net4-client\Mono.Options.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmReady">
+      <HintPath>..\packages\MvvmReady.1.1.0\lib\net45\MvvmReady.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
