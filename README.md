@@ -38,3 +38,5 @@ This project is possible to build thanks to following libraries:
 ## License
 
 This project is licensed under [GPL-3.0](https://github.com/junian/termission/blob/master/LICENSE).
+
+Copyright (C) 2018 Junian Triajianto
