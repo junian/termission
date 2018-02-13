@@ -4,8 +4,7 @@
 Copyright (c) 2011-2018 Curtis Wensley. All Rights Reserved.\
 Copyright (c) 2012-2013 Vivek Jhaveri. All Rights Reserved.
 
-[Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) ([MIT License](https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md))\
-Copyright (c) 2007 James Newton-King.
+[LitJson](https://github.com/LitJSON/litjson) ([Unlicense](https://github.com/LitJSON/litjson/blob/develop/COPYING))
 
 [Xam.Plugins.Settings](https://github.com/jamesmontemagno/SettingsPlugin) ([MIT License](https://github.com/jamesmontemagno/SettingsPlugin/blob/master/LICENSE))\
 Copyright (c) 2017 James Montemagno.
