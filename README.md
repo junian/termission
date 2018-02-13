@@ -26,7 +26,7 @@ This project is possible to build thanks to following libraries:
 
 - [Eto.Forms](https://github.com/picoe/Eto) - A cross platform desktop and mobile user interface framework.
 - [MvvmLightLibs](https://github.com/lbugnion/mvvmlight) - A toolkit to accelerate the creation and development of MVVM applications.
-- [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) - A popular high-performance JSON framework for .NET.
+- [LitJson](https://github.com/LitJSON/litjson) - A .Net library to handle conversions from and to JSON (JavaScript Object Notation) strings.
 - [Xam.Plugins.Settings](https://github.com/jamesmontemagno/SettingsPlugin) - Read and Write Settings Plugin for Xamarin and Windows.
 - [FastColoredTextBox](https://github.com/PavelTorgashov/FastColoredTextBox) - A text editor component for .NET that allows you to create custom text editor with syntax highlighting.
 - [SourceTextView](https://github.com/xamarin/mac-samples/tree/master/SourceWriter) - A simple source code editor for Xamarin.Mac that provides support for code completion and simple syntax highlighting.
