@@ -1,30 +1,246 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="Termission.WinSetup" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="f275c3e0-c57f-4bb9-8e25-cce8551630f0">
-		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+  <Product Id="*"
+		Name="$(var.AppName)"
+		Language="1033"
+		Version="$(var.ProductVersion)"
+		UpgradeCode="$(var.UpgradeCode)"
+		Manufacturer="$(var.Manufacturer)">
 
-		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-		<MediaTemplate />
+    <Package Description="$(var.AppName) by $(var.Manufacturer)"
+			Comments= "$(var.AppName) by $(var.Manufacturer)"
+			InstallerVersion="200"
+			Compressed="yes"
+			InstallScope="perMachine"
+			InstallPrivileges="elevated"
+		/>
 
-		<Feature Id="ProductFeature" Title="Termission.WinSetup" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
-		</Feature>
-	</Product>
+    <!--
+		<Property Id="OLDERVERSIONBEINGUPGRADED" Secure="yes" />
+		<Upgrade Id="$(var.UpgradeCode)"> 
+		    <UpgradeVersion Minimum="$(var.ProductVersion)" 
+		                    OnlyDetect="yes" 
+		                    Property="NEWERVERSIONDETECTED" />
+		    <UpgradeVersion Minimum="0.0.0" 
+		                    IncludeMinimum="yes" 
+		                    Maximum="$(var.ProductVersion)" 
+		                    IncludeMaximum="no" 
+		                    Property="OLDERVERSIONBEINGUPGRADED" />
+		</Upgrade>
+		-->
 
-	<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="Termission.WinSetup" />
-			</Directory>
-		</Directory>
-	</Fragment>
+    <Media Id="1"
+		       Cabinet="contents.cab"
+		       EmbedCab="yes"
+		       CompressionLevel="high"/>
 
-	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-				<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
-		</ComponentGroup>
-	</Fragment>
+    <Icon Id="ProductIcon"
+		      SourceFile="..\..\resources\icon.ico"/>
+    <Property Id="ARPPRODUCTICON"
+		          Value="ProductIcon"/>
+    <Property Id="ARPHELPLINK"
+		          Value="https://www.junian.net"/>
+    <Property Id="ARPURLINFOABOUT"
+		          Value="https://www.junian.net"/>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="APPLICATIONROOTDIRECTORYHOME" Name="$(var.AppName)">
+          <Directory Id="APPLICATIONROOTDIRECTORY" Name="$(var.ProductVersion)">
+          </Directory>
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolderHome" Name="$(var.AppName)">
+          <Directory Id="ApplicationProgramsFolder" Name="$(var.ProductVersion)"/>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+      <Component Id="Termissionexe"
+           Guid="*" DiskId="1">
+        <File Id="Termission.exe"
+				      Name="Termission.exe"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.exe"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="Termissionexeconfig"
+			           Guid="*" DiskId="1">
+        <File Id="Termission.exe.config"
+				      Name="Termission.exe.config"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.exe.config"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="TermissionCoredll"
+			           Guid="*" DiskId="1">
+        <File Id="Termission.Core.dll"
+				      Name="Termission.Core.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.Core.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="TermissionCoreDotnetdll"
+			           Guid="*" DiskId="1">
+        <File Id="Termission.Core.Dotnet.dll"
+				      Name="Termission.Core.Dotnet.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.Core.Dotnet.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="TermissionEtoFormsdll"
+			           Guid="*" DiskId="1">
+        <File Id="Termission.EtoForms.dll"
+				      Name="Termission.EtoForms.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.EtoForms.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="Etodll"
+			           Guid="*" DiskId="1">
+        <File Id="Eto.dll"
+				      Name="Eto.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Eto.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="Eto.WinFormsdll"
+			           Guid="*" DiskId="1">
+        <File Id="Eto.WinForms.dll"
+				      Name="Eto.WinForms.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Eto.WinForms.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="MvvmReadydll"
+			           Guid="*" DiskId="1">
+        <File Id="MvvmReady.dll"
+				      Name="MvvmReady.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\MvvmReady.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="LitJsondll"
+			           Guid="*" DiskId="1">
+        <File Id="LitJson.dll"
+				      Name="LitJson.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\LitJson.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="PluginSettingsAbstractionsdll"
+			           Guid="*" DiskId="1">
+        <File Id="Plugin.Settings.Abstractions.dll"
+				      Name="Plugin.Settings.Abstractions.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Plugin.Settings.Abstractions.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="PluginSettingsdll"
+			           Guid="*" DiskId="1">
+        <File Id="Plugin.Settings.dll"
+				      Name="Plugin.Settings.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Plugin.Settings.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="CommonMarkdll"
+			           Guid="*" DiskId="1">
+        <File Id="CommonMark.dll"
+				      Name="CommonMark.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\CommonMark.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="FastColoredTextBoxdll"
+			           Guid="*" DiskId="1">
+        <File Id="FastColoredTextBox.dll"
+				      Name="FastColoredTextBox.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\FastColoredTextBox.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="jintdll"
+			           Guid="*" DiskId="1">
+        <File Id="jint.dll"
+				      Name="jint.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\jint.dll"
+				      KeyPath="yes" />
+      </Component>
+      <Component Id="MonoOptionsdll"
+			           Guid="*" DiskId="1">
+        <File Id="Mono.Options.dll"
+				      Name="Mono.Options.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Mono.Options.dll"
+				      KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut"
+                 Guid="*">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="$(var.AppName) ($(var.ProductVersion))"
+                  Description="$(var.AppName) by $(var.Manufacturer)"
+                  Target="[#Termission.exe]"
+                  Icon="ProductIcon"
+                  WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+
+        <!--
+				<Shortcut Id="UninstallProduct"             
+                          Name="Uninstall 35E Control Panel"
+                          Description="Uninstalls 35E Control Panel"
+                          Target="[SystemFolder]msiexec.exe"
+                          Arguments="/x [ProductCode]"/>
+				-->
+
+        <RemoveFolder Id="RemoveApplicationProgramsFolderHome"
+                      Directory="ApplicationProgramsFolderHome"
+                      On="uninstall"/>
+        <RemoveFolder Id="RemoveApplicationProgramsFolder"
+                      Directory="ApplicationProgramsFolder"
+                      On="uninstall"/>
+        <RegistryValue Root="HKCU"
+                       Key="Software\Microsoft\$(var.Manufacturer)\$(var.AppName)\$(var.ProductVersion)"
+                       Name="installed" Type="integer"
+                       Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+    <InstallExecuteSequence>
+      <RemoveExistingProducts Before="InstallInitialize" />
+    </InstallExecuteSequence>
+
+    <Feature Id="MainApplication" Title="Main Application" Level="1">
+      <ComponentRef Id="Termissionexe" />
+      <ComponentRef Id="Termissionexeconfig" />
+      <ComponentRef Id="TermissionCoredll" />
+      <ComponentRef Id="TermissionCoreDotnetdll" />
+      <ComponentRef Id="TermissionEtoFormsdll" />
+      <ComponentRef Id="Etodll" />
+      <ComponentRef Id="Eto.WinFormsdll" />
+      <ComponentRef Id="MvvmReadydll" />
+      <ComponentRef Id="LitJsondll" />
+      <ComponentRef Id="PluginSettingsAbstractionsdll" />
+      <ComponentRef Id="PluginSettingsdll" />
+      <ComponentRef Id="CommonMarkdll" />
+      <ComponentRef Id="FastColoredTextBoxdll" />
+      <ComponentRef Id="jintdll" />
+      <ComponentRef Id="MonoOptionsdll" />
+
+      <ComponentRef Id="ApplicationShortcut" />
+    </Feature>
+
+    <UI>
+      <UIRef Id="WixUI_Minimal" />
+      <Publish Dialog="ExitDialog"
+          Control="Finish"
+          Event="DoAction"
+          Value="LaunchApplication">WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed</Publish>
+    </UI>
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT"
+              Value="Launch $(var.AppName)" />
+
+    <Property Id="WixShellExecTarget"
+		          Value="[#Termission.exe]" />
+    <CustomAction Id="LaunchApplication"
+        BinaryKey="WixCA"
+        DllEntry="WixShellExec"
+        Impersonate="yes" />
+
+    <PropertyRef Id="NETFRAMEWORK45"/>
+    <Condition
+			Message="This application requires .NET Framework 4.5.*. Please install the .NET Framework then run this installer again. For more information, you can contact admin@junian.net.">
+      <![CDATA[Installed OR NETFRAMEWORK45]]>
+    </Condition>
+  </Product>
 </Wix>
