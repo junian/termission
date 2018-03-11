@@ -17,10 +17,28 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-	<DefineConstants>ProductVersion=0.1.0;UpgradeCode=159B5463-046E-4F65-B0D8-0C5E4C17706C;AppProject=Termission.WinForms;AppName=Termission;Manufacturer=Junian Triajianto;</DefineConstants>
+    <DefineConstants>ProductVersion=0.1.0;UpgradeCode=159B5463-046E-4F65-B0D8-0C5E4C17706C;AppProject=Termission.WinForms;AppName=Termission;Manufacturer=Junian Triajianto;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Termission.WinForms\Termission.WinForms.csproj">
+      <Name>Termission.WinForms</Name>
+      <Project>{bfdb387b-728c-4eac-97f1-d3acb196aaa8}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Wpf\Termission.Wpf.csproj">
+      <Name>Termission.Wpf</Name>
+      <Project>{482cf3bf-50fd-43bb-9f71-29ae47e89032}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />
