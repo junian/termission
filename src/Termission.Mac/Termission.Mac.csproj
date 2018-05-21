@@ -83,6 +83,17 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon-512.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon-512%402x.png" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_512x512%402x.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_512x512.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_256x256%402x.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_256x256.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_128x128%402x.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_128x128.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_32x32%402x.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_32x32.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_16x16%402x.png" />
+    <ImageAsset Include="Assets.xcassets\DevAppIcon.appiconset\icon_16x16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -129,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Assets.xcassets\DevAppIcon.appiconset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>
