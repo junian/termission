@@ -47,6 +47,7 @@ namespace Juniansoft.Termission.Core.Engines.Networks
         {
             if (model is SerialComSettings s)
             {
+                _serialPort.PortName = s.PortName;
                 _serialPort.BaudRate = s.BaudRate;
                 _serialPort.Handshake = (Handshake) s.Handshake;
                 _serialPort.Parity = (Parity) s.Parity;

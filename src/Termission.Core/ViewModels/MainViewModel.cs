@@ -428,6 +428,7 @@ namespace Juniansoft.Termission.Core.ViewModels
                     {
                         _engine.Set(new SerialComSettings
                         {
+                            PortName = SelectedSerialPortName,
                             BaudRate = Settings.SelectedBaudRate,
                             Handshake = (int)Settings.SelectedHandshake,
                             Parity = (int)Settings.SelectedParity,
@@ -438,7 +439,7 @@ namespace Juniansoft.Termission.Core.ViewModels
                         });
                     }
 
-                    if (OpenSerialPort(SelectedSerialPortName))
+                    if (OpenSerialPort())
                     {
                         OnLogReceived(SelectedSerialPortName + " opened.");
                         SetSelectedPortLabel(SelectedSerialPortName);
@@ -487,12 +488,11 @@ namespace Juniansoft.Termission.Core.ViewModels
         /// </summary>
         /// <param name="portName"></param>
         /// <returns></returns>
-        private bool OpenSerialPort(string portName)
+        private bool OpenSerialPort()
         {
             try
             {
                 CloseSerialPort();
-                //_serialPort.PortName = portName;
                 _engine?.Open();
             }
             catch (Exception ex)
