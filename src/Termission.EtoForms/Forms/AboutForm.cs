@@ -22,7 +22,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
 
             var imageView = new ImageView
             {
-                Image = DesktopAppResources.Terminal,
+                Image = DesktopAppResources.DevAppLogo,
                 Size = new Size(128, 128)
             };
 

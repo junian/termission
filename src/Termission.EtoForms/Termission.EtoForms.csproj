@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -79,14 +79,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Controls\" />
-    <Folder Include="Resources\" />
-    <Folder Include="MenuCommands\" />
-    <Folder Include="Views\" />
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="..\..\resources\tango-icons\DocumentNew.png">
       <Link>Resources\DocumentNew.png</Link>
@@ -114,6 +107,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\resources\tango-icons\MediaStart.png">
       <Link>Resources\MediaStart.png</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\resources\DevAppIcon.ico">
+      <Link>Resources\DevAppIcon.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\DevAppLogo.png">
+      <Link>Resources\DevAppLogo.png</Link>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
