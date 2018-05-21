@@ -82,7 +82,7 @@ namespace Juniansoft.Termission.EtoForms.Views
                     new StackLayoutItem
                     {
                         Control = GroupDeviceSelection(),
-                        HorizontalAlignment = HorizontalAlignment.Center,
+                        HorizontalAlignment = HorizontalAlignment.Left,
                     },
                     new StackLayoutItem
                     {
@@ -106,7 +106,7 @@ namespace Juniansoft.Termission.EtoForms.Views
                     Spacing = 5,
                     Items =
                     {
-                        new Label{ Text = "Device:" },
+                        new Label{ Text = "Device:", Visible = false },
                         (_dropDownSerialPort = new DropDown{ Width = 256, }),
                         (_btnRefresh = new Button{ Text="Refresh", }),
                         (_btnRun = new Button{ Text = "Run" }),

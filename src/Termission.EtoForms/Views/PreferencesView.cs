@@ -26,6 +26,9 @@ namespace Juniansoft.Termission.EtoForms.Views
         private DropDown _radDataBits;
         private EnumDropDown<StopBits> _radStopBits;
 
+        private CheckBox _chkDtr;
+        private CheckBox _chkRts;
+
         public PreferencesView()
         {
             Padding = 10;
@@ -69,6 +72,13 @@ namespace Juniansoft.Termission.EtoForms.Views
                 Binding.Property((PreferencesViewModel m) => m.SelectedStopBits)
                 .Convert(x => (StopBits)x, x => (int)x));
 
+            _chkDtr.CheckedBinding.BindDataContext(
+                Binding.Property((PreferencesViewModel m) => m.IsDtrEnable)
+                .Convert(x => (bool?)x, x => x == true));
+
+            _chkRts.CheckedBinding.BindDataContext(
+                Binding.Property((PreferencesViewModel m) => m.IsRtsEnable)
+                .Convert(x => (bool?)x, x => x == true));
         }
 
         Control BuildContent()
@@ -92,6 +102,8 @@ namespace Juniansoft.Termission.EtoForms.Views
                     new TableRow(new Label{Text="Parity" }, (_dropDownParity = new EnumDropDown<Parity>{})),
                     new TableRow(new Label{Text="Data Bits" }, (_radDataBits = new DropDown {})),
                     new TableRow(new Label{Text="Stop Bits" },(_radStopBits = new EnumDropDown<StopBits>{})),
+                    new TableRow(new Label{Text="Enable Dtr" },(_chkDtr = new CheckBox{})),
+                    new TableRow(new Label{Text="Enable Rts" },(_chkRts = new CheckBox{})),
                     null,
                 },
             };

@@ -433,6 +433,8 @@ namespace Juniansoft.Termission.Core.ViewModels
                             Parity = (int)Settings.SelectedParity,
                             DataBits = Settings.SelectedDataBits,
                             StopBits = (int)Settings.SelectedStopBits,
+                            IsDtrEnable = Settings.IsDtrEnable,
+                            IsRtsEnable = Settings.IsRtsEnable,
                         });
                     }
 

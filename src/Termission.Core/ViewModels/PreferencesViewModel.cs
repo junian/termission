@@ -168,6 +168,34 @@ namespace Juniansoft.Termission.Core.ViewModels
             }
         }
 
+        public bool IsDtrEnable
+        {
+            get => Settings.IsDtrEnable;
+            set
+            {
+                var dtr = value;
+                if (Settings.IsDtrEnable != dtr)
+                {
+                    Settings.IsDtrEnable = dtr;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public bool IsRtsEnable
+        {
+            get => Settings.IsRtsEnable;
+            set
+            {
+                var rts = value;
+                if (Settings.IsRtsEnable != rts)
+                {
+                    Settings.IsRtsEnable = rts;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
         public PreferencesViewModel()
         {
 

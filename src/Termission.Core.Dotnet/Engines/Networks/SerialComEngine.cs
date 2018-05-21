@@ -52,6 +52,8 @@ namespace Juniansoft.Termission.Core.Engines.Networks
                 _serialPort.Parity = (Parity) s.Parity;
                 _serialPort.DataBits = s.DataBits;
                 _serialPort.StopBits = (StopBits) s.StopBits;
+                _serialPort.DtrEnable = s.IsDtrEnable;
+                _serialPort.RtsEnable = s.IsRtsEnable;
             }
         }
 
