@@ -29,6 +29,10 @@ namespace Juniansoft.Termission.EtoForms.Views
         private CheckBox _chkDtr;
         private CheckBox _chkRts;
 
+        private Button _btnResetTcpListener;
+        private Button _btnResetTcpClient;
+        private Button _btnResetSerial;
+
         public PreferencesView()
         {
             Padding = 10;
@@ -79,6 +83,10 @@ namespace Juniansoft.Termission.EtoForms.Views
             _chkRts.CheckedBinding.BindDataContext(
                 Binding.Property((PreferencesViewModel m) => m.IsRtsEnable)
                 .Convert(x => (bool?)x, x => x == true));
+
+            _btnResetTcpListener.BindDataContext(c => c.Command, (PreferencesViewModel vm) => vm.ResetTcpListenerCommand);
+            _btnResetTcpClient.BindDataContext(c => c.Command, (PreferencesViewModel vm) => vm.ResetTcpClientCommand);
+            _btnResetSerial.BindDataContext(c => c.Command, (PreferencesViewModel vm) => vm.ResetSerialComCommand);
         }
 
         Control BuildContent()
@@ -91,10 +99,12 @@ namespace Juniansoft.Termission.EtoForms.Views
                     new TableRow(new Label{ Text = "TCP Listener Mode", Font = SystemFonts.Bold(), }),
                     new TableRow(new Label{ Text ="Ip Address:" }, (_textTcpListenerIp = new TextBox{ PlaceholderText="e.g. 127.0.0.1" })),
                     new TableRow(new Label{ Text="Port:" }, (_textTcpListenerPort = new NumericMaskedTextBox<int>{ PlaceholderText = "e.g. 8080" })),
+                    new TableRow((_btnResetTcpListener = new Button { Text="Reset TCP Listener" }), null),
                     new TableRow(),
                     new TableRow(new Label{ Text = "TCP Client Mode", Font = SystemFonts.Bold(), }),
                     new TableRow(new Label{ Text ="Ip Address:" }, (_textTcpClientIp = new TextBox{ PlaceholderText="e.g. 127.0.0.1" })),
                     new TableRow(new Label{ Text="Port:" }, (_textTcpClientPort = new NumericMaskedTextBox<int>{ PlaceholderText = "e.g. 8080" })),
+                    new TableRow((_btnResetTcpClient = new Button { Text="Reset TCP Client" }), null),
                     new TableRow(),
                     new TableRow( new Label { Text = "Serial COM Mode", Font = SystemFonts.Bold(), } ),
                     new TableRow(new Label{Text="Baud Rate" }, (_dropDownBaudRate = new ComboBox{})),
@@ -104,6 +114,8 @@ namespace Juniansoft.Termission.EtoForms.Views
                     new TableRow(new Label{Text="Stop Bits" },(_radStopBits = new EnumDropDown<StopBits>{})),
                     new TableRow(new Label{Text="Enable Dtr" },(_chkDtr = new CheckBox{})),
                     new TableRow(new Label{Text="Enable Rts" },(_chkRts = new CheckBox{})),
+                    new TableRow((_btnResetSerial = new Button { Text="Reset Serial" }), null),
+                    new TableRow(),
                     null,
                 },
             };

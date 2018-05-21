@@ -1,10 +1,12 @@
-﻿using Juniansoft.Termission.Core.Helpers;
+﻿using Juniansoft.MvvmReady;
+using Juniansoft.Termission.Core.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Juniansoft.Termission.Core.ViewModels
 {
@@ -195,6 +197,38 @@ namespace Juniansoft.Termission.Core.ViewModels
                 }
             }
         }
+
+        public ICommand ResetTcpListenerCommand => new Command(() => 
+        {
+            TcpListenerIp = Settings.DefaultTcpListenerIpAddress;
+            TcpListenerPort = Settings.DefaultTcpListenerPort;
+        });
+
+        public ICommand ResetTcpClientCommand => new Command(() => 
+        {
+            TcpClientIp = Settings.DefaultTcpClientIpAddress;
+            TcpClientPort = Settings.DefaultTcpClientPort;
+        });
+
+        public ICommand ResetSerialComCommand => new Command(() => 
+        {
+            SelectedBaudRate = Settings.DefaultBaudRate;
+            SelectedParity = Settings.DefaultParity;
+            SelectedDataBits = Settings.DefaultDataBits;
+            SelectedStopBits = Settings.DefaultStopBits;
+            SelectedHandshake = Settings.DefaultHandshake;
+            IsDtrEnable = Settings.DefaultDtrEnable;
+            IsRtsEnable = Settings.DefaultRtsEnable;
+        });
+
+        public ICommand ResetAllCommand => new Command(() => 
+        {
+            ResetTcpListenerCommand.Execute(null);
+
+            ResetTcpClientCommand.Execute(null);
+
+            ResetSerialComCommand.Execute(null);
+        });
 
         public PreferencesViewModel()
         {
