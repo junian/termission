@@ -12,12 +12,12 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <DefineConstants>Debug;ProductVersion=0.1.0;UpgradeCode=159B5463-046E-4F65-B0D8-0C5E4C17706C;AppProject=Termission.WinForms;AppName=Termission;Manufacturer=Junian Triajianto;AppLink=http://junian.net;TargetFramework=net45;</DefineConstants>
+    <DefineConstants>Debug;ProductVersion=0.1.1;UpgradeCode=159B5463-046E-4F65-B0D8-0C5E4C17706C;AppProject=Termission.WinForms;AppName=Termission;Manufacturer=Junian Triajianto;AppLink=http://junian.net;TargetFramework=net45;</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <DefineConstants>ProductVersion=0.1.0;UpgradeCode=159B5463-046E-4F65-B0D8-0C5E4C17706C;AppProject=Termission.WinForms;AppName=Termission;Manufacturer=Junian Triajianto;AppLink=http://junian.net;TargetFramework=net45;</DefineConstants>
+    <DefineConstants>ProductVersion=0.1.1;UpgradeCode=159B5463-046E-4F65-B0D8-0C5E4C17706C;AppProject=Termission.WinForms;AppName=Termission;Manufacturer=Junian Triajianto;AppLink=http://junian.net;TargetFramework=net45;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
