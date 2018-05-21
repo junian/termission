@@ -84,33 +84,38 @@ namespace Juniansoft.Termission.Core.Helpers
             set => AppSettings.AddOrUpdateValue(nameof(SelectedActivityMode), value);
         }
 
+        public const int DefaultBaudRate = 9600;
         public static int SelectedBaudRate
         {
-            get => AppSettings.GetValueOrDefault(nameof(SelectedBaudRate), 19200);
+            get => AppSettings.GetValueOrDefault(nameof(SelectedBaudRate), DefaultBaudRate);
             set => AppSettings.AddOrUpdateValue(nameof(SelectedBaudRate), value);
         }
 
+        public const int DefaultDataBits = 8;
         public static int SelectedDataBits
         {
-            get => AppSettings.GetValueOrDefault(nameof(SelectedDataBits), 8);
+            get => AppSettings.GetValueOrDefault(nameof(SelectedDataBits), DefaultDataBits);
             set => AppSettings.AddOrUpdateValue(nameof(SelectedDataBits), value);
         }
 
+        public const int DefaultStopBits = 1;
         public static int SelectedStopBits
         {
-            get => AppSettings.GetValueOrDefault(nameof(SelectedStopBits), 0);
+            get => AppSettings.GetValueOrDefault(nameof(SelectedStopBits), DefaultStopBits);
             set => AppSettings.AddOrUpdateValue(nameof(SelectedStopBits), value);
         }
 
+        public const int DefaultHandshake = 0;
         public static int SelectedHandshake
         {
-            get => AppSettings.GetValueOrDefault(nameof(SelectedHandshake), 0);
+            get => AppSettings.GetValueOrDefault(nameof(SelectedHandshake), DefaultHandshake);
             set => AppSettings.AddOrUpdateValue(nameof(SelectedHandshake), value);
         }
 
+        public const int DefaultParity = 0;
         public static int SelectedParity
         {
-            get => AppSettings.GetValueOrDefault(nameof(SelectedParity), 0);
+            get => AppSettings.GetValueOrDefault(nameof(SelectedParity), DefaultParity);
             set => AppSettings.AddOrUpdateValue(nameof(SelectedParity), value);
         }
 
