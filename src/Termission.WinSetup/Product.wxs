@@ -35,13 +35,13 @@
 		       CompressionLevel="high"/>
 
     <Icon Id="ProductIcon"
-		      SourceFile="..\..\resources\devicon.ico"/>
+		      SourceFile="..\..\resources\DevAppIcon.ico"/>
     <Property Id="ARPPRODUCTICON"
 		          Value="ProductIcon"/>
     <Property Id="ARPHELPLINK"
-		          Value="https://www.junian.net"/>
+		          Value="$(var.AppLink)"/>
     <Property Id="ARPURLINFOABOUT"
-		          Value="https://www.junian.net"/>
+		          Value="$(var.AppLink)"/>
 
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
@@ -54,6 +54,7 @@
         <Directory Id="ApplicationProgramsFolderHome" Name="$(var.AppName)">
           <Directory Id="ApplicationProgramsFolder" Name="$(var.ProductVersion)"/>
         </Directory>
+        <Directory Id="DesktopFolder" Name="Desktop"></Directory>
       </Directory>
     </Directory>
 
@@ -196,6 +197,34 @@
       </Component>
     </DirectoryRef>
 
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="ApplicationShortcutDesktop"
+                 Guid="{63D8A0A5-F7E2-49DD-AED0-BCECE1D58040}">
+        <Shortcut Id="ApplicationDesktopShortcut"
+                  Name="$(var.AppName) ($(var.ProductVersion))"
+                  Description="$(var.AppName) by $(var.Manufacturer)"
+                  Target="[#Termission.exe]"
+                  Icon="ProductIcon"
+                  WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+
+        <!--
+				<Shortcut Id="UninstallProduct"             
+                          Name="Uninstall 35E Control Panel"
+                          Description="Uninstalls 35E Control Panel"
+                          Target="[SystemFolder]msiexec.exe"
+                          Arguments="/x [ProductCode]"/>
+				-->
+
+        <RemoveFolder Id="RemoveDesktopFolder"
+                      Directory="DesktopFolder"
+                      On="uninstall" />
+        <RegistryValue Root="HKCU"
+                       Key="Software\Microsoft\$(var.Manufacturer)\$(var.AppName)\$(var.ProductVersion)"
+                       Name="installed" Type="integer"
+                       Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+    
     <InstallExecuteSequence>
       <RemoveExistingProducts Before="InstallInitialize" />
     </InstallExecuteSequence>
@@ -218,6 +247,7 @@
       <ComponentRef Id="MonoOptionsdll" />
 
       <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="ApplicationShortcutDesktop" />
     </Feature>
 
     <UI>
