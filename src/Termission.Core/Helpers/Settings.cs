@@ -119,6 +119,20 @@ namespace Juniansoft.Termission.Core.Helpers
             set => AppSettings.AddOrUpdateValue(nameof(SelectedParity), value);
         }
 
+        public const bool DefaultDtrEnable = false;
+        public static bool IsDtrEnable
+        {
+            get => AppSettings.GetValueOrDefault(nameof(IsDtrEnable), DefaultDtrEnable);
+            set => AppSettings.AddOrUpdateValue(nameof(IsDtrEnable), value);
+        }
+
+        public const bool DefaultRtsEnable = false;
+        public static bool IsRtsEnable
+        {
+            get => AppSettings.GetValueOrDefault(nameof(IsRtsEnable), DefaultRtsEnable);
+            set => AppSettings.AddOrUpdateValue(nameof(IsRtsEnable), value);
+        }
+
         public static int SelectedScriptingLanguage
         {
             get => AppSettings.GetValueOrDefault(nameof(SelectedScriptingLanguage), (int)BotScriptType.CSharp);
