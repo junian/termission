@@ -16,15 +16,11 @@ using Juniansoft.Termission.GtkSharp.Services;
 
 namespace Juniansoft.Termission.GtkSharp
 {
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-            //Application.Init();
-            //MainWindow win = new MainWindow();
-            //win.Show();
-            //Application.Run();
-
+	class MainClass
+	{
+		[STAThread]
+		public static void Main(string[] args)
+		{
             var platform = new Eto.GtkSharp.Platform();
 
             RegisterUIHandlers(platform);

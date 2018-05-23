@@ -13,13 +13,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Juniansoft.Termission.Wpf
+namespace Termission.Wpf
 {
-    class Program
-    {
-        [STAThread]
-        static void Main(string[] args)
-        {
+	class MainClass
+	{
+		[STAThread]
+		public static void Main(string[] args)
+		{
             var platform = Eto.Platform.Get(Eto.Platforms.Wpf);
 
             RegisterUIHandlers(platform);

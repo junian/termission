@@ -15,15 +15,12 @@ using Juniansoft.Termission.EtoForms.Forms;
 using Juniansoft.Termission.Mac.Controls;
 using Juniansoft.Termission.Mac.Services;
 
-namespace Juniansoft.Termission.Mac
+namespace Termission.XamMac
 {
-    static class Program
-    {
-        static void Main(string[] args)
-        {
-            //NSApplication.Init();
-            //NSApplication.Main(args);
-
+	static class MainClass
+	{
+		static void Main(string[] args)
+		{
             var platform = new Eto.Mac.Platform();
 
             // Register custom UI handlers

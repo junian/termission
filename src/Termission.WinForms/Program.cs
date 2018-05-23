@@ -17,21 +17,13 @@ using Juniansoft.Termission.EtoForms.Forms;
 using Juniansoft.Termission.WinForms.Controls;
 using Juniansoft.Termission.WinForms.Services;
 
-namespace Juniansoft.Termission.WinForms
+namespace Termission.WinForms
 {
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main(string[] args)
-        {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-
-
+	class MainClass
+	{
+		[STAThread]
+		public static void Main(string[] args)
+		{
             var platform = Eto.Platform.Get(Eto.Platforms.WinForms);
 
             RegisterUIHandlers(platform);
@@ -115,4 +107,3 @@ namespace Juniansoft.Termission.WinForms
         }
     }
 }
-

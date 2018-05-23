@@ -149,19 +149,19 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Engines\" />
+    <Folder Include="Engines\Networks\" />
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
-      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
+      <Project>{E22FBA6B-804E-48C4-BF28-A4B8B6642461}</Project>
       <Name>Termission.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Termission.Mobile\Termission.Mobile.csproj">
       <Project>{039207AC-2037-4B0B-A200-23A680E73FD7}</Project>
       <Name>Termission.Mobile</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engines\" />
-    <Folder Include="Engines\Networks\" />
-    <Folder Include="Controls\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />

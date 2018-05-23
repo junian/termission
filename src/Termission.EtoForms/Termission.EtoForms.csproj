@@ -1,86 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BDC8B552-3E54-44F1-A703-F712D06B55C6}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <TargetFramework>net45</TargetFramework>
     <RootNamespace>Juniansoft.Termission.EtoForms</RootNamespace>
-    <AssemblyName>Termission.EtoForms</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PackageVersion>1.0</PackageVersion>
+    <Title>Termission</Title>
+    <Copyright>Copyright © 2018</Copyright>
+    <Description>Description of Termission</Description>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
-  </PropertyGroup>
+  
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="Eto">
-      <HintPath>..\packages\Eto.Forms.2.3.0\lib\net45\Eto.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Options">
-      <HintPath>..\packages\Mono.Options.5.3.0.1\lib\net4-client\Mono.Options.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmReady">
-      <HintPath>..\packages\MvvmReady.1.1.0\lib\net45\MvvmReady.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Eto.Forms" Version="2.4.1" />
+    <PackageReference Include="Mono.Options" Version="5.3.0.1" />
+    <PackageReference Include="MvvmReady" Version="1.2.0" />
   </ItemGroup>
+  
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\CrossDialog.cs" />
-    <Compile Include="Controls\SyntaxHightlightTextArea.cs" />
-    <Compile Include="MenuCommands\AboutCommand.cs" />
-    <Compile Include="MenuCommands\BotActiveCommand.cs" />
-    <Compile Include="MenuCommands\CompileCommand.cs" />
-    <Compile Include="MenuCommands\NewCommand.cs" />
-    <Compile Include="MenuCommands\OpenCommand.cs" />
-    <Compile Include="MenuCommands\PreferencesCommand.cs" />
-    <Compile Include="MenuCommands\QuitCommand.cs" />
-    <Compile Include="MenuCommands\SaveAsCommand.cs" />
-    <Compile Include="MenuCommands\SaveCommand.cs" />
-    <Compile Include="MenuCommands\UpdateCommand.cs" />
-    <Compile Include="MainApplication.cs" />
-    <Compile Include="Services\EtoSystemService.cs" />
-    <Compile Include="Views\MainView.cs" />
-    <Compile Include="Views\PreferencesView.cs" />
-    <Compile Include="Views\DeviceBotView.cs" />
-    <Compile Include="Forms\MainForm.cs" />
-    <Compile Include="Forms\AboutForm.cs" />
-    <Compile Include="Forms\PreferencesForm.cs" />
-    <Compile Include="Forms\DeviceBotForm.cs" />
-    <Compile Include="Controls\AceSourceEditor.cs" />
-    <Compile Include="Forms\HelpForm.cs" />
-    <Compile Include="MenuCommands\HelpCommand.cs" />
-    <Compile Include="Resources\DesktopAppResources.cs" />
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj" />
+    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
-      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
-      <Name>Termission.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
-      <Project>{68A8AACE-4371-4D61-B984-09185E77C2ED}</Project>
-      <Name>Termission.Core.Dotnet</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
+    <EmbeddedResource Include="..\..\resources\DevAppIcon.ico">
+      <Link>Resources\DevAppIcon.ico</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\DevAppLogo.png">
+      <Link>Resources\DevAppLogo.png</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\resources\tango-icons\DocumentNew.png">
       <Link>Resources\DocumentNew.png</Link>
     </EmbeddedResource>
@@ -96,6 +42,9 @@
     <EmbeddedResource Include="..\..\resources\tango-icons\MediaRecord.png">
       <Link>Resources\MediaRecord.png</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\tango-icons\MediaStart.png">
+      <Link>Resources\MediaStart.png</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\..\resources\tango-icons\Preferences.png">
       <Link>Resources\Preferences.png</Link>
     </EmbeddedResource>
@@ -105,17 +54,5 @@
     <EmbeddedResource Include="..\..\resources\tango-icons\Terminal.png">
       <Link>Resources\Terminal.png</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\resources\tango-icons\MediaStart.png">
-      <Link>Resources\MediaStart.png</Link>
-    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\..\resources\DevAppIcon.ico">
-      <Link>Resources\DevAppIcon.ico</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\resources\DevAppLogo.png">
-      <Link>Resources\DevAppLogo.png</Link>
-    </EmbeddedResource>
-  </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

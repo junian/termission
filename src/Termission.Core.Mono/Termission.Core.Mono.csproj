@@ -1,52 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E44089B-8967-4117-A12F-6F0E31D480D2}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <TargetFramework>net45</TargetFramework>
     <RootNamespace>Juniansoft.Termission.Core</RootNamespace>
-    <AssemblyName>Termission.Core.Mono</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PackageVersion>1.0</PackageVersion>
+    <Title>Termission</Title>
+    <Copyright>Copyright © 2018</Copyright>
+    <Description>Description of Termission</Description>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
-  </PropertyGroup>
+  
   <ItemGroup>
-    <Reference Include="System" />
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj" />
+    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Mono.CSharp" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Engines\Scripts\CSharpMcsScriptEngine.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engines\" />
-    <Folder Include="Engines\Scripts\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
-      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
-      <Name>Termission.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
-      <Project>{68A8AACE-4371-4D61-B984-09185E77C2ED}</Project>
-      <Name>Termission.Core.Dotnet</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

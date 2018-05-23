@@ -1,117 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</ProjectGuid>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <PackageTargetFallback>
+        $(PackageTargetFallback);portable45-net45+win8+wpa81;net45
+    </PackageTargetFallback>
     <RootNamespace>Juniansoft.Termission.Core</RootNamespace>
-    <AssemblyName>Termission.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <PackageVersion>1.0</PackageVersion>
+    <Title>Termission</Title>
+    <Copyright>Copyright © 2018</Copyright>
+    <Description>Description of Termission</Description>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+  
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Events\LogReceivedEventArgs.cs" />
-    <Compile Include="Events\MessageResponseReceivedArgs.cs" />
-    <Compile Include="Engines\Networks\INetworkEngine.cs" />
-    <Compile Include="Engines\Scripts\IBotScriptEngine.cs" />
-    <Compile Include="Engines\Scripts\JSJintScriptEngine.cs" />
-    <Compile Include="Engines\Scripts\BaseJSScriptEngine.cs" />
-    <Compile Include="Engines\Scripts\BaseScriptEngine.cs" />
-    <Compile Include="ITermissionApp.cs" />
-    <Compile Include="Helpers\Settings.cs" />
-    <Compile Include="Constants\EtoStyles.cs" />
-    <Compile Include="Extensions\StringExtension.cs" />
-    <Compile Include="Models\BotScript.cs" />
-    <Compile Include="Models\ShouldSerializeContractResolver.cs" />
-    <Compile Include="Enums\ActivityMode.cs" />
-    <Compile Include="Enums\BotScriptType.cs" />
-    <Compile Include="Models\TermSharpSettings.cs" />
-    <Compile Include="Services\SerialDataConverter.cs" />
-    <Compile Include="Services\INotificationService.cs" />
-    <Compile Include="Services\ICrossDialog.cs" />
-    <Compile Include="ViewModels\CoreViewModel.cs" />
-    <Compile Include="ViewModels\PreferencesViewModel.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="Services\ISystemService.cs" />
-    <Compile Include="Engines\Scripts\ICSharpBotEngine.cs" />
-    <Compile Include="Engines\Scripts\IJavaScriptBotEngine.cs" />
-    <Compile Include="Services\IFileService.cs" />
-    <Compile Include="Models\TcpListenerSettings.cs" />
-    <Compile Include="Models\TcpClientSettings.cs" />
-    <Compile Include="Models\SerialComSettings.cs" />
-    <Compile Include="ViewModels\DeviceBotViewModel.cs" />
-    <Compile Include="App.cs" />
-    <Compile Include="Resources\AppResources.cs" />
-    <Compile Include="ViewModels\HelpViewModel.cs" />
-    <Compile Include="Services\IJsonService.cs" />
-    <Compile Include="Services\LitJsonService.cs" />
-    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <PackageReference Include="MvvmReady" Version="1.2.0" />
+    <PackageReference Include="CommonMark.NET" Version="0.15.1" />
+    <PackageReference Include="LitJson" Version="0.13.0" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Jint" Version="2.11.58" />
+    <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Engines\Scripts\Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Events\" />
-    <Folder Include="Engines\" />
-    <Folder Include="Engines\Networks\" />
-    <Folder Include="Engines\Scripts\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Constants\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Models\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Services\" />
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Engines\Scripts\Program.cs" />
-    <EmbeddedResource Include="..\..\DOCUMENTATION.md">
-      <Link>Resources\DOCUMENTATION.md</Link>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Engines\Scripts\Program.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
     <EmbeddedResource Include="..\..\ACKNOWLEDGMENTS.md">
       <Link>Resources\ACKNOWLEDGMENTS.md</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\DOCUMENTATION.md">
+      <Link>Resources\DOCUMENTATION.md</Link>
+    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="jint">
-      <HintPath>..\packages\jint.2.10.4\lib\portable40-net40+sl5+win8+wp8+wpa81\jint.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Settings.Abstractions">
-      <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Settings">
-      <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.dll</HintPath>
-    </Reference>
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="CommonMark">
-      <HintPath>..\packages\CommonMark.NET.0.15.1\lib\portable-net45+wp80+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\CommonMark.dll</HintPath>
-    </Reference>
-    <Reference Include="LitJson">
-      <HintPath>..\packages\LitJson.0.9.0\lib\LitJson.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmReady">
-      <HintPath>..\packages\MvvmReady.1.1.0\lib\portable-net45+win8+wp8+wpa81\MvvmReady.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

@@ -159,7 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
-      <Project>{3EDCD048-0B52-408B-9E27-C507F4FB14E3}</Project>
+      <Project>{E22FBA6B-804E-48C4-BF28-A4B8B6642461}</Project>
       <Name>Termission.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Termission.Mobile\Termission.Mobile.csproj">
