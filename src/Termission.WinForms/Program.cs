@@ -17,9 +17,9 @@ using Juniansoft.Termission.EtoForms.Forms;
 using Juniansoft.Termission.WinForms.Controls;
 using Juniansoft.Termission.WinForms.Services;
 
-namespace Termission.WinForms
+namespace Juniansoft.Termission.WinForms
 {
-	class MainClass
+	class Program
 	{
 		[STAThread]
 		public static void Main(string[] args)

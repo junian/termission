@@ -4,6 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net461</TargetFramework>
     <ApplicationIcon>..\..\resources\DevAppIcon.ico</ApplicationIcon>
+    <AssemblyName>Termission</AssemblyName>
+    <RootNamespace>Juniansoft.Termission.WinForms</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
