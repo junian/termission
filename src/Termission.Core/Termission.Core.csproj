@@ -1,10 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
-    <PackageTargetFallback>
-        $(PackageTargetFallback);portable45-net45+win8+wpa81;net45
-    </PackageTargetFallback>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <RootNamespace>Juniansoft.Termission.Core</RootNamespace>
     <PackageVersion>1.0</PackageVersion>
     <Title>Termission</Title>
@@ -18,7 +15,6 @@
     <PackageReference Include="LitJson" Version="0.13.0" />
     <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="Jint" Version="2.11.58" />
-    <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
   </ItemGroup>
   
   <ItemGroup>

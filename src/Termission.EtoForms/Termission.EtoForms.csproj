@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	
   <PropertyGroup>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>net461</TargetFramework>
     <RootNamespace>Juniansoft.Termission.EtoForms</RootNamespace>
     <PackageVersion>1.0</PackageVersion>
     <Title>Termission</Title>
