@@ -7,6 +7,7 @@ using Juniansoft.Termission.EtoForms.Resources;
 using Juniansoft.Termission.Core.ViewModels;
 using Juniansoft.Termission.EtoForms.Views;
 using Juniansoft.MvvmReady;
+using Juniansoft.Termission.Core;
 
 namespace Juniansoft.Termission.EtoForms.Forms
 {
@@ -30,7 +31,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
             _mainView = ServiceLocator.Current.Get<MainView>();
             _mainVm = ServiceLocator.Current.Get<MainViewModel>();
 
-            Title = MainApplication.AssemblyProduct;
+            Title = App.AssemblyProduct;
             ClientSize = new Eto.Drawing.Size(720, 480);
             Style = EtoStyles.FormMain;
             Icon = DesktopAppResources.DevAppIcon;

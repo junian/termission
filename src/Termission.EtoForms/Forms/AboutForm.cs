@@ -2,6 +2,7 @@
 using System.Reflection;
 using Eto.Drawing;
 using Eto.Forms;
+using Juniansoft.Termission.Core;
 using Juniansoft.Termission.EtoForms.Resources;
 
 namespace Juniansoft.Termission.EtoForms.Forms
@@ -10,7 +11,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
     {
         public AboutForm()
         {
-            var title = MainApplication.AssemblyProduct;
+            var title = App.AssemblyProduct;
 
             /* dialog attributes */
 
@@ -33,15 +34,15 @@ namespace Juniansoft.Termission.EtoForms.Forms
                 TextAlignment = TextAlignment.Center
             };
 
-            var version = MainApplication.AssemblyVersion;
+            var version = App.AssemblyVersion;
             var labelVersion = new Label
             {
                 Text = string.Format("Version {0}", version),
                 TextAlignment = TextAlignment.Center
             };
 
-            var copyright = MainApplication.AssemblyCopyright;
-            var company = MainApplication.AssemblyCompany;
+            var copyright = App.AssemblyCopyright;
+            var company = App.AssemblyCompany;
             var labelCopyright = new Label
             {
                 Text = $"{copyright} by {company}",

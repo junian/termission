@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Eto.Forms;
+using Juniansoft.Termission.Core;
 
 namespace Juniansoft.Termission.EtoForms.MenuCommands
 {
@@ -11,7 +12,7 @@ namespace Juniansoft.Termission.EtoForms.MenuCommands
     {
         public AboutCommand()
         {
-            this.MenuText = $"About {MainApplication.AssemblyProduct}";
+            this.MenuText = $"About {App.AssemblyProduct}";
             this.ToolBarText = "About";
             this.ToolTip = "About";
         }
