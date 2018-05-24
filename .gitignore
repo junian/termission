@@ -40,3 +40,5 @@ Thumbs.db
 *.dotCover
 .vs/
 node_modules/
+
+.env
