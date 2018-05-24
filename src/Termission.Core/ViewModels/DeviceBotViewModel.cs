@@ -182,7 +182,7 @@ namespace Juniansoft.Termission.Core.ViewModels
 
         public string Title
         {
-            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? $"{App.AssemblyProduct} Bot" : $"{App.AssemblyProduct} Bot ({CurrentFilePath})";
+            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? $"{CoreApp.AssemblyProduct} Bot" : $"{CoreApp.AssemblyProduct} Bot ({CurrentFilePath})";
         }
 
         public int Width

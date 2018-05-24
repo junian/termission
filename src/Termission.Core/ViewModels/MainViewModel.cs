@@ -395,7 +395,7 @@ namespace Juniansoft.Termission.Core.ViewModels
 
         public string Title
         {
-            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? $"{App.AssemblyProduct}" : $"{App.AssemblyProduct} ({CurrentFilePath})";
+            get => string.IsNullOrWhiteSpace(CurrentFilePath) ? $"{CoreApp.AssemblyProduct}" : $"{CoreApp.AssemblyProduct} ({CurrentFilePath})";
         }
 
         public ICommand ExitCommand => new Command(_systemService.Quit);

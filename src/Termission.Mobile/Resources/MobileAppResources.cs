@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using Xamarin.Forms;
 
 namespace Juniansoft.Termission.Mobile.Resources
 {
@@ -22,6 +23,15 @@ namespace Juniansoft.Termission.Mobile.Resources
                 content = r.ReadToEnd();
             }
             return content;
+        }
+
+        public static ImageSource DevAppLogo => GetImage(nameof(DevAppLogo));
+
+        private static ImageSource GetImage(string name)
+        {
+            var type = typeof(MobileAppResources);
+            var assembly = type.GetTypeInfo().Assembly;
+            return ImageSource.FromResource($"{type.Namespace}.{name}.png", assembly);
         }
     }
 }

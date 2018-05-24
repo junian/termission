@@ -17,7 +17,7 @@ namespace Termission.Mobile
 
             RegisterServices();
 
-            MainPage = new DeviceBotPage
+            MainPage = new AboutPage
             {
                 //BindingContext = ServiceLocator.Instance.Get<DeviceBotViewModel>(),
             };

@@ -28,6 +28,9 @@
     <EmbeddedResource Include="..\..\resources\codemirror\codemirror-mode-javascript.js">
       <Link>Resources\codemirror-mode-javascript.js</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\..\resources\DevAppLogo.png">
+      <Link>Resources\DevAppLogo.png</Link>
+    </EmbeddedResource>
   </ItemGroup>
     
 </Project>

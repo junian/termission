@@ -12,7 +12,7 @@ namespace Juniansoft.Termission.EtoForms.MenuCommands
     {
         public AboutCommand()
         {
-            this.MenuText = $"About {App.AssemblyProduct}";
+            this.MenuText = $"About {CoreApp.AssemblyProduct}";
             this.ToolBarText = "About";
             this.ToolTip = "About";
         }

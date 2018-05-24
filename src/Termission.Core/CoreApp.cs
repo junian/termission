@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Juniansoft.Termission.Core
 {
-    public static class App
+    public static class CoreApp
     {
         #region Assembly Attribute Accessors
 
@@ -12,7 +12,7 @@ namespace Juniansoft.Termission.Core
         {
             get
             {
-                var assembly = typeof(App)
+                var assembly = typeof(CoreApp)
                     .GetTypeInfo()
                     .Assembly;
                 var attribute = assembly
@@ -32,7 +32,7 @@ namespace Juniansoft.Termission.Core
         {
             get
             {
-                var assembly = typeof(App)
+                var assembly = typeof(CoreApp)
                     .GetTypeInfo()
                     .Assembly;
                 return assembly.GetName().Version.ToString();
@@ -43,7 +43,7 @@ namespace Juniansoft.Termission.Core
         {
             get
             {
-                var assembly = typeof(App)
+                var assembly = typeof(CoreApp)
                     .GetTypeInfo()
                     .Assembly;
                 var attribute = assembly
@@ -63,7 +63,7 @@ namespace Juniansoft.Termission.Core
         {
             get
             {
-                var assembly = typeof(App)
+                var assembly = typeof(CoreApp)
                     .GetTypeInfo()
                     .Assembly;
                 var attribute = assembly
@@ -83,7 +83,7 @@ namespace Juniansoft.Termission.Core
         {
             get
             {
-                var assembly = typeof(App)
+                var assembly = typeof(CoreApp)
                     .GetTypeInfo()
                     .Assembly;
                 var attribute = assembly
@@ -103,7 +103,7 @@ namespace Juniansoft.Termission.Core
         {
             get
             {
-                var assembly = typeof(App)
+                var assembly = typeof(CoreApp)
                     .GetTypeInfo()
                     .Assembly;
                 var attribute = assembly

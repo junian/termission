@@ -11,7 +11,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
     {
         public AboutForm()
         {
-            var title = App.AssemblyProduct;
+            var title = CoreApp.AssemblyProduct;
 
             /* dialog attributes */
 
@@ -34,15 +34,15 @@ namespace Juniansoft.Termission.EtoForms.Forms
                 TextAlignment = TextAlignment.Center
             };
 
-            var version = App.AssemblyVersion;
+            var version = CoreApp.AssemblyVersion;
             var labelVersion = new Label
             {
                 Text = string.Format("Version {0}", version),
                 TextAlignment = TextAlignment.Center
             };
 
-            var copyright = App.AssemblyCopyright;
-            var company = App.AssemblyCompany;
+            var copyright = CoreApp.AssemblyCopyright;
+            var company = CoreApp.AssemblyCompany;
             var labelCopyright = new Label
             {
                 Text = $"{copyright} by {company}",

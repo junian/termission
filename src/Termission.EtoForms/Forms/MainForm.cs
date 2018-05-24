@@ -31,7 +31,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
             _mainView = ServiceLocator.Current.Get<MainView>();
             _mainVm = ServiceLocator.Current.Get<MainViewModel>();
 
-            Title = App.AssemblyProduct;
+            Title = CoreApp.AssemblyProduct;
             ClientSize = new Eto.Drawing.Size(720, 480);
             Style = EtoStyles.FormMain;
 
