@@ -3,17 +3,15 @@
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
     <RootNamespace>Juniansoft.Termission.Core</RootNamespace>
-    <PackageVersion>1.0</PackageVersion>
-    <Title>Termission</Title>
-    <Copyright>Copyright © 2018</Copyright>
-    <Description>Description of Termission</Description>
   </PropertyGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj" />
     <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj" />
   </ItemGroup>
+    
   <ItemGroup>
     <Reference Include="Mono.CSharp" />
   </ItemGroup>
+    
 </Project>

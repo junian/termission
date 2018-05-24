@@ -9,6 +9,7 @@
     <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="MvvmReady" Version="1.2.0" />
   </ItemGroup>
+    
   <ItemGroup>
     <ProjectReference Include="..\Termission.Core\Termission.Core.csproj" />
   </ItemGroup>
@@ -27,4 +28,5 @@
       <Link>Resources\codemirror-mode-javascript.js</Link>
     </EmbeddedResource>
   </ItemGroup>
+    
 </Project>
