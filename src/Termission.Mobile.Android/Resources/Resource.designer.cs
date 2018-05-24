@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Termission.Mobile.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Juniansoft.Termission.Mobile.Android.Resource", IsApplication=true)]
 
-namespace Termission.Mobile.Droid
+namespace Juniansoft.Termission.Mobile.Android
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Termission.Mobile.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Termission.Mobile.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Juniansoft.Termission.Mobile.Android.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

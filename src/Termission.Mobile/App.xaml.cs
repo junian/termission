@@ -7,7 +7,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace Termission.Mobile
+namespace Juniansoft.Termission.Mobile
 {
     public partial class App : Application, ITermissionApp
     {
