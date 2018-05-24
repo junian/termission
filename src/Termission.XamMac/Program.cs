@@ -15,7 +15,7 @@ using Juniansoft.Termission.EtoForms.Forms;
 using Juniansoft.Termission.Mac.Controls;
 using Juniansoft.Termission.Mac.Services;
 
-namespace Termission.XamMac
+namespace Juniansoft.Termission.XamMac
 {
 	static class MainClass
 	{
