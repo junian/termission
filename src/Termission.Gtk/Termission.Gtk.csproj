@@ -1,24 +1,62 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-	
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <ProjectGuid>{88D40798-93A7-4FD9-AFC6-2133B7051B42}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net461</TargetFramework>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Juniansoft.Termission.GtkSharp</RootNamespace>
+    <AssemblyName>Termission</AssemblyName>
   </PropertyGroup>
-
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
-    <StartAction>Project</StartAction>
-    <ExternalConsole>false</ExternalConsole>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mono.TextEditor\Mono.TextEditor.csproj" />
-    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj" />
-    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj" />
-    <ProjectReference Include="..\Termission.Core.Mono\Termission.Core.Mono.csproj" />
-    <ProjectReference Include="..\Termission.EtoForms\Termission.EtoForms.csproj" />
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
-
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\MainWindow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\SyntaxHightlightTextAreaHandler.cs" />
+    <Compile Include="Services\NotificationService.cs" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Eto.Platform.Gtk2" Version="2.4.1" />
     <PackageReference Include="ICSharpCode.NRefactory" Version="5.5.1" />
@@ -26,15 +64,27 @@
     <PackageReference Include="MvvmReady" Version="1.2.0" />
     <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
   </ItemGroup>
-	
   <ItemGroup>
-    <Reference Include="Mono.Cairo" />
-    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="Mono.Posix" />
+    <ProjectReference Include="..\Mono.TextEditor\Mono.TextEditor.csproj">
+      <Project>{A2329308-3751-4DBD-9A75-5F7B8B024625}</Project>
+      <Name>Mono.TextEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
+      <Project>{E22FBA6B-804E-48C4-BF28-A4B8B6642461}</Project>
+      <Name>Termission.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj">
+      <Project>{696EBE0F-E2AF-46D5-A577-D6FF2F2860A5}</Project>
+      <Name>Termission.Core.Dotnet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.Core.Mono\Termission.Core.Mono.csproj">
+      <Project>{D2A838BC-1003-4169-A2E0-16CE0A5326E1}</Project>
+      <Name>Termission.Core.Mono</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Termission.EtoForms\Termission.EtoForms.csproj">
+      <Project>{24C1E28F-25B3-4AD3-9053-A3CB307DEE54}</Project>
+      <Name>Termission.EtoForms</Name>
+    </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

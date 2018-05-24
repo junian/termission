@@ -34,7 +34,10 @@ namespace Juniansoft.Termission.EtoForms.Forms
             Title = App.AssemblyProduct;
             ClientSize = new Eto.Drawing.Size(720, 480);
             Style = EtoStyles.FormMain;
-            Icon = DesktopAppResources.DevAppIcon;
+
+            if(!Platform.IsGtk)
+                Icon = DesktopAppResources.DevAppIcon;
+            
             Menu = BuildMenu();
             Content = _mainView;
 
