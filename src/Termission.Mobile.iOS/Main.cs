@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Juniansoft.Termission.Mobile.iOS
+namespace Termission.Mobile.iOS
 {
     public class Application
     {

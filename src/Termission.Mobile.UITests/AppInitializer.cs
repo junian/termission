@@ -1,10 +1,8 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
-namespace Juniansoft.Termission.Mobile.UITests
+namespace Termission.Mobile.UITests
 {
     public class AppInitializer
     {

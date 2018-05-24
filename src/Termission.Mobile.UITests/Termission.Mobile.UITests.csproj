@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25FFE033-8AF3-4A04-A08C-94CEB2EB49FC}</ProjectGuid>
+    <ProjectGuid>{B19C892E-2628-4CA7-AD27-08D406A3B14B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Juniansoft.Termission.Mobile.UITests</RootNamespace>
+    <RootNamespace>Termission.Mobile.UITests</RootNamespace>
     <AssemblyName>Termission.Mobile.UITests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
@@ -26,33 +26,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.UITest">
-      <HintPath>..\packages\Xamarin.UITest.2.0.8\lib\Xamarin.UITest.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests.cs" />
-    <Compile Include="AppInitializer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <PackageReference Include="NUnit" Version="2.6.4" />
+    <PackageReference Include="Xamarin.UITest" Version="2.2.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Termission.Mobile.iOS\Termission.Mobile.iOS.csproj">
-      <Project>{D7EAE7F5-2793-4CB5-9DBE-4B9FDE7D182E}</Project>
+      <Project>{F6A287A7-A8EF-4890-940E-64C069B86B1C}</Project>
       <Name>Termission.Mobile.iOS</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Termission.Mobile.Droid\Termission.Mobile.Droid.csproj">
-      <Project>{741BF8CD-1951-4C21-8F10-CB40B87E237A}</Project>
-      <Name>Termission.Mobile.Droid</Name>
+    <ProjectReference Include="..\Termission.Mobile.Android\Termission.Mobile.Android.csproj">
+      <Project>{CFCA35FD-7D79-4DD6-8208-91F701DCAC1E}</Project>
+      <Name>Termission.Mobile.Android</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tests.cs" />
+    <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,11 +1,13 @@
-﻿using Juniansoft.MvvmReady;
+using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Services;
 using Juniansoft.Termission.Core.ViewModels;
 using Juniansoft.Termission.Mobile.Pages;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-namespace Juniansoft.Termission.Mobile
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+namespace Termission.Mobile
 {
     public partial class App : Application, ITermissionApp
     {
@@ -47,7 +49,7 @@ namespace Juniansoft.Termission.Mobile
             ServiceLocator.Current.Register<IJsonService, LitJsonService>();
 
             //if (Platform.Instance.IsWinForms || Platform.IsWpf)
-                //ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
+            //ServiceLocator.Instance.Register<ICSharpBotEngine, CSharpCodeDomScriptEngine>();
 
             // Register all ViewModels here.
             ServiceLocator.Current.Register<MainViewModel>();
