@@ -25,14 +25,16 @@
 	<key>CFBundleDisplayName</key>
 	<string>Termission.Mobile</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.junian.Termission</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>net.junian.termission</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
-	<string>Termission.Mobile</string>
+	<string>Termission</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.1</string>
+	<key>CFBundleVersion</key>
+	<string>0.1.1</string>
 </dict>
 </plist>
