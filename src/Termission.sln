@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termission.WinForms", "Termission.WinForms\Termission.WinForms.csproj", "{387F2B2D-115F-4982-80DC-2B84443D6266}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.WinForms", "Termission.WinForms\Termission.WinForms.csproj", "{387F2B2D-115F-4982-80DC-2B84443D6266}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Wpf", "Termission.Wpf\Termission.Wpf.csproj", "{7A41414D-77E2-4827-87A9-5E716A4A419D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.XamMac", "Termission.XamMac\Termission.XamMac.csproj", "{47C59A57-6220-4C6C-ADBB-5F1C038A3012}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termission.Core", "Termission.Core\Termission.Core.csproj", "{E22FBA6B-804E-48C4-BF28-A4B8B6642461}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core", "Termission.Core\Termission.Core.csproj", "{E22FBA6B-804E-48C4-BF28-A4B8B6642461}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termission.Core.Dotnet", "Termission.Core.Dotnet\Termission.Core.Dotnet.csproj", "{696EBE0F-E2AF-46D5-A577-D6FF2F2860A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core.Dotnet", "Termission.Core.Dotnet\Termission.Core.Dotnet.csproj", "{696EBE0F-E2AF-46D5-A577-D6FF2F2860A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termission.Core.Mono", "Termission.Core.Mono\Termission.Core.Mono.csproj", "{D2A838BC-1003-4169-A2E0-16CE0A5326E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Core.Mono", "Termission.Core.Mono\Termission.Core.Mono.csproj", "{D2A838BC-1003-4169-A2E0-16CE0A5326E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termission.EtoForms", "Termission.EtoForms\Termission.EtoForms.csproj", "{24C1E28F-25B3-4AD3-9053-A3CB307DEE54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.EtoForms", "Termission.EtoForms\Termission.EtoForms.csproj", "{24C1E28F-25B3-4AD3-9053-A3CB307DEE54}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.TextEditor", "Mono.TextEditor\Mono.TextEditor.csproj", "{A2329308-3751-4DBD-9A75-5F7B8B024625}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Termission.WinSetup", "Termission.WinSetup\Termission.WinSetup.wixproj", "{B8D15188-F8DE-470B-8B60-F41F3CB0DA85}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Termission.Mobile", "Termission.Mobile\Termission.Mobile.csproj", "{E1FD3705-749B-4E56-8A09-3D067DE5184D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Mobile", "Termission.Mobile\Termission.Mobile.csproj", "{E1FD3705-749B-4E56-8A09-3D067DE5184D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Mobile.Android", "Termission.Mobile.Android\Termission.Mobile.Android.csproj", "{CFCA35FD-7D79-4DD6-8208-91F701DCAC1E}"
 EndProject
@@ -40,6 +40,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{5FA978B9-CD43-41E9-B372-E562A318FCCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.Gtk", "Termission.Gtk\Termission.Gtk.csproj", "{88D40798-93A7-4FD9-AFC6-2133B7051B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Termission.GtkSharp", "Termission.GtkSharp\Termission.GtkSharp.csproj", "{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -621,6 +623,46 @@ Global
 		{88D40798-93A7-4FD9-AFC6-2133B7051B42}.Standalone|iPhoneSimulator.Build.0 = Release|Any CPU
 		{88D40798-93A7-4FD9-AFC6-2133B7051B42}.Standalone|x86.ActiveCfg = Release|Any CPU
 		{88D40798-93A7-4FD9-AFC6-2133B7051B42}.Standalone|x86.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|x86.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Ad-Hoc|x86.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|Any CPU.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|x86.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.AppStore|x86.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Debug|x86.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|iPhone.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|x86.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Release|x86.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|Any CPU.Build.0 = Debug|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|iPhone.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|iPhone.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|x86.ActiveCfg = Release|Any CPU
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA}.Standalone|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -640,6 +682,7 @@ Global
 		{F6A287A7-A8EF-4890-940E-64C069B86B1C} = {475DFE5F-90F8-424E-8A56-DC862274017D}
 		{B19C892E-2628-4CA7-AD27-08D406A3B14B} = {475DFE5F-90F8-424E-8A56-DC862274017D}
 		{88D40798-93A7-4FD9-AFC6-2133B7051B42} = {2A0F6C0B-7424-46D2-8ECC-960BB3490B4F}
+		{C0A5A19B-954D-4693-AB1A-75DA43A49BFA} = {2A0F6C0B-7424-46D2-8ECC-960BB3490B4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47857121-F23B-4FD1-B3FD-23A0B03BB92D}
