@@ -8,6 +8,7 @@ using System.Windows.Forms;
 
 namespace Juniansoft.Termission.WinForms.Services
 {
+    [Obsolete("Use EtoForms NotificationService instead")]
     public class NotificationService : INotificationService
     {
         private NotifyIcon _notifyIcon;

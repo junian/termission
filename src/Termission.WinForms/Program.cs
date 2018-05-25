@@ -39,7 +39,6 @@ namespace Juniansoft.Termission.WinForms
 
         private static void RegisterServices()
         {
-            ServiceLocator.Current.Register<INotificationService, NotificationService>();
         }
 
         private static void RegisterUIHandlers(Platform platform)

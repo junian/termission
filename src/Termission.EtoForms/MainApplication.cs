@@ -18,6 +18,8 @@ namespace Juniansoft.Termission.EtoForms
 {
     public class MainApplication: Application, ITermissionApp
     {
+        public static TrayIndicator TrayIndicator { get; internal set; }
+
         public MainApplication(Platform platform)
             : base(platform)
         {
@@ -85,6 +87,7 @@ namespace Juniansoft.Termission.EtoForms
         {
             // Register all Services here
             ServiceLocator.Current.Register<ICrossDialog, CrossDialog>();
+            ServiceLocator.Current.Register<INotificationService, NotificationService>();
             ServiceLocator.Current.Register<IJavaScriptBotEngine, JSJintScriptEngine>();
             ServiceLocator.Current.Register<INetworkEngine, TermSharpEngine>();
             ServiceLocator.Current.Register<ISystemService, EtoSystemService>();

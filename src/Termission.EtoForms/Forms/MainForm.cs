@@ -19,6 +19,8 @@ namespace Juniansoft.Termission.EtoForms.Forms
         Eto.Forms.Command _menuItemSaveAs;
         Eto.Forms.Command _menuItemExit;
         Eto.Forms.Command _menuItemHelp;
+        Eto.Forms.Command _menuItemAbout;
+        Eto.Forms.Command _menuItemPreferences;
 
         CheckCommand _menuItemAlwaysOnTop;
 
@@ -40,6 +42,9 @@ namespace Juniansoft.Termission.EtoForms.Forms
             
             Menu = BuildMenu();
             Content = _mainView;
+
+            MainApplication.TrayIndicator = CreateTrayIndicator();
+            MainApplication.TrayIndicator.Show();
 
             ConfigureDataBinding();
 
@@ -76,7 +81,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
 
             var menuBar = new MenuBar
             {
-                AboutItem = new AboutCommand()
+                AboutItem = _menuItemAbout = new AboutCommand()
                 {
                     DelegatedCommand = new RelayCommand<object>((_) =>
                     {
@@ -121,13 +126,13 @@ namespace Juniansoft.Termission.EtoForms.Forms
                 });
             }
 
-            menuBar.ApplicationItems.Add(new PreferencesCommand
+            menuBar.ApplicationItems.Add((_menuItemPreferences = new PreferencesCommand
             {
                 DelegatedCommand = new RelayCommand<object>((_) =>
                 {
                     new PreferencesForm().ShowModal(this);
                 }),
-            }, 900);
+            }), 900);
 
 
             return menuBar;
@@ -137,6 +142,23 @@ namespace Juniansoft.Termission.EtoForms.Forms
         {
             var botDialog = new DeviceBotForm();
             botDialog.ShowModal(this);
+        }
+
+        private TrayIndicator CreateTrayIndicator()
+        {
+            var tray = new TrayIndicator
+            {
+                Image = DesktopAppResources.DevAppIcon,
+                Title = CoreApp.AssemblyProduct
+            };
+
+            var menu = new ContextMenu();
+            menu.Items.Add(_menuItemAbout);
+            menu.Items.Add(_menuItemPreferences);
+            menu.Items.Add(_menuItemExit);
+            tray.Menu = menu;
+
+            return tray;
         }
     }
 }

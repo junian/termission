@@ -44,7 +44,6 @@ namespace Juniansoft.Termission.XamMac
 
         private static void RegisterServices()
         {
-            ServiceLocator.Current.Register<INotificationService, NotificationService>();
             ServiceLocator.Current.Register<ICSharpBotEngine, CSharpMcsScriptEngine>();
         }
 

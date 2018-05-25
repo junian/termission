@@ -35,7 +35,6 @@ namespace Termission.Wpf
 
         private static void RegisterServices()
         {
-            ServiceLocator.Current.Register<INotificationService, NotificationService>();
         }
 
         private static void ConfigureStyles()
