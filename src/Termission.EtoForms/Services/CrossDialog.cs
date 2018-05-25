@@ -5,7 +5,7 @@ using Juniansoft.Termission.Core.Services;
 
 namespace Juniansoft.Termission.EtoForms.Services
 {
-    public class CrossDialog: ICrossDialog
+    public class CrossDialog: ICrossDialog, INotificationService
     {
         public Task<string> ShowOpenDialogAsync(string extension = "json", string typename = "JSON Files")
         {
@@ -53,6 +53,11 @@ namespace Juniansoft.Termission.EtoForms.Services
         public async Task ShowMessageBoxAsync(string message)
         {
             await Task.Run(() => MessageBox.Show(message));
+        }
+
+        public void Show(string title, string message)
+        {
+            MessageBox.Show(message, title);
         }
     }
 }

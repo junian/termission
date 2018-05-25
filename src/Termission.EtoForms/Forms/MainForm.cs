@@ -148,7 +148,7 @@ namespace Juniansoft.Termission.EtoForms.Forms
         {
             var tray = new TrayIndicator
             {
-                Image = DesktopAppResources.DevAppIcon,
+                Image = !Platform.IsGtk ? DesktopAppResources.DevAppIcon : DesktopAppResources.DevAppLogo,
                 Title = CoreApp.AssemblyProduct
             };
 

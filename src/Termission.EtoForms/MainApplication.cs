@@ -87,7 +87,10 @@ namespace Juniansoft.Termission.EtoForms
         {
             // Register all Services here
             ServiceLocator.Current.Register<ICrossDialog, CrossDialog>();
-            ServiceLocator.Current.Register<INotificationService, NotificationService>();
+            if(Platform.Supports<Notification>())
+                ServiceLocator.Current.Register<INotificationService, NotificationService>();
+            else
+                ServiceLocator.Current.Register<INotificationService, CrossDialog>();
             ServiceLocator.Current.Register<IJavaScriptBotEngine, JSJintScriptEngine>();
             ServiceLocator.Current.Register<INetworkEngine, TermSharpEngine>();
             ServiceLocator.Current.Register<ISystemService, EtoSystemService>();

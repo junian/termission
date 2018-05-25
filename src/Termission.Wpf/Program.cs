@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Termission.Wpf
 {
-	class MainClass
+	class Program
 	{
 		[STAThread]
 		public static void Main(string[] args)

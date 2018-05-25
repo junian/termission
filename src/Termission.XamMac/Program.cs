@@ -17,7 +17,7 @@ using Juniansoft.Termission.Mac.Services;
 
 namespace Juniansoft.Termission.XamMac
 {
-	static class MainClass
+	static class Program
 	{
 		static void Main(string[] args)
 		{
