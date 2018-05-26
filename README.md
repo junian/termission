@@ -1,3 +1,6 @@
+[![GitHub release](https://img.shields.io/github/release/junian/termission.svg)](https://github.com/junian/termission/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/junian/termission/total.svg)](https://github.com/junian/termission/releases)
+
 # Termission
 
 Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.
