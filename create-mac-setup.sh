@@ -27,7 +27,7 @@ cp -r "$CURRENT_DIR/src/${PROJECT_NAME}.XamMac/bin/Release/${APP_NAME}.app" "$CU
     --icon-size 160 \
     --app-drop-link 480 170 \
     --icon "$APP_NAME.app" 180 170 \
-    "$CURRENT_DIR/setup/${APP_NAME}.dmg" \
+    "$CURRENT_DIR/setup/${APP_NAME}-v${APP_VERSION}.dmg" \
     $CURRENT_DIR/setup/app
 
 rm -rf $CURRENT_DIR/setup/app/
