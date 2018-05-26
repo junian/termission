@@ -267,10 +267,10 @@
         DllEntry="WixShellExec"
         Impersonate="yes" />
 
-    <PropertyRef Id="NETFRAMEWORK45"/>
+    <PropertyRef Id="WIX_IS_NETFRAMEWORK_461_OR_LATER_INSTALLED"/>
     <Condition
-			Message="This application requires .NET Framework 4.7.1+. Please install the .NET Framework then run this installer again. For more information, you can contact admin@junian.net.">
-      <![CDATA[Installed OR NETFRAMEWORK471]]>
+			Message="$(var.AppName) requires .NET Framework 4.6.1 or higher. For more information, you can contact admin@junian.net.">
+      <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_461_OR_LATER_INSTALLED]]>
     </Condition>
   </Product>
 </Wix>
