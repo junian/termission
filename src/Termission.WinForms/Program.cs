@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Eto;
+using Eto.Forms;
 using Eto.WinForms.Forms;
 using Eto.WinForms.Forms.Controls;
 using Juniansoft.MvvmReady;
@@ -43,6 +44,7 @@ namespace Juniansoft.Termission.WinForms
 
         private static void RegisterUIHandlers(Platform platform)
         {
+            platform.Add<Notification.IHandler>(() => new Controls.NotificationHandler());
             platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
         }
 
