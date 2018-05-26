@@ -7,12 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.1.6] - 2018-05-26
+## [0.1.7] - 2018-05-26
 
 ### Changed
 
 - Switch library to netstandard2.0
 - Switch desktop target to net461
+- Fix notifications for Windows
 - Fix some minor bugs
 
 ## [0.1.1] - 2018-05-21
