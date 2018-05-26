@@ -96,15 +96,6 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\BaseNetworkEngine.cs">
-      <Link>Engines\Networks\BaseNetworkEngine.cs</Link>
-    </Compile>
-    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpClientEngine.cs">
-      <Link>Engines\Networks\TcpClientEngine.cs</Link>
-    </Compile>
-    <Compile Include="..\Termission.Core.Dotnet\Engines\Networks\TcpListenerEngine.cs">
-      <Link>Engines\Networks\TcpListenerEngine.cs</Link>
-    </Compile>
     <Compile Include="Controls\CodeMirrorEditorRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
