@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <ApplicationIcon>..\..\resources\DevAppIcon.ico</ApplicationIcon>
     <AssemblyName>Termission</AssemblyName>
     <RootNamespace>Juniansoft.Termission.WinForms</RootNamespace>

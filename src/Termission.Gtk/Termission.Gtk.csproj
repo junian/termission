@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>{88D40798-93A7-4FD9-AFC6-2133B7051B42}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <RootNamespace>Juniansoft.Termission.GtkSharp</RootNamespace>
     <AssemblyName>Termission</AssemblyName>
   </PropertyGroup>
