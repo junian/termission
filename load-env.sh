@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ -f ./.env ]; then
-   source ./.env
+if [ -f ./.env.example ]; then
+   source ./.env.example
    export $(cut -d= -f1 ./.env.example)
 else
     echo "Unable to find .env file." >&2
