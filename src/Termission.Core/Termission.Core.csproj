@@ -8,7 +8,7 @@
     <Description>Cross-platform Serial / TCP terminal</Description>
     <Company>Juniansoft</Company>
     <Product>Termission</Product>
-    <AssemblyVersion>0.1.5</AssemblyVersion>
+    <AssemblyVersion>0.1.6</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
     <PackageVersion>$(AssemblyVersion)</PackageVersion>
