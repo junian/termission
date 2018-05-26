@@ -21,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj" />
+    <ProjectReference Include="..\Termission.Core\Termission.Core.csproj">
+      <TargetFramework>net461</TargetFramework>
+    </ProjectReference>
     <ProjectReference Include="..\Termission.Core.Dotnet\Termission.Core.Dotnet.csproj" />
     <ProjectReference Include="..\Termission.EtoForms\Termission.EtoForms.csproj" />
   </ItemGroup>
