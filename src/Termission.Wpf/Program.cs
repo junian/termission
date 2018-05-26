@@ -1,4 +1,5 @@
 ﻿using Eto;
+using Eto.Forms;
 using Juniansoft.MvvmReady;
 using Juniansoft.Termission.Core;
 using Juniansoft.Termission.Core.Services;
@@ -13,7 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Termission.Wpf
+namespace Juniansoft.Termission.Wpf
 {
 	class Program
 	{
@@ -45,6 +46,7 @@ namespace Termission.Wpf
         private static void RegisterUIHandlers(Platform platform)
         {
             platform.Add<SyntaxHightlightTextArea.ISyntaxHightlightTextArea>(() => new SyntaxHightlightTextAreaHandler());
+            platform.Add<Notification.IHandler>(() => new Controls.NotificationHandler());
         }
     }
 }
