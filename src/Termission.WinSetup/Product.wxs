@@ -63,105 +63,105 @@
            Guid="*" DiskId="1">
         <File Id="Termission.exe"
 				      Name="Termission.exe"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.exe"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Termission.exe"
 				      KeyPath="yes" />
       </Component>
       <Component Id="Termissionexeconfig"
 			           Guid="*" DiskId="1">
         <File Id="Termission.exe.config"
 				      Name="Termission.exe.config"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.exe.config"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Termission.exe.config"
 				      KeyPath="yes" />
       </Component>
       <Component Id="TermissionCoredll"
 			           Guid="*" DiskId="1">
         <File Id="Termission.Core.dll"
 				      Name="Termission.Core.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.Core.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Termission.Core.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="TermissionCoreDotnetdll"
 			           Guid="*" DiskId="1">
         <File Id="Termission.Core.Dotnet.dll"
 				      Name="Termission.Core.Dotnet.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.Core.Dotnet.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Termission.Core.Dotnet.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="TermissionEtoFormsdll"
 			           Guid="*" DiskId="1">
         <File Id="Termission.EtoForms.dll"
 				      Name="Termission.EtoForms.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Termission.EtoForms.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Termission.EtoForms.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="Etodll"
 			           Guid="*" DiskId="1">
         <File Id="Eto.dll"
 				      Name="Eto.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Eto.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Eto.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="Eto.WinFormsdll"
 			           Guid="*" DiskId="1">
         <File Id="Eto.WinForms.dll"
 				      Name="Eto.WinForms.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Eto.WinForms.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Eto.WinForms.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="MvvmReadydll"
 			           Guid="*" DiskId="1">
         <File Id="MvvmReady.dll"
 				      Name="MvvmReady.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\MvvmReady.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\MvvmReady.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="LitJsondll"
 			           Guid="*" DiskId="1">
         <File Id="LitJson.dll"
 				      Name="LitJson.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\LitJson.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\LitJson.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="PluginSettingsAbstractionsdll"
 			           Guid="*" DiskId="1">
         <File Id="Plugin.Settings.Abstractions.dll"
 				      Name="Plugin.Settings.Abstractions.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Plugin.Settings.Abstractions.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Plugin.Settings.Abstractions.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="PluginSettingsdll"
 			           Guid="*" DiskId="1">
         <File Id="Plugin.Settings.dll"
 				      Name="Plugin.Settings.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Plugin.Settings.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Plugin.Settings.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="CommonMarkdll"
 			           Guid="*" DiskId="1">
         <File Id="CommonMark.dll"
 				      Name="CommonMark.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\CommonMark.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\CommonMark.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="FastColoredTextBoxdll"
 			           Guid="*" DiskId="1">
         <File Id="FastColoredTextBox.dll"
 				      Name="FastColoredTextBox.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\FastColoredTextBox.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\FastColoredTextBox.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="jintdll"
 			           Guid="*" DiskId="1">
         <File Id="jint.dll"
 				      Name="jint.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\jint.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\jint.dll"
 				      KeyPath="yes" />
       </Component>
       <Component Id="MonoOptionsdll"
 			           Guid="*" DiskId="1">
         <File Id="Mono.Options.dll"
 				      Name="Mono.Options.dll"
-				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\Mono.Options.dll"
+				      Source="..\$(var.AppProject)\bin\$(var.Configuration)\$(var.TargetFramework)\Mono.Options.dll"
 				      KeyPath="yes" />
       </Component>
     </DirectoryRef>
@@ -269,8 +269,8 @@
 
     <PropertyRef Id="NETFRAMEWORK45"/>
     <Condition
-			Message="This application requires .NET Framework 4.5.*. Please install the .NET Framework then run this installer again. For more information, you can contact admin@junian.net.">
-      <![CDATA[Installed OR NETFRAMEWORK45]]>
+			Message="This application requires .NET Framework 4.7.1+. Please install the .NET Framework then run this installer again. For more information, you can contact admin@junian.net.">
+      <![CDATA[Installed OR NETFRAMEWORK471]]>
     </Condition>
   </Product>
 </Wix>
