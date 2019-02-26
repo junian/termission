@@ -1,6 +1,8 @@
 [![GitHub release](https://img.shields.io/github/release/junian/termission.svg)](https://github.com/junian/termission/releases)
 [![Github All Releases](https://img.shields.io/github/downloads/junian/termission/total.svg)](https://github.com/junian/termission/releases)
 
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/junian)
+
 # Termission
 
 Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.
