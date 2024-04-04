@@ -1,11 +1,11 @@
 [![GitHub release](https://img.shields.io/github/release/junian/termission.svg)](https://github.com/junian/termission/releases)
 [![Github All Releases](https://img.shields.io/github/downloads/junian/termission/total.svg)](https://github.com/junian/termission/releases)
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/junian)
-
 # Termission
 
 Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.
+
+![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbWmXJ3gY4weGdDUn8b-rcxVHEr4icONFu13ShcJsRBk9LI8SU_LWPFIzG2-Ia77hpKOiUTgTaTwW_bjV0OC3qfPYkPMjJqGnWHbk3Q4APN-FET4zZX5e4hUaTv_2JWV5MfnPTL3P6GJllW1o1Nf2S6PXPISyyYURmHfEdsrdVfwFjcN8rtmi_fOVALqo/s1600/termission-screenshot-00.png)
 
 ## About
 
