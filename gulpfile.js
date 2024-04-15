@@ -1,11 +1,12 @@
-var gulp = require('gulp');
-var inject = require('gulp-inject');
+const { src, dest, series } = require('gulp');
+const inject = require('gulp-inject');
 
-gulp.task('codemirror', function () {
-  var target = gulp.src('./resources/codemirror-editor.html');
-  var sources = gulp.src(['./resources/**/codemirror*.js', './resources/**/codemirror*.css'], {read: true});
+function codemirrorBuild() {
+  var target = src('./resources/codemirror/codemirror-editor.html');
+  var sources = src(['./resources/**/codemirror*.js', './resources/**/codemirror*.css'], {read: true});
 
   return target.pipe(inject(sources))
-    .pipe(gulp.dest('./resources'));
-});
+    .pipe(dest('./resources/codemirror'));
+}
 
+exports.default = series(codemirrorBuild);

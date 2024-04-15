@@ -3,11 +3,6 @@
   "version": "0.8.0",
   "description": "Cross-platform Serial/TCP Terminal with Scriptable Auto-Response.",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-inject": "^4.3.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/junian/termission/issues"
   },
-  "homepage": "https://github.com/junian/termission#readme"
+  "homepage": "https://github.com/junian/termission#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-inject": "^5.0.5"
+  }
 }
