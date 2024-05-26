@@ -22,26 +22,16 @@ This project is the successor of my old [serial-device-emulator](https://github.
 
 ## Installation
 
-- Install [VSPE](http://www.eterlogic.com/Products.VSPE.html) to create virtual Serial Port
-- Download the app, install it, and use it
-
-## Credits
-
-This project is possible to build thanks to following libraries:
-
-- [Eto.Forms](https://github.com/picoe/Eto) - A cross platform desktop and mobile user interface framework.
-- [MvvmLightLibs](https://github.com/lbugnion/mvvmlight) - A toolkit to accelerate the creation and development of MVVM applications.
-- [LitJson](https://github.com/LitJSON/litjson) - A .Net library to handle conversions from and to JSON (JavaScript Object Notation) strings.
-- [Xam.Plugins.Settings](https://github.com/jamesmontemagno/SettingsPlugin) - Read and Write Settings Plugin for Xamarin and Windows.
-- [FastColoredTextBox](https://github.com/PavelTorgashov/FastColoredTextBox) - A text editor component for .NET that allows you to create custom text editor with syntax highlighting.
-- [SourceTextView](https://github.com/xamarin/mac-samples/tree/master/SourceWriter) - A simple source code editor for Xamarin.Mac that provides support for code completion and simple syntax highlighting.
-- [AvalonEdit](https://github.com/icsharpcode/AvalonEdit) - The WPF-based text editor component used in SharpDevelop.
-- [Mono.TextEditor](https://github.com/mono/monodevelop/tree/monodevelop-6.3.0.864/main/src/core/Mono.Texteditor) - GTK-based text editor developed by Monodevelop.
-- [Jint](https://github.com/sebastienros/jint) - Javascript Interpreter for .NET Framework.
-- [IronPython](https://github.com/IronLanguages/ironpython2) - Implementation of the Python programming language for .NET Framework.
+- Install [Virtual COM Port](https://en.wikipedia.org/wiki/Virtual_COM_port) driver such as [com0com](https://com0com.sourceforge.net).
+- Download the **Termission** app and install it normally.
+- Type in a string or hexadecimal message.
+- Write Bot Script in C# by clicking **View** - **Device Bot**.
+- The rest of the features should be self-explanatory.
 
 ## License
 
 This project is licensed under [GPL-3.0](https://github.com/junian/termission/blob/master/LICENSE).
 
-Copyright (C) 2018 - 2024 [Junian Triajianto](https://www.junian.dev/).
+---
+
+Made with ☕ by [Junian.dev](https://www.junian.dev).
