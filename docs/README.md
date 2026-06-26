@@ -5,7 +5,7 @@
 <p align="center"><a href="https://github.com/junian/termission/releases"><img src="https://img.shields.io/github/release/junian/termission.svg?style=for-the-badge" alt="GitHub release" /></a>
 <a href="https://github.com/junian/termission/releases"><img src="https://img.shields.io/github/downloads/junian/termission/total.svg?style=for-the-badge" alt="Github All Releases" /></a></p>
 
-<p align="center"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbWmXJ3gY4weGdDUn8b-rcxVHEr4icONFu13ShcJsRBk9LI8SU_LWPFIzG2-Ia77hpKOiUTgTaTwW_bjV0OC3qfPYkPMjJqGnWHbk3Q4APN-FET4zZX5e4hUaTv_2JWV5MfnPTL3P6GJllW1o1Nf2S6PXPISyyYURmHfEdsrdVfwFjcN8rtmi_fOVALqo/s1600/termission-screenshot-00.png" alt="Termission screenshot" title="Termission screenshot" /></p>
+<p align="center"><img src="https://www.junian.dev/img/b/R29vZ2xl/AVvXsEhbWmXJ3gY4weGdDUn8b-rcxVHEr4icONFu13ShcJsRBk9LI8SU_LWPFIzG2-Ia77hpKOiUTgTaTwW_bjV0OC3qfPYkPMjJqGnWHbk3Q4APN-FET4zZX5e4hUaTv_2JWV5MfnPTL3P6GJllW1o1Nf2S6PXPISyyYURmHfEdsrdVfwFjcN8rtmi_fOVALqo/s1600/termission-screenshot-00.png" alt="Termission screenshot" title="Termission screenshot" /></p>
 
 ## About
 
